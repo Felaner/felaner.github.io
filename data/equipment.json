@@ -13140,6 +13140,138 @@
    "blocks": []
   },
   {
+   "id": "cape86",
+   "category": "capes",
+   "name": "Меховая накидка мага",
+   "nameEN": "Magey Backfur",
+   "namePL": "Futrzak magowca",
+   "icon": "data/raresImg/cape/86.cape.png",
+   "image": "data/raresImg/models/cape/86.webp",
+   "level": 8,
+   "fields": [
+    [
+     "Требуемый уровень",
+     "8"
+    ],
+    [
+     "Редкость",
+     "Психорар"
+    ],
+    [
+     "Улучшения",
+     "звёзды, орбы, осколки"
+    ],
+    [
+     "Тип",
+     "Плащи"
+    ],
+    [
+     "Цена",
+     "10 000"
+    ],
+    [
+     "Ремонт",
+     "180к"
+    ],
+    [
+     "Заряды",
+     "3000"
+    ],
+    [
+     "Вместимость дрифов",
+     "4"
+    ],
+    [
+     "Мощь",
+     "2"
+    ],
+    [
+     "Знание",
+     "2"
+    ],
+    [
+     "Здоровье",
+     "70"
+    ],
+    [
+     "Мана",
+     "10"
+    ]
+   ],
+   "blocks": [
+    {
+     "title": "Дроп",
+     "html": "<img data-items=\"ogre8a\" src=\"data/raresImg/bosses/ogre8a.bosslogo.png\" title=\"Чван\"/>"
+    }
+   ]
+  },
+  {
+   "id": "cape87",
+   "category": "capes",
+   "name": "Меховая накидка бойца",
+   "nameEN": "Wacky Backfur",
+   "namePL": "Futrzak bojowca",
+   "icon": "data/raresImg/cape/87.cape.png",
+   "image": "data/raresImg/models/cape/87.webp",
+   "level": 8,
+   "fields": [
+    [
+     "Требуемый уровень",
+     "8"
+    ],
+    [
+     "Редкость",
+     "Психорар"
+    ],
+    [
+     "Улучшения",
+     "звёзды, орбы, осколки"
+    ],
+    [
+     "Тип",
+     "Плащи"
+    ],
+    [
+     "Цена",
+     "10 000"
+    ],
+    [
+     "Ремонт",
+     "1.1kk+"
+    ],
+    [
+     "Заряды",
+     "3000"
+    ],
+    [
+     "Вместимость дрифов",
+     "4"
+    ],
+    [
+     "Сила",
+     "2"
+    ],
+    [
+     "Ловкость",
+     "2"
+    ],
+    [
+     "Здоровье",
+     "70"
+    ],
+    [
+     "Выносливость",
+     "10"
+    ]
+   ],
+   "blocks": [
+    {
+     "title": "Дроп",
+     "html": "<img data-items=\"ogre8a\" src=\"data/raresImg/bosses/ogre8a.bosslogo.png\" title=\"Чван\"/>"
+    }
+   ]
+  },
+  {
    "id": "cape34",
    "category": "capes",
    "name": "Бриз",
@@ -18896,6 +19028,138 @@
     {
      "title": "Дроп",
      "html": "Боссы и Чемпионы"
+    }
+   ]
+  },
+  {
+   "id": "gloves58",
+   "category": "gloves",
+   "name": "Рукавицы воина",
+   "nameEN": "Killy Grabguards",
+   "namePL": "Rencochrony woja",
+   "icon": "data/raresImg/gloves/58.gloves.png",
+   "image": "",
+   "level": 8,
+   "fields": [
+    [
+     "Требуемый уровень",
+     "8"
+    ],
+    [
+     "Редкость",
+     "Психорар"
+    ],
+    [
+     "Улучшения",
+     "звёзды, орбы, осколки"
+    ],
+    [
+     "Тип",
+     "Перчатки"
+    ],
+    [
+     "Цена",
+     "10 000"
+    ],
+    [
+     "Ремонт",
+     "60.8к"
+    ],
+    [
+     "Заряды",
+     "3000"
+    ],
+    [
+     "Вместимость дрифов",
+     "4"
+    ],
+    [
+     "Сила",
+     "5"
+    ],
+    [
+     "Ловкость",
+     "2"
+    ],
+    [
+     "Здоровье",
+     "40"
+    ],
+    [
+     "Выносливость",
+     "10"
+    ]
+   ],
+   "blocks": [
+    {
+     "title": "Дроп",
+     "html": "<img data-items=\"ogre8a\" src=\"data/raresImg/bosses/ogre8a.bosslogo.png\" title=\"Чван\"/>"
+    }
+   ]
+  },
+  {
+   "id": "gloves59",
+   "category": "gloves",
+   "name": "Рукавицы шамана",
+   "nameEN": "Shammy Grabguards",
+   "namePL": "Rencochrony szamana",
+   "icon": "data/raresImg/gloves/59.gloves.png",
+   "image": "",
+   "level": 8,
+   "fields": [
+    [
+     "Требуемый уровень",
+     "8"
+    ],
+    [
+     "Редкость",
+     "Психорар"
+    ],
+    [
+     "Улучшения",
+     "звёзды, орбы, осколки"
+    ],
+    [
+     "Тип",
+     "Перчатки"
+    ],
+    [
+     "Цена",
+     "10 000"
+    ],
+    [
+     "Ремонт",
+     "60.8к"
+    ],
+    [
+     "Заряды",
+     "3000"
+    ],
+    [
+     "Вместимость дрифов",
+     "4"
+    ],
+    [
+     "Мощь",
+     "5"
+    ],
+    [
+     "Знание",
+     "2"
+    ],
+    [
+     "Здоровье",
+     "40"
+    ],
+    [
+     "Мана",
+     "10"
+    ]
+   ],
+   "blocks": [
+    {
+     "title": "Дроп",
+     "html": "<img data-items=\"ogre8a\" src=\"data/raresImg/bosses/ogre8a.bosslogo.png\" title=\"Чван\"/>"
     }
    ]
   },
@@ -45171,8 +45435,8 @@
    "id": "helmet134",
    "category": "skins",
    "name": "Короновладный шишак",
-   "nameEN": "Короновладный шишак",
-   "namePL": "Короновладный шишак",
+   "nameEN": "Crownguard Zischagge",
+   "namePL": "Szyszak Koronowładny",
    "icon": "data/raresImg/helmet/134.helmet.png",
    "image": "data/raresImg/models/helmet/134.webp",
    "level": null,
@@ -45197,8 +45461,8 @@
    "id": "helmet135",
    "category": "skins",
    "name": "Гетманское забрало",
-   "nameEN": "Гетманское забрало",
-   "namePL": "Гетманское забрало",
+   "nameEN": "Hetman Visor",
+   "namePL": "Przyłbica Hetmańska",
    "icon": "data/raresImg/helmet/135.helmet.png",
    "image": "data/raresImg/models/helmet/135.webp",
    "level": null,
@@ -46322,8 +46586,8 @@
    "id": "armor127",
    "category": "skins",
    "name": "Короновладная карацена",
-   "nameEN": "Короновладная карацена",
-   "namePL": "Короновладная карацена",
+   "nameEN": "Crownguard Cuirass",
+   "namePL": "Karacena Koronowładna",
    "icon": "data/raresImg/armor/127.armor.png",
    "image": "data/raresImg/models/armor/127.webp",
    "level": null,
@@ -46348,8 +46612,8 @@
    "id": "armor128",
    "category": "skins",
    "name": "Гетманская карацена",
-   "nameEN": "Гетманская карацена",
-   "namePL": "Гетманская карацена",
+   "nameEN": "Hetman Cuirass",
+   "namePL": "Karacena Hetmańska",
    "icon": "data/raresImg/armor/128.armor.png",
    "image": "data/raresImg/models/armor/128.webp",
    "level": null,
@@ -47165,8 +47429,8 @@
    "id": "cape84",
    "category": "skins",
    "name": "Короновладная епанча",
-   "nameEN": "Короновладная епанча",
-   "namePL": "Короновладная епанча",
+   "nameEN": "Crownguard Mantle",
+   "namePL": "Opończa Koronowładna",
    "icon": "data/raresImg/cape/84.cape.png",
    "image": "data/raresImg/models/cape/84.webp",
    "level": null,
@@ -47191,8 +47455,8 @@
    "id": "cape85",
    "category": "skins",
    "name": "Гетманская делия",
-   "nameEN": "Гетманская делия",
-   "namePL": "Гетманская делия",
+   "nameEN": "Hetman Delia",
+   "namePL": "Delia Hetmańska",
    "icon": "data/raresImg/cape/85.cape.png",
    "image": "data/raresImg/models/cape/85.webp",
    "level": null,
@@ -48164,8 +48428,8 @@
    "id": "pants99",
    "category": "skins",
    "name": "Короновладные шоссы",
-   "nameEN": "Короновладные шоссы",
-   "namePL": "Короновладные шоссы",
+   "nameEN": "Crownguard Greaves",
+   "namePL": "Nogawice Koronowładne",
    "icon": "data/raresImg/pants/99.pants.png",
    "image": "data/raresImg/models/pants/99.webp",
    "level": null,
@@ -48190,8 +48454,8 @@
    "id": "pants100",
    "category": "skins",
    "name": "Гетманские шаровары",
-   "nameEN": "Гетманские шаровары",
-   "namePL": "Гетманские шаровары",
+   "nameEN": "Hetman Sharovary",
+   "namePL": "Hajdawery Hetmańskie",
    "icon": "data/raresImg/pants/100.pants.png",
    "image": "data/raresImg/models/pants/100.webp",
    "level": null,
@@ -48986,8 +49250,8 @@
    "id": "boots99",
    "category": "skins",
    "name": "Короновладные пулены",
-   "nameEN": "Короновладные пулены",
-   "namePL": "Короновладные пулены",
+   "nameEN": "Crownguard Poulaine",
+   "namePL": "Ciżmy Koronowładne",
    "icon": "data/raresImg/boots/99.boots.png",
    "image": "",
    "level": null,
@@ -49012,8 +49276,8 @@
    "id": "boots100",
    "category": "skins",
    "name": "Гетманские башмаки",
-   "nameEN": "Гетманские башмаки",
-   "namePL": "Гетманские башмаки",
+   "nameEN": "Hetman Riding Boots",
+   "namePL": "Baczmagi Hetmańskie",
    "icon": "data/raresImg/boots/100.boots.png",
    "image": "",
    "level": null,
@@ -49465,8 +49729,8 @@
    "id": "stick74",
    "category": "skins",
    "name": "Честь Гусарии",
-   "nameEN": "Честь Гусарии",
-   "namePL": "Честь Гусарии",
+   "nameEN": "Hussar's Honor",
+   "namePL": "Honor Husarii",
    "icon": "data/raresImg/stick/74.stick.png",
    "image": "",
    "level": null,
@@ -49491,8 +49755,8 @@
    "id": "stick75",
    "category": "skins",
    "name": "Бердыш региментаря",
-   "nameEN": "Бердыш региментаря",
-   "namePL": "Бердыш региментаря",
+   "nameEN": "Brigadier's Bardiche",
+   "namePL": "Berdysz Regimentarza",
    "icon": "data/raresImg/stick/75.stick.png",
    "image": "",
    "level": null,
@@ -49720,8 +49984,8 @@
    "id": "bow49",
    "category": "skins",
    "name": "Королевский охотник",
-   "nameEN": "Королевский охотник",
-   "namePL": "Королевский охотник",
+   "nameEN": "Royal Huntsman",
+   "namePL": "Łowczy Koronny",
    "icon": "data/raresImg/bow/49.bow.png",
    "image": "",
    "level": null,
@@ -49923,8 +50187,8 @@
    "id": "knuckles36",
    "category": "skins",
    "name": "Орлиные когти",
-   "nameEN": "Орлиные когти",
-   "namePL": "Орлиные когти",
+   "nameEN": "Eagle Claws",
+   "namePL": "Orle Szpony",
    "icon": "data/raresImg/knuckles/36.knuckles.png",
    "image": "",
    "level": null,
@@ -50334,8 +50598,8 @@
    "id": "sword44",
    "category": "skins",
    "name": "Лучистая карабела",
-   "nameEN": "Лучистая карабела",
-   "namePL": "PЛучистая карабела",
+   "nameEN": "Radiant Karabela",
+   "namePL": "Świetlista Karabela",
    "icon": "data/raresImg/sword/44.sword.png",
    "image": "",
    "level": null,
@@ -50589,8 +50853,8 @@
    "id": "swordth24",
    "category": "skins",
    "name": "Орлиный клинок",
-   "nameEN": "Орлиный клинок",
-   "namePL": "Орлиный клинок",
+   "nameEN": "Eagle Blade",
+   "namePL": "Orla Głownia",
    "icon": "data/raresImg/sword_th/24.sword_th.png",
    "image": "",
    "level": null,
@@ -50719,8 +50983,8 @@
    "id": "axe20",
    "category": "skins",
    "name": "Сарматский рубатель",
-   "nameEN": "Сарматский рубатель",
-   "namePL": "Сарматский рубатель",
+   "nameEN": "Sarmatian Cleaver",
+   "namePL": "Sarmacki Rębacz",
    "icon": "data/raresImg/axe/20.axe.png",
    "image": "",
    "level": null,
@@ -50896,8 +51160,8 @@
    "id": "axeth23",
    "category": "skins",
    "name": "Королевская секира",
-   "nameEN": "Королевская секира",
-   "namePL": "Королевская секира",
+   "nameEN": "Royal Greataxe",
+   "namePL": "Oksza Królewska",
    "icon": "data/raresImg/axe_th/23.axe_th.png",
    "image": "",
    "level": null,
@@ -51026,8 +51290,8 @@
    "id": "hammer20",
    "category": "skins",
    "name": "Гетманский кулак",
-   "nameEN": "Гетманский кулак",
-   "namePL": "Гетманский кулак",
+   "nameEN": "Hetman's Fist",
+   "namePL": "Hetmańska Pięść",
    "icon": "data/raresImg/hammer/20.hammer.png",
    "image": "",
    "level": null,
@@ -51156,8 +51420,8 @@
    "id": "hammerth18",
    "category": "skins",
    "name": "Гусарский гром",
-   "nameEN": "Гусарский гром",
-   "namePL": "Гусарский гром",
+   "nameEN": "Hussar Thunder",
+   "namePL": "Husarski Grom",
    "icon": "data/raresImg/hammer_th/18.hammer_th.png",
    "image": "",
    "level": null,
@@ -51468,8 +51732,8 @@
    "id": "shield36",
    "category": "skins",
    "name": "Шанец",
-   "nameEN": "Шанец",
-   "namePL": "Шанец",
+   "nameEN": "Rampart",
+   "namePL": "Szaniec",
    "icon": "data/raresImg/shield/36.shield.png",
    "image": "",
    "level": null,

@@ -8,6 +8,8 @@
 /raresImg/models/cape/82.webp
 /raresImg/models/cape/84.webp
 /raresImg/models/cape/85.webp
+/raresImg/models/cape/86.webp
+/raresImg/models/cape/87.webp
 /raresImg/models/helmet/124.webp
 /raresImg/models/helmet/126.webp
 /raresImg/models/helmet/128.webp

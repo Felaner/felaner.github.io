@@ -1273,6 +1273,9 @@ def add_wikibr():
             add_block(e, tr_text(b["title"]).strip(), convert(b["html"], e["id"]))
 
     def add_block(e, title, html):
+        # Фрагменты второй вики помечены классом src2, чтобы сверять их с основной базой (check_conflicts).
+        if not e["id"].startswith("wb_"):
+            html = f'<div class="src2">{html}</div>'
         for b in e["blocks"]:
             if b["title"] == title:
                 b["html"] += "<hr>" + html
@@ -1447,6 +1450,33 @@ def wb_img(path):
     return "data/wiki" + path
 
 
+def dedupe_second_source():
+    """«Дроп» и «Команда» из второй вики повторяют основную базу: оставляем из неё только записи,
+    которых в основной части нет. Ссылки на статьи-списки (wb_…) — те же категории, что списки основной базы."""
+    removed = 0
+    for _, entries in SECTIONS_OUT.values():
+        for e in entries:
+            for b in e["blocks"]:
+                if b["title"] not in ("Дроп", "Команда") or 'class="src2"' not in b["html"]:
+                    continue
+                main = re.sub(r'(<hr>)?<div class="src2">.*?</div>(?=<hr>|$)', "", b["html"], flags=re.S)
+                have = set(re.findall(r'data-items="([^"]+)"', main))
+                if not have:
+                    continue
+
+                def clean(m):
+                    nonlocal removed
+                    part = re.sub(r'<img[^>]*data-items="([^"]+)"[^>]*/?>',
+                                  lambda i: "" if i.group(1) in have or i.group(1).startswith("wb_") else i.group(0),
+                                  m.group(2))
+                    if "<img" not in part:
+                        removed += 1
+                        return ""
+                    return m.group(1) + '<div class="src2">' + part + "</div>"
+                b["html"] = re.sub(r'(<hr>)?<div class="src2">(.*?)</div>(?=<hr>|$)', clean, b["html"], flags=re.S)
+    print(f"Дубли второй вики в «Дроп»/«Команда» убраны в {removed} блоках")
+
+
 def write(sid, cats, entries):
     SECTIONS_OUT[sid] = (cats, entries)
 
@@ -1477,6 +1507,7 @@ def main():
     write("npc", [], [build_entry(o, "npc", "_") for o in DB["npcMain"].values()])
     write("skills", [], [build_entry(o, "skills", "_") for o in DB["skillsMain"].values()])
     add_wikibr()
+    dedupe_second_source()
     add_attacks()
     maps = build_maps()
     tidy_mobs(maps)

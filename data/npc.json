@@ -88,7 +88,7 @@
    "blocks": [
     {
      "title": "Описание",
-     "html": "<span class=\"c-yellow\">Ты можешь переработать кое-что для меня?</span> <br><span class=\"c-cyan\">Мне нужны камни. [Треб. ур. 40]</span> <br><span class=\"c-yellow\">Происходит здесь чего интересного. [Треб. ур. 44]</span> <br>Добыть 1х <img data-items=\"item463\" src=\"data/raresImg/items/463.items.png\"/> и получить 150х <img data-items=\"item114\" src=\"data/raresImg/items2/114.items2.png\"/>. [Откат 60мин.] <br><span class=\"c-yellow\">А так в принципе, то кто ты вообще такой?. [Треб. ур. 55]</span> <br><dl> <dt>Переработка:</dt> <dd>10x <img data-items=\"item462\" src=\"data/raresImg/items2/462.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 5x <img data-items=\"item113\" src=\"data/raresImg/items2/113.items2.png\"/></dd> <dd>10x <img data-items=\"item458\" src=\"data/raresImg/items2/458.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 5x <img data-items=\"item114\" src=\"data/raresImg/items2/114.items2.png\"/></dd> <dd>2x <img data-items=\"item465\" src=\"data/raresImg/items2/465.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 1x <img data-items=\"item115\" src=\"data/raresImg/items2/115.items2.png\"/></dd> <dd>1x <img data-items=\"item121\" src=\"data/raresImg/items2/121.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 6x <img data-items=\"item116\" src=\"data/raresImg/items2/116.items2.png\"/></dd> <dd>1x <img data-items=\"item471\" src=\"data/raresImg/items/471.items.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 200x <img data-items=\"item77\" src=\"data/raresImg/items/449.items.png\"/></dd> </dl>"
+     "html": "<span class=\"c-yellow\">Ты можешь переработать кое-что для меня?</span> <br><span class=\"c-cyan\">Говорят, тебе нужны молодые сабельтиги. Эт правда?</span> <br><span class=\"c-yellow\">Происходит здесь чего интересного. [Треб. ур. 44]</span> <br><dl> <dt>Обмен:</dt> <dd>1x  <img data-items=\"item463\" src=\"data/raresImg/items/463.items.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 100x <img data-items=\"item114\" src=\"data/raresImg/items2/114.items2.png\"/></dd> </dl> <br><span class=\"c-yellow\">А так в принципе, то кто ты вообще такой?. [Треб. ур. 55]</span> <br><dl> <dt>Переработка:</dt> <dd>10x <img data-items=\"item462\" src=\"data/raresImg/items2/462.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 5x <img data-items=\"item113\" src=\"data/raresImg/items2/113.items2.png\"/></dd> <dd>10x <img data-items=\"item458\" src=\"data/raresImg/items2/458.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 5x <img data-items=\"item114\" src=\"data/raresImg/items2/114.items2.png\"/></dd> <dd>2x <img data-items=\"item465\" src=\"data/raresImg/items2/465.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 1x <img data-items=\"item115\" src=\"data/raresImg/items2/115.items2.png\"/></dd> <dd>1x <img data-items=\"item121\" src=\"data/raresImg/items2/121.items2.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 6x <img data-items=\"item116\" src=\"data/raresImg/items2/116.items2.png\"/></dd> <dd>1x <img data-items=\"item471\" src=\"data/raresImg/items/471.items.png\"/> <img src=\"data/raresImg/icons/arrowxchange.png\"/> 200x <img data-items=\"item77\" src=\"data/raresImg/items/449.items.png\"/></dd> </dl> <br><span class=\"c-cyan\">Мне нужны камни <img data-items=\"item114\" src=\"data/raresImg/items2/114.items2.png\" title=\"Камень\"/> и кристаллы <img data-items=\"item116\" src=\"data/raresImg/items2/116.items2.png\" title=\"Кристаллы\"/>. У тебя есть немного на продажу? <span>(награда 200x)</span></span>"
     },
     {
      "title": "Где найти",
@@ -733,6 +733,10 @@
    "level": null,
    "fields": [],
    "blocks": [
+    {
+     "title": "forQf",
+     "html": "Задачи Контроль над игнифексами 100 ✎ В <span class=\"c-yellow\" data-maps=\"m424\">Пустошь Хвара</span> подойти к <img data-items=\"gardar3ac\" src=\"data/raresImg/npc/gardar3a.npc.png\" title=\"Зенлин\"/> и взять задачу.<br/>✎ Убить 10x <img data-items=\"ignifex2a\" src=\"data/raresImg/mobs2/ignifex2a.moblogo2.png\" title=\"Обсидиановый игнифекс\"/><br/>✎ Вернуться к <img data-items=\"gardar3ac\" src=\"data/raresImg/npc/gardar3a.npc.png\" title=\"Зенлин\"/>   350x <img data-items=\"item114\" src=\"data/raresImg/items2/114.items2.png\" title=\"Камень\"/> либо <img data-items=\"item115\" src=\"data/raresImg/items2/115.items2.png\" title=\"Железо\"/> либо <img data-items=\"item113\" src=\"data/raresImg/items2/113.items2.png\" title=\"Доски\"/> либо <img data-items=\"item116\" src=\"data/raresImg/items2/116.items2.png\" title=\"Кристаллы\"/>  "
+    },
     {
      "title": "Где найти",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m424\"><b>Пустошь Хвара</b></span></li></ul>"
@@ -1547,9 +1551,9 @@
   {
    "id": "pogranicznikalarilskia",
    "category": "_",
-   "name": "Пограничник",
-   "nameEN": "Border Guard",
-   "namePL": "Pogranicznik",
+   "name": "Микело",
+   "nameEN": "Mikelo",
+   "namePL": "Mikelo",
    "icon": "data/raresImg/npc/pogranicznikalarilskia.npc.png",
    "image": "",
    "level": null,
@@ -1558,6 +1562,39 @@
     {
      "title": "Где найти",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m209\"><b>Аларил</b></span></li></ul>"
+    }
+   ]
+  },
+  {
+   "id": "dowodcaalarilskiac",
+   "category": "_",
+   "name": "Капитан Тарвиано",
+   "nameEN": "Captain Tarviano",
+   "namePL": "Kapitan Tarviano",
+   "icon": "data/raresImg/npc/dowodcaalarilskia.npc.png",
+   "image": "",
+   "level": null,
+   "fields": [],
+   "blocks": [
+    {
+     "title": "Рецепт",
+     "html": "<b>Обмен</b><br><b>Обмен</b><br><b>Обмен</b><br><b>Обмен</b>"
+    },
+    {
+     "title": "Где найти",
+     "html": "<ul class=\"plain-list\"><li><span data-maps=\"m209\"><b>Аларил</b></span></li></ul>"
+    }
+   ],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "item116",
+      "item113",
+      "item114",
+      "item115",
+      "item439"
+     ]
     }
    ]
   },
@@ -2059,8 +2096,7 @@
     {
      "title": "Упоминается в",
      "ids": [
-      "item673",
-      "item116"
+      "item673"
      ]
     }
    ]
