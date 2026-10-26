@@ -850,9 +850,11 @@
   const statPointsSpent = () => Object.entries(STAT_START).reduce((s, [k, v]) =>
     s + Math.max(0, (num(build.base[k]) || v) - v) / (STAT_STEP[k] || 1), 0);
 
-  const emptyBuild = () => ({ cls: "", lvl: 1, base: { ...STAT_START }, items: {}, skills: {} });
+  const emptyBuild = () => ({ cls: "", lvl: 1, base: { ...STAT_START }, items: {}, skills: {}, extra: [] });
+  const savedBuilds = store.get("builds", {});   // именованные сборки: { имя: сборка }
   let build = Object.assign(emptyBuild(), store.get("build", {}));
   build.skills = build.skills || {};
+  build.extra = build.extra || [];
   if (build.items.bracers) { build.items.gloves = build.items.gloves || build.items.bracers; delete build.items.bracers; }
   const saveBuild = () => store.set("build", build);
 
@@ -893,10 +895,10 @@
     return out;
   }
 
-  function computeBuild() {
-    const items = SLOTS.map(s => [s, db.byId.get(build.items[s.id])]).filter(([, e]) => e);
+  function computeBuild(bd = build) {
+    const items = SLOTS.map(s => [s, db.byId.get(bd.items[s.id])]).filter(([, e]) => e);
     const total = {}, fromItems = {}, mods = new Map(), res = {};
-    for (const [label, key] of BASE_STATS) total[label] = num(build.base[key]) || STAT_START[key] || 0;
+    for (const [label, key] of BASE_STATS) total[label] = num(bd.base[key]) || STAT_START[key] || 0;
     const addMod = (name, val, pct, k = 1) => {
       if (!pct && name in total) {
         // Характеристики игра округляет вниз (Сила +8 × 40% = +3), проценты — нет.
@@ -923,6 +925,8 @@
       const inKit = e.blocks.some(b => b.title === "Комплект");
       if (!inKit) for (const b of e.blocks) if (b.title === "Модификаторы") for (const [n, v, p] of parseMods(b.html)) addMod(n, v, p);
     }
+    // Доп. бонусы, которые игрок вписывает из игры: дрифы, орбы, звёзды улучшений, рост психорара.
+    for (const x of bd.extra || []) if (x.name && num(x.val)) addMod(x.name, num(x.val), /%/.test(String(x.val)));
     // Комплекты.
     const equippedIds = new Set(items.map(([, e]) => e.id));
     const sets = [];
@@ -941,19 +945,19 @@
     const problems = [];
     for (const [slot, e] of items) {
       const lvl = fnum(e, "Требуемый уровень");
-      if (lvl > (num(build.lvl) || 0)) problems.push([slot, e, `нужен ${lvl} уровень`]);
+      if (lvl > (num(bd.lvl) || 0)) problems.push([slot, e, `нужен ${lvl} уровень`]);
       const cls = fv(fieldOf(e, "Требуемый класс"));
-      if (cls && build.cls && cls !== build.cls) problems.push([slot, e, `только для класса «${cls}»`]);
+      if (cls && bd.cls && cls !== bd.cls) problems.push([slot, e, `только для класса «${cls}»`]);
       for (const [rl, stat] of REQS) {
         const need = fnum(e, rl);
         if (need > total[stat]) problems.push([slot, e, `нужно ${stat.toLowerCase()} ${need} (сейчас ${Math.floor(total[stat])})`]);
       }
     }
     const w = items.find(([s]) => s.id === "weapon")?.[1];
-    if (w && isTwoHanded(w) && build.items.offhand) problems.push([SLOTS.find(s => s.id === "offhand"),
-      db.byId.get(build.items.offhand), "двуручное оружие занимает обе руки"]);
+    if (w && isTwoHanded(w) && bd.items.offhand) problems.push([SLOTS.find(s => s.id === "offhand"),
+      db.byId.get(bd.items.offhand), "двуручное оружие занимает обе руки"]);
     // Power (по статье «Сила (PvE)»), без бонусов психо и орбов.
-    const lvl = num(build.lvl) || 0;
+    const lvl = num(bd.lvl) || 0;
     const power = Math.round(
       (total["Сила"] + total["Ловкость"] + total["Мощь"] + total["Знание"] + total["Интеллект"]) + 2 * weaponDmg +
       (total["Здоровье"] + total["Выносливость"] + total["Мана"]) / 10 +
@@ -963,13 +967,42 @@
     return { items, total, fromItems, res, mods, sets, problems, power, weaponDmg };
   }
 
+  let modNames = null;
+  function allModNames() {
+    if (modNames) return modNames;
+    const s = new Set([...BASE_STATS.map(([l]) => l), ...RESISTS.map(([l]) => l)]);
+    for (const e of db.sections.equipment?.entries || [])
+      for (const b of e.blocks) if (b.title === "Модификаторы" || b.title === "Бонус комплекта") for (const [n] of parseMods(b.html)) s.add(n);
+    return (modNames = [...s].sort((a, b) => a.localeCompare(b, "ru")));
+  }
+
+  // Сравнение текущей сборки с сохранённой: Power, характеристики, сопротивления, модификаторы.
+  function buildCompareHtml(name) {
+    const other = savedBuilds[name];
+    if (!other) return "";
+    const a = computeBuild(build), b = computeBuild(Object.assign(emptyBuild(), other));
+    const row = (label, x, y, pct) => {
+      const d = Math.round((x - y) * 100) / 100;
+      return `<tr><th>${esc(label)}</th><td>${fmtN(x)}${pct ? "%" : ""}</td><td>${fmtN(y)}${pct ? "%" : ""}</td>
+        <td class="${d > 0 ? "up" : d < 0 ? "down" : ""}">${d ? (d > 0 ? "+" : "") + fmtN(d) : ""}</td></tr>`;
+    };
+    const mods = [...new Set([...a.mods.keys(), ...b.mods.keys()])].sort((x, y) => x.localeCompare(y, "ru"));
+    return `<section class="b-panel b-cmp"><h3>Сравнение с «${esc(name)}»</h3>
+      <div class="tscroll"><table class="art"><tr><th></th><th>Текущая</th><th>${esc(name)}</th><th>Разница</th></tr>
+      ${row("Power", a.power, b.power)}
+      ${BASE_STATS.map(([l]) => row(l, a.total[l], b.total[l])).join("")}
+      ${RESISTS.map(([l, n]) => row("Сопр. " + n.toLowerCase(), resistPct(a.res[l]), resistPct(b.res[l]), true)).join("")}
+      ${mods.map(k => row(k.replace(/ %$/, ""), a.mods.get(k) || 0, b.mods.get(k) || 0, k.endsWith(" %"))).join("")}
+      </table></div></section>`;
+  }
+
   const fmtN = v => {
     const r = Math.round(v * 100) / 100;
     return Math.abs(r) >= 10000 ? r.toLocaleString("ru-RU") : String(r).replace(".", ",");
   };
 
   function buildLink() {
-    const data = { c: build.cls, l: build.lvl, b: build.base, i: build.items, s: build.skills };
+    const data = { c: build.cls, l: build.lvl, b: build.base, i: build.items, s: build.skills, x: build.extra };
     const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(data)))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
     return location.href.split("#")[0] + "#/build?b=" + b64;
   }
@@ -977,7 +1010,7 @@
     try {
       const s = decodeURIComponent(escape(atob(b64.replace(/-/g, "+").replace(/_/g, "/"))));
       const d = JSON.parse(s);
-      build = { cls: d.c || "", lvl: d.l || 1, base: d.b || {}, items: d.i || {}, skills: d.s || {} };
+      build = { cls: d.c || "", lvl: d.l || 1, base: d.b || {}, items: d.i || {}, skills: d.s || {}, extra: d.x || [] };
       saveBuild();
     } catch { /* битая ссылка — оставляем текущую сборку */ }
   }
@@ -1131,11 +1164,28 @@
             <button class="btn" id="bShare">${svg("link")} Ссылка на сборку</button>
             <button class="btn" id="bClear">Снять всё</button>
           </div>
+          <div class="b-saved">
+            <select id="bSaved"><option value="">Сохранённые сборки${Object.keys(savedBuilds).length ? "" : " — пока нет"}</option>
+              ${Object.keys(savedBuilds).sort().map(n => `<option ${view.savedSel === n ? "selected" : ""}>${esc(n)}</option>`).join("")}</select>
+            <button class="btn" id="bSave">Сохранить как…</button>
+            ${view.savedSel ? `<button class="btn" id="bLoad">Загрузить</button>
+              <button class="btn" id="bCmp">${view.cmpBuild === view.savedSel ? "Скрыть сравнение" : "Сравнить"}</button>
+              <button class="btn" id="bDel">Удалить</button>` : ""}
+          </div>
           <p class="muted small">Нажмите на слот, чтобы выбрать вещь. Вещь можно надеть и из её карточки кнопкой «Надеть».</p>
         </section>
         <section class="b-panel">
           ${r.problems.length ? `<div class="b-warn"><b>Не подходит:</b><ul>${r.problems.map(([s, e, why]) =>
             `<li>${esc(e?.name || s.name)} — ${esc(why)}</li>`).join("")}</ul></div>` : ""}
+          <h3>Доп. бонусы</h3>
+          <p class="muted small">Дрифы, орбы, звёзды улучшений, рост психорара — впишите значение из подсказки в игре
+            (с «%» для процентов), и оно войдёт в суммы.</p>
+          <datalist id="modList">${allModNames().map(n => `<option value="${esc(n)}">`).join("")}</datalist>
+          <div class="b-extra">${build.extra.map((x, i) => `<div class="b-x">
+              <input list="modList" data-xn="${i}" value="${esc(x.name)}" placeholder="Модификатор">
+              <input data-xv="${i}" value="${esc(x.val)}" placeholder="+5%">
+              <button class="icon-btn" data-xdel="${i}" title="Убрать" aria-label="Убрать">${svg("x")}</button></div>`).join("")}
+            <button class="btn btn-sm" id="bAddX">Добавить бонус</button></div>
           <h3>Комплекты</h3>
           ${setRows ? `<ul class="b-list">${setRows}</ul>` : `<p class="muted small">Нет надетых частей комплектов.</p>`}
           <h3>Модификаторы</h3>
@@ -1148,6 +1198,7 @@
           </ul>
         </section>
       </div>
+      ${view.cmpBuild ? buildCompareHtml(view.cmpBuild) : ""}
       <section class="b-panel b-skills"><h3>Навыки</h3>${renderSkills()}</section>
       <div class="picker" id="picker" hidden></div>`;
 
@@ -1169,6 +1220,29 @@
     }));
     bon("#stReset", "click", () => { build.base = { ...STAT_START }; rerender(); });
     bon("#bClear", "click", () => { build.items = {}; rerender(); });
+    bon("#bAddX", "click", () => { build.extra.push({ name: "", val: "" }); rerender(); });
+    $$("[data-xn]").forEach(i => i.addEventListener("change", () => { build.extra[i.dataset.xn].name = i.value.trim(); rerender(); }));
+    $$("[data-xv]").forEach(i => i.addEventListener("change", () => { build.extra[i.dataset.xv].val = i.value.trim(); rerender(); }));
+    $$("[data-xdel]").forEach(b => b.addEventListener("click", () => { build.extra.splice(Number(b.dataset.xdel), 1); rerender(); }));
+    bon("#bSaved", "change", ev => { view.savedSel = ev.target.value; refresh(); });
+    bon("#bSave", "click", () => {
+      const name = (prompt("Название сборки", view.savedSel || `${build.cls || "Сборка"} ${build.lvl}`) || "").trim();
+      if (!name) return;
+      savedBuilds[name] = JSON.parse(JSON.stringify(build));
+      store.set("builds", savedBuilds);
+      view.savedSel = name;
+      refresh();
+    });
+    bon("#bLoad", "click", () => { build = Object.assign(emptyBuild(), JSON.parse(JSON.stringify(savedBuilds[view.savedSel]))); rerender(); });
+    bon("#bDel", "click", () => {
+      if (!confirm(`Удалить сборку «${view.savedSel}»?`)) return;
+      delete savedBuilds[view.savedSel];
+      store.set("builds", savedBuilds);
+      if (view.cmpBuild === view.savedSel) view.cmpBuild = "";
+      view.savedSel = "";
+      refresh();
+    });
+    bon("#bCmp", "click", () => { view.cmpBuild = view.cmpBuild === view.savedSel ? "" : view.savedSel; refresh(); });
     bon("#bShare", "click", ev => {
       const link = buildLink();
       (navigator.clipboard?.writeText(link) || Promise.reject()).then(

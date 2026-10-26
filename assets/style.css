@@ -833,3 +833,15 @@ body.static { background: var(--bg); }
 
 .block-html ol.steps { margin: 0; padding-left: 22px; }
 .block-html ol.steps li { margin: 4px 0; }
+
+/* ---------- переодевалка 2.0 ---------- */
+.b-saved { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 6px 0; }
+.b-saved select { width: auto; max-width: 220px; height: 34px; }
+.b-extra { display: flex; flex-direction: column; gap: 6px; margin-bottom: 6px; }
+.b-x { display: grid; grid-template-columns: minmax(0, 1fr) 76px 30px; gap: 6px; }
+.b-x input { height: 30px; padding: 0 8px; border: 1px solid var(--line-2); border-radius: var(--radius); background: var(--bg); color: var(--text); font: inherit; font-size: 14px; min-width: 0; }
+.b-x .icon-btn { width: 30px; height: 30px; }
+.b-extra .btn-sm { align-self: flex-start; margin-left: 0; }
+.b-cmp { margin-top: 18px; }
+.b-cmp td.up { color: var(--good); }
+.b-cmp td.down { color: var(--warn); }
