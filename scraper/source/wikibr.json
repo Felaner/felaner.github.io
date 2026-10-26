@@ -7494,34 +7494,6 @@
     "Vorliński Dukat"
    ]
   },
-  "Klucz do maszynowni (Admirał)": {
-   "kind": "item",
-   "title": "Klucz do maszynowni (Admirał)",
-   "image": "/images/a/a2/Klucz_do_maszynowni_admiral.png",
-   "fields": [
-    [
-     "Wartość",
-     "0"
-    ],
-    [
-     "Waga",
-     "1"
-    ]
-   ],
-   "blocks": [
-    {
-     "title": "Применение",
-     "html": "<table class=\"wb\"><tr><td colspan=\"2\">Służy do otworzenia maszynowni <span data-wikibr=\"Admirał Utoru\">Admirała Utoru</span>. </td></tr></table>"
-    },
-    {
-     "title": "Как добыть",
-     "html": "<table class=\"wb\"><tr><td colspan=\"2\"> <p>Zbieranie w lokalizacji: <br/>• Maszynownia </p> </td></tr></table>"
-    }
-   ],
-   "links": [
-    "Admirał Utoru"
-   ]
-  },
   "Klucz do maszynowni (Komandor)": {
    "kind": "item",
    "title": "Klucz do maszynowni (Komandor)",
@@ -25024,7 +24996,6 @@
   "/images/a/a1/Z%C5%82ota_Laska_Tropiciela_Lo%C5%BCy.png",
   "/images/a/a2/Basteja_i_HusarionS.png",
   "/images/a/a2/IkonaCzempion.png",
-  "/images/a/a2/Klucz_do_maszynowni_admiral.png",
   "/images/a/a2/Morowa_Laska_Doktora_Plagi.png",
   "/images/a/a2/Pasek_z_flaga_ot%C4%99pienie.png",
   "/images/a/a2/Pasek_z_flaga_wyssanie_duszy.png",

@@ -10,6 +10,7 @@
 """
 
 import hashlib
+import html as H
 import json
 import re
 import shutil
@@ -100,20 +101,18 @@ def shrink(f):
 
 
 def news_titles():
-    """Свежие заголовки официальных новостей (патчноуты). Сайт иногда недоступен — тогда пусто."""
+    """Свежие заголовки официальных новостей (патчноуты). Сайт требует cookie сессии; если недоступен — пусто."""
+    import http.cookiejar
+    opener = urllib.request.build_opener(urllib.request.HTTPCookieProcessor(http.cookiejar.CookieJar()))
     try:
-        html = fetch(NEWS, timeout=30).decode("utf-8", "replace")
+        html = opener.open(urllib.request.Request(NEWS, headers=UA), timeout=30).read().decode("utf-8", "replace")
     except Exception as e:
         print(f"новости недоступны: {e}")
         return []
-    items = re.findall(r'href="(https://brokenranks\.com/en/news/[^"#?]+)"[^>]*>\s*(?:<[^>]+>\s*)*([^<]{4,140})', html)
-    seen, out = set(), []
-    for url, title in items:
-        title = re.sub(r"\s+", " ", title).strip()
-        if url not in seen and not url.rstrip("/").endswith("/news"):
-            seen.add(url)
-            out.append((title, url))
-    return out[:15]
+    out = {}
+    for path, title in re.findall(r'<a href="(/en/news/[^"#?]+)" title="([^"]+)"', html):
+        out.setdefault("https://brokenranks.com" + path, H.unescape(title).strip())
+    return [(t, u) for u, t in list(out.items())[:15]]
 
 
 def main():

@@ -1683,37 +1683,6 @@
    }
   },
   {
-   "id": "wb_klucz_do_maszynowni_admiral",
-   "category": "other",
-   "name": "Ключ от машинного отделения (Адмирал)",
-   "nameEN": "",
-   "namePL": "Klucz do maszynowni (Admirał)",
-   "icon": "data/wiki/images/a/a2/Klucz_do_maszynowni_admiral.png",
-   "image": "",
-   "level": null,
-   "fields": [
-    [
-     "Цена",
-     "0"
-    ],
-    [
-     "Вес",
-     "1"
-    ]
-   ],
-   "blocks": [
-    {
-     "title": "Применение",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Служит для открытия машинного отделения <span data-items=\"admiral1a\">Уторского Адмирала</span>. </td></tr></table></div>"
-    },
-    {
-     "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>• Машинное отделение </p> </td></tr></table></div>"
-    }
-   ],
-   "sourceUrl": ""
-  },
-  {
    "id": "wb_klucz_do_maszynowni_komandor",
    "category": "other",
    "name": "Ключ от машинного отделения (Командор)",
