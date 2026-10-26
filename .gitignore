@@ -3,3 +3,4 @@ scraper/recon/
 scraper/mirror/
 scraper/cache/
 .claude/
+local/
