@@ -2,6 +2,9 @@
   "use strict";
 
   const SECTIONS = window.BR_CONFIG.sections;
+  // Версия файлов из адреса app.js (её проставляет сборщик): данные перекачиваются только после пересборки.
+  const V = (document.currentScript?.src.match(/[?&]v=([^&]+)/) || [])[1] || "";
+  const withV = src => V ? `${src}?v=${V}` : src;
   const $ = sel => document.querySelector(sel);
   const $$ = sel => document.querySelectorAll(sel);
 
@@ -120,7 +123,7 @@
 
   async function loadData() {
     window.BR_DATA = window.BR_DATA || {};
-    await Promise.all([...SECTIONS.map(s => loadScript(`data/${s.id}.js`)), loadScript("data/maps.js")]);
+    await Promise.all([...SECTIONS.map(s => loadScript(withV(`data/${s.id}.js`))), loadScript(withV("data/maps.js"))]);
     const hasReal = SECTIONS.some(s => window.BR_DATA[s.id]?.entries?.length);
     if (!hasReal) db.demo = await loadScript("data/demo.js");
 
@@ -184,6 +187,7 @@
       description: e.description || "",
       lists: Array.isArray(e.lists) ? e.lists : [],
       blocks: Array.isArray(e.blocks) ? e.blocks : [],
+      lazy: !!e.lazy,
       backrefs: Array.isArray(e.backrefs) ? e.backrefs : [],
       attacks: e.attacks || null,
       skillClass: e.skillClass || "",
@@ -198,6 +202,26 @@
       searchFull: norm([name, e.nameEN, e.namePL, e.description, ...flatVals,
         ...(e.blocks || []).map(b => stripTags(b.html))].join(" ")),
     };
+  }
+
+  // Тексты статей лежат в отдельном файле: грузим его в фоне после первого экрана
+  // или сразу, когда открывают статью. Повторные вызовы ждут ту же загрузку.
+  let bodyPromise = null;
+  function loadBodies() {
+    if (bodyPromise) return bodyPromise;
+    const lazySecs = SECTIONS.filter(s => db.sections[s.id]?.entries.some(e => e.lazy));
+    bodyPromise = Promise.all(lazySecs.map(s => loadScript(withV(`data/${s.id}-body.js`)))).then(() => {
+      for (const s of lazySecs) {
+        const body = window.BR_BODY?.[s.id] || {};
+        for (const e of db.sections[s.id].entries) {
+          if (!e.lazy) continue;
+          e.blocks = body[e.id] || [];
+          e.lazy = false;
+          e.searchFull += " " + norm(e.blocks.map(b => stripTags(b.html)).join(" "));
+        }
+      }
+    });
+    return bodyPromise;
   }
 
   const fieldOf = (e, label) => e.fields.find(([k]) => k === label)?.[1];
@@ -1325,6 +1349,7 @@
       document.body.classList.remove("detail-open", "detail-wide");
       return;
     }
+    if (e.lazy) loadBodies().then(() => { if (parseRoute().entryId === e.id) renderDetail(parseRoute()); });
     const sec = db.sections[e.section];
     const cat = sec.categories.find(c => c.id === e.category);
     const idx = view.list.findIndex(x => x.id === e.id);
@@ -1368,6 +1393,7 @@
       ${barsHtml(e)}
       ${propsHtml(e, props)}
       ${e.description ? `<div class="desc">${esc(e.description).replace(/\n/g, "<br>")}</div>` : ""}
+      ${e.lazy ? `<p class="muted">Загрузка статьи…</p>` : ""}
       ${e.blocks.map(b => `<div class="block">
         ${b.title && b.title !== "Статья" ? `<h3>${esc(b.title)}</h3>` : ""}
         <div class="block-html">${b.html}</div>
@@ -1659,5 +1685,9 @@
   loadData().then(() => {
     window.addEventListener("hashchange", onRoute);
     onRoute();
+    // Тексты статей — после первого экрана, когда браузер освободится.
+    (window.requestIdleCallback || (f => setTimeout(f, 300)))(() => loadBodies().then(() => {
+      if (els.search.value) renderSearch();
+    }));
   });
 })();

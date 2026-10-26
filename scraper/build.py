@@ -1626,9 +1626,35 @@ def write_out(sid, cats, entries):
     data = {"updated": date.today().isoformat(), "categories": cats, "entries": entries}
     payload = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
     (DATA / f"{sid}.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), "utf-8")
+    if sid in LAZY_BODY:
+        # Тексты статей (2 МБ) не нужны для первого экрана: сайт подгружает их отдельным файлом в фоне.
+        light = dict(data, entries=[dict(e, blocks=[], lazy=True) for e in entries])
+        payload = json.dumps(light, ensure_ascii=False, separators=(",", ":"))
+        body = json.dumps({e["id"]: e["blocks"] for e in entries}, ensure_ascii=False, separators=(",", ":"))
+        (DATA / f"{sid}-body.js").write_text(f"(window.BR_BODY = window.BR_BODY || {{}})[{json.dumps(sid)}] = {body};\n",
+                                             "utf-8")
     (DATA / f"{sid}.js").write_text(f"(window.BR_DATA = window.BR_DATA || {{}})[{json.dumps(sid)}] = {payload};\n",
                                     "utf-8")
     print(f"{sid}: {len(entries)} записей, категорий: {len(cats)}")
+
+
+LAZY_BODY = {"guides"}
+
+
+def stamp_version():
+    """Версия файлов сайта = хеш данных и кода: браузеры перекачивают их только после изменений."""
+    import hashlib
+    h = hashlib.sha1()
+    for f in sorted(list(DATA.glob("*.js")) + list((ROOT / "assets").glob("*.*"))):
+        if f.name == "version.js":
+            continue
+        h.update(f.read_bytes())
+    v = h.hexdigest()[:8]
+    index = ROOT / "index.html"
+    html = re.sub(r"\?v=[0-9a-z]+", f"?v={v}", index.read_text("utf-8"))
+    index.write_text(html, "utf-8")
+    (DATA / "version.js").write_text(f'window.BR_VERSION = "{v}";\n', "utf-8")
+    print(f"Версия файлов: {v}")
 
 
 def main():
@@ -1656,6 +1682,7 @@ def main():
     import static_pages
     static_pages.generate(SECTIONS_OUT)
     write_maps(maps)
+    stamp_version()
     (SRC / "needed_images.txt").write_text("\n".join(sorted(needed_images)) + "\n", "utf-8")
     print(f"Недостающих картинок: {len(needed_images)} (scraper/source/needed_images.txt)")
     (SRC / "needed_wikibr.txt").write_text("\n".join(sorted(needed_wikibr)) + "\n", "utf-8")
