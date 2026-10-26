@@ -108,7 +108,10 @@ code { background: var(--panel-2); padding: 1px 5px; border-radius: 4px; font-si
 .sr:hover, .sr.active { background: var(--accent-soft); text-decoration: none; }
 .sr-name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .sr-sec { color: var(--muted); font-size: 12px; }
-.sr-more { padding: 8px; color: var(--muted); font-size: 12px; text-align: center; }
+.sr-more { padding: 8px; color: var(--muted); font-size: 13px; text-align: center; }
+.sr-group { padding: 8px 8px 2px; color: var(--muted); font-size: 13px; }
+.sr-group:not(:first-child) { border-top: 1px solid var(--line); margin-top: 4px; }
+.sr-name { font: 700 16px/1.2 var(--serif); color: var(--rc, var(--text)); }
 
 .icon-btn {
   width: 34px; height: 34px; flex: none;
@@ -210,6 +213,9 @@ code { background: var(--panel-2); padding: 1px 5px; border-radius: 4px; font-si
 .home-tile p a { color: var(--text); }
 .home-tile p a:hover { color: var(--accent); }
 .home-note { margin: 22px 0 0; color: var(--muted); font-size: 14px; }
+.home-recent { margin: 0 0 26px; }
+.home-h { margin: 0 0 10px; font: 700 20px/1.2 var(--serif); }
+.bref span { color: var(--rc, var(--text)); }
 
 /* ---------- toolbar ---------- */
 .toolbar { display: flex; gap: 8px; align-items: center; }

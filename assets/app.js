@@ -367,8 +367,11 @@
         <h1 class="page-title">Broken Ranks Fandom Wiki</h1>
         <p class="page-sub">${total.toLocaleString("ru-RU")} записей о предметах, противниках, НПС и мире игры.</p>
         <button class="home-search" id="homeSearch" type="button">Найти предмет, противника, НПС или локацию<kbd>/</kbd></button>
-      </section>
-      <div class="home-grid">`;
+      </section>`;
+    const rec = recent.map(id => db.byId.get(id)).filter(Boolean).slice(0, 10);
+    if (rec.length) html += `<section class="home-recent"><h2 class="home-h">Недавно открытые</h2><div class="brefs">${rec.map(t =>
+      `<a class="bref"${rarAttr(t)} href="${entryHref(t)}" data-items="${esc(t.id)}">${iconHtml(t, "ico-sm")}<span>${esc(t.name)}</span></a>`).join("")}</div></section>`;
+    html += `<div class="home-grid">`;
     const tile = (link, title, count, cats) => `<div class="home-tile">
         <a class="home-tile-head" href="${link}"><b>${esc(title)}</b><span>${count}</span></a>
         ${cats ? `<p>${cats}</p>` : ""}
@@ -407,7 +410,7 @@
     const q = norm(view.query);
     const min = num(view.lvlMin), max = num(view.lvlMax), mine = num(view.myLevel);
     return entries.filter(e => {
-      if (q && !e.search.includes(q) && !e.searchFull.includes(q)) return false;
+      if (q && !q.split(/\s+/).every(tk => e.searchFull.includes(tk) || e.search.includes(tk))) return false;
       if (!isNaN(min) && !(e.level >= min)) return false;
       if (!isNaN(max) && !(e.level <= max)) return false;
       if (view.onlyMine && !isNaN(mine) && e.level != null && e.level > mine) return false;
@@ -1414,6 +1417,7 @@
     els.detail.hidden = false;
     if (wasHidden || els.detail.dataset.id !== e.id) els.detail.scrollTop = 0;
     els.detail.dataset.id = e.id;
+    rememberRecent(e.id);
     document.body.classList.add("detail-open");
     els.backdrop.hidden = false;
 
@@ -1569,27 +1573,116 @@
 
   let activeResult = -1;
 
+  // ---------- умный поиск ----------
+  // Слова ищутся независимо от порядка; в названиях прощаются опечатки; запрос в неверной
+  // раскладке («rjhjyf») пробуется как «корона»; «сила 58» находит вещи с таким значением поля.
+  const EN_RU = "qwertyuiop[]asdfghjkl;'zxcvbnm,.`";
+  const RU_KB = "йцукенгшщзхъфывапролджэячсмитьбюё";
+  const swapLayout = s => [...s].map(ch => {
+    const i = EN_RU.indexOf(ch);
+    return i >= 0 ? RU_KB[i] : ch;
+  }).join("");
+  const words = s => norm(s).split(/[^0-9a-zа-яё+%]+/i).filter(Boolean);
+
+  // Расстояние Левенштейна с ранним выходом, если превышен порог.
+  function editDist(a, b, max) {
+    if (Math.abs(a.length - b.length) > max) return max + 1;
+    let prev = Array.from({ length: b.length + 1 }, (_, i) => i);
+    for (let i = 1; i <= a.length; i++) {
+      const cur = [i];
+      let best = i;
+      for (let j = 1; j <= b.length; j++) {
+        cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        best = Math.min(best, cur[j]);
+      }
+      if (best > max) return max + 1;
+      prev = cur;
+    }
+    return prev[b.length];
+  }
+
+  function scoreEntry(e, tokens, q) {
+    e.nameWords ??= words([e.name, e.nameEN, e.namePL].join(" "));
+    let score = 0;
+    for (const tk of tokens) {
+      let s = 0;
+      for (const w of e.nameWords) {
+        if (w === tk) s = Math.max(s, 12);
+        else if (w.startsWith(tk)) s = Math.max(s, 10);
+        else if (w.includes(tk)) s = Math.max(s, 6);
+        else if (tk.length >= 4 && editDist(tk, w.slice(0, tk.length + 1), tk.length >= 8 ? 2 : 1) <= (tk.length >= 8 ? 2 : 1)) s = Math.max(s, 4);
+      }
+      if (!s && e.searchFull.includes(tk)) s = 1;
+      if (!s) return 0;
+      score += s;
+    }
+    // «Сила 58»: слово-название поля рядом со значением.
+    if (tokens.length >= 2) {
+      for (const [k, v] of e.fields) {
+        const kn = norm(k), vn = norm(fv(v));
+        if (tokens.some(tk => kn.startsWith(tk)) && tokens.some(tk => /\d/.test(tk) && vn.replace(/\s/g, "") === tk.replace(/^\+/, ""))) score += 15;
+      }
+    }
+    const name = norm(e.name);
+    if (name === q) score += 50;
+    else if (name.startsWith(q)) score += 20;
+    return score;
+  }
+
+  function searchAll(raw) {
+    const q = norm(raw);
+    const run = query => {
+      const tokens = words(query);
+      if (!tokens.length) return [];
+      return db.all.map(e => [scoreEntry(e, tokens, norm(query)), e]).filter(([s]) => s > 0)
+        .sort((a, b) => b[0] - a[0] || a[1].name.length - b[1].name.length);
+    };
+    let found = run(q);
+    // Ничего не нашлось и запрос латиницей — возможно, забыли переключить раскладку.
+    if (!found.length && /[a-z]/.test(q)) found = run(swapLayout(q));
+    return found.map(([, e]) => e);
+  }
+
+  // Недавно открытые записи — для пустого поиска и главной.
+  const recent = store.get("recent", []);
+  function rememberRecent(id) {
+    const i = recent.indexOf(id);
+    if (i >= 0) recent.splice(i, 1);
+    recent.unshift(id);
+    recent.length = Math.min(recent.length, 12);
+    store.set("recent", recent);
+  }
+
+  const srRow = e => `<a class="sr"${rarAttr(e)} href="${entryHref(e)}">
+      ${iconHtml(e, "ico-sm")}<span class="sr-name">${esc(e.name)}</span>
+      <span class="sr-sec">${esc(db.sections[e.section].categories.find(c => c.id === e.category)?.name || db.sections[e.section].title)}</span></a>`;
+
   function renderSearch() {
     const q = norm(els.search.value);
-    if (!q) { els.results.hidden = true; return; }
-    const starts = [], contains = [], deep = [];
-    for (const e of db.all) {
-      if (e.search.startsWith(q)) starts.push(e);
-      else if (e.search.includes(q)) contains.push(e);
-      else if (e.searchFull.includes(q)) deep.push(e);
+    if (!q) {
+      const rec = recent.map(id => db.byId.get(id)).filter(Boolean).slice(0, 8);
+      els.results.innerHTML = rec.length ? `<div class="sr-group">Недавно открытые</div>${rec.map(srRow).join("")}` : "";
+      els.results.hidden = !rec.length;
+      activeResult = rec.length ? 0 : -1;
+      els.results.querySelector(".sr")?.classList.add("active");
+      return;
     }
-    const mapsFound = db.maps.filter(m => norm(m.name).includes(q)).slice(0, 5);
-    const found = [...starts, ...contains, ...deep];
+    const found = searchAll(q);
+    const mapsFound = db.maps.filter(m => words(m.name).some(w => words(q).every(tk => norm(m.name).includes(tk)))).slice(0, 5);
     const shown = found.slice(0, 40);
+    // Группы по разделам в порядке лучшего результата каждой группы.
+    const groups = new Map();
+    for (const e of shown) {
+      if (!groups.has(e.section)) groups.set(e.section, []);
+      groups.get(e.section).push(e);
+    }
+    let html = "";
+    for (const [sid, list] of groups) html += `<div class="sr-group">${esc(db.sections[sid].title)}</div>${list.map(srRow).join("")}`;
+    if (mapsFound.length) html += `<div class="sr-group">Карты</div>` + mapsFound.map(m => `<a class="sr" href="${mapHref(m.id)}">
+      <div class="ico ico-sm ico-empty">К</div><span class="sr-name">${esc(m.name)}</span><span class="sr-sec">Карта</span></a>`).join("");
+    if (found.length > shown.length) html += `<div class="sr-more">…и ещё ${found.length - shown.length}. Уточните запрос</div>`;
+    els.results.innerHTML = html || `<div class="sr-more">Ничего не найдено. Проверьте написание или поищите по одному слову</div>`;
     activeResult = shown.length || mapsFound.length ? 0 : -1;
-    const mapRows = mapsFound.map(m => `<a class="sr" href="${mapHref(m.id)}"><div class="ico ico-sm ico-empty">К</div>
-      <span class="sr-name">${esc(m.name)}</span><span class="sr-sec">Карта</span></a>`).join("");
-    els.results.innerHTML = shown.length || mapsFound.length
-      ? shown.map(e => `<a class="sr"${rarAttr(e)} href="${entryHref(e)}">
-          ${iconHtml(e, "ico-sm")}<span class="sr-name">${esc(e.name)}</span>
-          <span class="sr-sec">${esc(db.sections[e.section].title)}</span></a>`).join("") + mapRows
-        + (found.length > shown.length ? `<div class="sr-more">…и ещё ${found.length - shown.length}</div>` : "")
-      : `<div class="sr-more">Ничего не найдено</div>`;
     els.results.querySelector(".sr")?.classList.add("active");
     els.results.hidden = false;
   }
