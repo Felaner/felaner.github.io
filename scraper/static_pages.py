@@ -58,12 +58,13 @@ def page(title, desc, canonical, body, image=None, depth=1):
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{esc(canonical)}">
 {og_img}
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="{up}assets/style.css">
 <script>try{{var t=JSON.parse(localStorage.getItem("brwiki:theme"));if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 </head>
 <body class="static">
 <header class="topbar">
-  <a class="logo" href="{up}index.html"><span class="logo-mark">⚔</span>
+  <a class="logo" href="{up}index.html">
     <span class="logo-text">Broken Ranks <b>Fandom Wiki</b></span></a>
   <nav class="static-nav"><a href="{up}index.html">Интерактивная вики</a> · <a href="{up}e/index.html">Все страницы</a></nav>
 </header>

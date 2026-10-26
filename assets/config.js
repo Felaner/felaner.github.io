@@ -5,19 +5,16 @@ window.BR_CONFIG = {
     {
       id: "equipment",
       title: "Экипировка",
-      icon: "🛡",
       categories: []
     },
     {
       id: "pets",
       title: "Питомцы",
-      icon: "🐾",
       categories: []
     },
     {
       id: "mobs",
       title: "Противники",
-      icon: "💀",
       categories: [
         { id: "normal", name: "Обычные" },
         { id: "elite", name: "Элита" },
@@ -28,25 +25,21 @@ window.BR_CONFIG = {
     {
       id: "items",
       title: "Предметы",
-      icon: "🎒",
       categories: []
     },
     {
       id: "npc",
       title: "НПС",
-      icon: "🧙",
       categories: []
     },
     {
       id: "skills",
       title: "Навыки",
-      icon: "✨",
       categories: []
     },
     {
       id: "guides",
       title: "Статьи",
-      icon: "📖",
       categories: []
     }
   ]

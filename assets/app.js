@@ -78,6 +78,24 @@
   const fv = v => isDiff(v) ? (v[view.diff] ?? v.n ?? "") : v;
   const hasDiff = e => e.fields.some(([, v]) => isDiff(v));
 
+  // Редкость окрашивает имя и рамку иконки, как в игре (цвета — в style.css по data-rar).
+  const rarAttr = e => {
+    const r = e.fields && fv(e.fields.find(([k]) => k === "Редкость")?.[1]);
+    return r ? ` data-rar="${esc(r)}"` : "";
+  };
+
+  // Контурные иконки кнопок (вместо эмодзи, которые в каждой системе рисуются по-своему).
+  const ICONS = {
+    prev: "M15 6l-6 6 6 6", next: "M9 6l6 6-6 6", x: "M6 6l12 12M18 6 6 18", check: "M5 12.5l4.5 4.5L19 7",
+    link: "M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1",
+    wear: "M9 4 4 7l2 4 2-1v10h8V10l2 1 2-4-5-3a3 3 0 0 1-6 0z",
+    wide: "M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5",
+    cmp: "M12 4v16M8 20h8M4 7h16M7 7l-3 7a3 3 0 0 0 6 0zM17 7l-3 7a3 3 0 0 0 6 0z",
+    star: "M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z",
+    menu: "M4 7h16M4 12h16M4 17h16", moon: "M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z",
+  };
+  const svg = name => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="${ICONS[name]}"/></svg>`;
+
   function iconHtml(entry, cls = "") {
     const letter = esc((entry.name || "?").trim().charAt(0).toUpperCase());
     if (!entry.icon) return `<div class="ico ico-empty ${cls}">${letter}</div>`;
@@ -278,17 +296,17 @@
 
   function renderSidebar(route) {
     const [kind, secId, catId] = route.parts;
-    const item = (active, link, ico, title, count) =>
-      `<a class="nav-item ${active ? "active" : ""}" href="${link}"><span class="nav-ico">${ico}</span>${title}
+    const item = (active, link, title, count) =>
+      `<a class="nav-item ${active ? "active" : ""}" href="${link}">${title}
         ${count != null ? `<span class="count">${count}</span>` : ""}</a>`;
     let html = `<div class="nav-group">`;
-    html += item(!kind, "#/", "🏠", "Главная");
-    html += item(kind === "fav", "#/fav", "⭐", "Избранное", favorites.size);
-    html += item(kind === "marks", "#/marks", "✅", "Есть у меня", marks.size);
-    html += item(kind === "cmp", "#/cmp", "⚖️", "Сравнение", compare.size);
-    html += item(kind === "maps", "#/maps", "🗺️", "Карты", db.maps.length || null);
-    html += item(kind === "build", "#/build", "🧥", "Переодевалка", Object.keys(build.items).length || null);
-    html += item(kind === "s" && secId === "equipment" && catId === "kits", href(["s", "equipment", "kits"]), "🧩",
+    html += item(!kind, "#/", "Главная");
+    html += item(kind === "fav", "#/fav", "Избранное", favorites.size || null);
+    html += item(kind === "marks", "#/marks", "Есть у меня", marks.size || null);
+    html += item(kind === "cmp", "#/cmp", "Сравнение", compare.size || null);
+    html += item(kind === "maps", "#/maps", "Карты", db.maps.length || null);
+    html += item(kind === "build", "#/build", "Переодевалка", Object.keys(build.items).length || null);
+    html += item(kind === "s" && secId === "equipment" && catId === "kits", href(["s", "equipment", "kits"]),
       "Комплекты", db.sections.equipment?.categories.find(c => c.id === "kits")?.count);
     html += `</div><div class="nav-title">Разделы</div><div class="nav-group">`;
 
@@ -296,7 +314,7 @@
       const data = db.sections[sec.id];
       const open = kind === "s" && secId === sec.id;
       html += `<a class="nav-item ${open && !catId ? "active" : ""} ${open ? "open" : ""}" href="${href(["s", sec.id])}">
-        <span class="nav-ico">${sec.icon}</span>${esc(sec.title)}<span class="count">${data.entries.length}</span></a>`;
+        ${esc(sec.title)}<span class="count">${data.entries.length}</span></a>`;
       if (open && data.categories.length) {
         html += `<div class="nav-sub">`;
         for (const c of data.categories) {
@@ -320,35 +338,35 @@
 
   function renderHome() {
     let html = db.demo ? demoBanner() : "";
-    html += `<h1 class="page-title">Broken Ranks Fandom Wiki</h1>
-      <p class="page-sub">Фанатская база по игре: экипировка, питомцы, противники, предметы, НПС, навыки, статьи и карты.</p>
-      <div class="notice">Это <b>неофициальная</b> фанатская вики, сделанная игроками. Она не связана с разработчиком
-        игры и не одобрена им. <a href="#/about">Подробнее</a><br>
-        Есть идея, нашли ошибку или хотите что-то спросить — пишите в Telegram: ${TG}</div>
+    const total = SECTIONS.reduce((s, sec) => s + db.sections[sec.id].entries.length, 0);
+    html += `<section class="home-hero">
+        <h1 class="page-title">Broken Ranks Fandom Wiki</h1>
+        <p class="page-sub">${total.toLocaleString("ru-RU")} записей о предметах, противниках, НПС и мире игры.</p>
+        <button class="home-search" id="homeSearch" type="button">Найти предмет, противника, НПС или локацию<kbd>/</kbd></button>
+      </section>
       <div class="home-grid">`;
+    const tile = (link, title, count, cats) => `<div class="home-tile">
+        <a class="home-tile-head" href="${link}"><b>${esc(title)}</b><span>${count}</span></a>
+        ${cats ? `<p>${cats}</p>` : ""}
+      </div>`;
     for (const sec of SECTIONS) {
       const data = db.sections[sec.id];
-      html += `<div class="home-card">
-        <a class="home-card-head" href="${href(["s", sec.id])}">
-          <span class="home-ico">${sec.icon}</span>
-          <span><b>${esc(sec.title)}</b><small>${countLabel(data.entries.length)}</small></span>
-        </a>
-        <div class="chips">${data.categories.map(c =>
-          `<a class="chip" href="${href(["s", sec.id, c.id])}">${esc(c.name)} <i>${c.count}</i></a>`).join("")
-          || `<span class="muted">Все записи одним списком</span>`}</div>
-      </div>`;
+      // Самые крупные категории — ссылками, остальное доступно в разделе.
+      const top = [...data.categories].sort((x, y) => y.count - x.count).slice(0, 6);
+      const cats = top.map(c => `<a href="${href(["s", sec.id, c.id])}">${esc(c.name)}</a>`).join(", ") +
+        (data.categories.length > top.length ? ` и ещё ${data.categories.length - top.length}` : "");
+      html += tile(href(["s", sec.id]), sec.title, countLabel(data.entries.length), cats);
     }
     if (db.maps.length) {
-      html += `<div class="home-card">
-        <a class="home-card-head" href="#/maps">
-          <span class="home-ico">🗺️</span>
-          <span><b>Карты</b><small>${db.maps.length} ${plural(db.maps.length, "локация", "локации", "локаций")}</small></span>
-        </a>
-        <span class="muted">Локации с порталами, НПС, предметами и противниками</span>
-      </div>`;
+      html += tile("#/maps", "Карты", `${db.maps.length} ${plural(db.maps.length, "локация", "локации", "локаций")}`,
+        "Переходы между локациями, НПС, противники и предметы на карте");
     }
-    html += `</div>`;
+    html += tile("#/build", "Переодевалка", "", "Соберите комплект: характеристики, сопротивления, бонусы сетов и навыки");
+    html += `</div>
+      <p class="home-note">Неофициальная фанатская вики, не связана с разработчиком игры. <a href="#/about">О сайте</a>.
+        Идеи и ошибки — в Telegram: ${TG}</p>`;
     els.main.innerHTML = html;
+    $("#homeSearch").addEventListener("click", () => els.search.focus());
     view.list = [];
   }
 
@@ -357,6 +375,7 @@
       Запусти <code>python scraper/build.py</code>, он создаст файлы в <code>data/</code>.</div>`;
   }
 
+  const RAR_ORDER = ["Рар", "Синергетик", "Психорар", "Сет", "Эпик"];
   // Поля, по которым можно фильтровать выпадающим списком.
   const FACETS = ["Редкость", "Требуемый класс", "Тип урона", "Тип", "Аспект", "Путь сложности", "Группа боссов"];
 
@@ -413,6 +432,10 @@
       const vals = [...new Set(entries.map(e => fieldOf(e, label)).filter(v => v != null && v !== "").map(v => String(fv(v))))];
       return vals.length >= 2 ? [label, vals.sort((a, b) => a.localeCompare(b, "ru"))] : null;
     }).filter(Boolean);
+    // Редкость — цветными кнопками в порядке ценности, остальные фасеты — выпадающими списками.
+    const rarVals = facetOpts.find(([l]) => l === "Редкость")?.[1]
+      .sort((a, b) => RAR_ORDER.indexOf(a) - RAR_ORDER.indexOf(b));
+    const selects = facetOpts.filter(([l]) => l !== "Редкость");
     const anyAtk = entries.some(e => e.attacks);
     const filtersActive = view.query || view.lvlMin || view.lvlMax || view.onlyMine || view.mark !== "all" || view.atk ||
       Object.values(view.facets).some(Boolean);
@@ -442,11 +465,16 @@
       </select>
       <button class="icon-btn" id="dirBtn" title="Направление сортировки">${view.sortDir > 0 ? "↑" : "↓"}</button>
       <div class="seg">
-        <button data-mode="grid" class="${view.mode === "grid" ? "active" : ""}" title="Карточки">▦</button>
-        <button data-mode="table" class="${view.mode === "table" ? "active" : ""}" title="Таблица">☰</button>
+        <button data-mode="grid" class="${view.mode === "grid" ? "active" : ""}">Список</button>
+        <button data-mode="table" class="${view.mode === "table" ? "active" : ""}">Таблица</button>
       </div>
       <button class="btn flt-toggle ${filtersActive ? "on" : ""}" id="fltBtn" aria-expanded="${view.showFilters}">Фильтры${filtersActive ? " •" : ""}</button>
     </div>
+    ${rarVals ? `<div class="rar-pills">
+      <button class="pill ${view.facets["Редкость"] ? "" : "on"}" data-rar-pick="">Любая редкость</button>
+      ${rarVals.map(v => `<button class="pill ${view.facets["Редкость"] === v ? "on" : ""}" data-rar="${esc(v)}"
+        data-rar-pick="${esc(v)}"><i></i>${esc(v)}</button>`).join("")}
+    </div>` : ""}
     <div class="filters ${view.showFilters ? "" : "collapsed"}">
       ${hasLevels ? `<label class="flt">Ур.
           <input id="lvlMin" type="number" min="0" placeholder="от" value="${esc(view.lvlMin)}">
@@ -455,7 +483,7 @@
           <input id="myLevel" type="number" min="0" placeholder="—" value="${esc(view.myLevel)}"></label>
         <label class="flt chk"><input id="onlyMine" type="checkbox" ${view.onlyMine ? "checked" : ""}
           ${view.myLevel ? "" : "disabled"}> не выше моего</label>` : ""}
-      ${facetOpts.map(([label, vals]) => `<select class="facet" data-facet="${esc(label)}" id="facet-${esc(label)}">
+      ${selects.map(([label, vals]) => `<select class="facet" data-facet="${esc(label)}" id="facet-${esc(label)}">
           <option value="">${esc(label)}: все</option>
           ${vals.map(v => `<option value="${esc(v)}" ${view.facets[label] === v ? "selected" : ""}>${esc(v)}</option>`).join("")}
         </select>`).join("")}
@@ -485,29 +513,37 @@
     bindToolbar();
   }
 
-  // В карточке — только редкость, цена и требуемый класс (если он есть).
+  // Поля, которые не нужны во всплывающей подсказке.
   const TIP_SKIP = /^(тип|улучшения|атаки|зоны атаки|шанс дропа|группа боссов)/i;
-  const PREVIEW = [/^редкость$/i, /^(цена|стоимость)$/i, /^требуемый класс$/i];
+
+  // Главные бонусы вещи для строки списка.
+  const KEY_STATS = ["Урон", "Сила", "Ловкость", "Мощь", "Знание", "Здоровье", "Мана", "Выносливость"];
+  function keyLine(e) {
+    if (e.attacks) return atkHtml(e, "atk-sm");
+    if (e.section === "equipment" || e.section === "pets") {
+      const st = KEY_STATS.map(k => [k, fv(fieldOf(e, k))]).filter(([, v]) => !isBlank(v)).slice(0, 2);
+      if (st.length) return st.map(([k, v]) => `${esc(k.toLowerCase())} <b>${k === "Урон" ? "" : "+"}${esc(v)}</b>`).join(", ");
+    }
+    const price = fv(fieldOf(e, "Цена"));
+    return isBlank(price) ? "" : `<b>${esc(price)}</b>`;
+  }
 
   function renderCard(e, showSection) {
     const sec = db.sections[e.section];
     const cat = sec.categories.find(c => c.id === e.category);
-    const preview = PREVIEW.map(rx => e.fields.find(([k, v]) => rx.test(k) && !isBlank(fv(v))))
-      .filter(Boolean);
-    const lvl = fv(fieldOf(e, "Уровень")) || e.level;
-    return `<a class="card ${favorites.has(e.id) ? "fav" : ""} ${marks.has(e.id) ? "have" : ""}"
+    const lvl = fv(fieldOf(e, "Уровень")) || fv(fieldOf(e, "Требуемый уровень")) || e.level;
+    const rar = fv(fieldOf(e, "Редкость"));
+    const cls = fv(fieldOf(e, "Требуемый класс"));
+    const meta = [showSection ? sec.title : "", rar || cat?.name || "", cls || ""].filter(Boolean).map(esc).join(", ");
+    return `<a class="card ${favorites.has(e.id) ? "fav" : ""} ${marks.has(e.id) ? "have" : ""}"${rarAttr(e)}
         href="${entryHrefHere(e)}" data-id="${esc(e.id)}">
       ${iconHtml(e)}
       <div class="card-body">
         <div class="card-name">${esc(e.name)}</div>
-        <div class="card-meta">
-          ${lvl != null && lvl !== "" ? `<span class="lvl">ур. ${esc(lvl)}</span>` : ""}
-          <span>${showSection ? esc(sec.title) + " · " : ""}${esc(cat?.name || "")}</span>
-          ${atkHtml(e, "atk-sm")}
-        </div>
-        ${preview.length ? `<div class="card-fields">${preview.map(([k, v]) =>
-          `<span><em>${esc(k)}:</em> ${esc(fv(v))}</span>`).join("")}</div>` : ""}
+        <div class="card-meta">${meta}</div>
       </div>
+      <div class="card-lvl">${lvl != null && lvl !== "" ? `ур. <b>${esc(lvl)}</b>` : ""}</div>
+      <div class="card-key">${keyLine(e)}</div>
     </a>`;
   }
 
@@ -558,6 +594,11 @@
     on("#atkSel", "change", ev => { view.atk = ev.target.value; refresh(); });
     on("#resetFlt", "click", () => { resetFilters(); refresh(); });
     on("#fltBtn", "click", () => { view.showFilters = !view.showFilters; refresh(); });
+    $$("[data-rar-pick]").forEach(b => b.addEventListener("click", () => {
+      const v = b.dataset.rarPick;
+      view.facets["Редкость"] = view.facets["Редкость"] === v ? "" : v;
+      refresh();
+    }));
     $$(".facet").forEach(s => s.addEventListener("change", () => { view.facets[s.dataset.facet] = s.value; refresh(); }));
     $$(".main .seg:not(.diff-seg) button").forEach(b => b.addEventListener("click", () => {
       view.mode = b.dataset.mode;
@@ -628,7 +669,7 @@
     view.list = items;
     let html = `<div class="list-head"><div>
         <h1 class="page-title">Сравнение</h1>
-        <p class="page-sub">Добавляй записи кнопкой ⚖ в карточке (до ${COMPARE_MAX})</p>
+        <p class="page-sub">Добавляйте записи кнопкой «Сравнить» в карточке, до ${COMPARE_MAX} штук</p>
       </div>
       ${items.length ? `<button class="link-btn" id="cmpClear">Очистить</button>` : ""}
     </div>`;
@@ -644,7 +685,7 @@
     html += `<div class="table-wrap"><table class="tbl cmp"><thead><tr><th></th>
       ${items.map(e => `<th><div class="cmp-head">
           <a href="${href(["cmp"], e.id)}">${iconHtml(e, "ico-sm")}<span>${esc(e.name)}</span></a>
-          <button class="x" data-rm="${esc(e.id)}" title="Убрать">✕</button>
+          <button class="x" data-rm="${esc(e.id)}" title="Убрать" aria-label="Убрать">${svg("x")}</button>
         </div><small>${esc(db.sections[e.section].title)}</small></th>`).join("")}
     </tr></thead><tbody>`;
     for (const label of labels) {
@@ -758,8 +799,8 @@
     { id: "armor", name: "Броня", cats: ["armors"] },
     { id: "cape", name: "Плащ", cats: ["capes"] },
   ];
-  const BASE_STATS = [["Здоровье", "hp", "❤"], ["Мана", "mana", "✷"], ["Выносливость", "stam", "🏃"],
-    ["Сила", "sila", "💪"], ["Ловкость", "lov", "✋"], ["Мощь", "mosh", "🌀"], ["Знание", "zn", "📖"], ["Интеллект", "int", "🧠"]];
+  const BASE_STATS = [["Здоровье", "hp"], ["Мана", "mana"], ["Выносливость", "stam"],
+    ["Сила", "sila"], ["Ловкость", "lov"], ["Мощь", "mosh"], ["Знание", "zn"], ["Интеллект", "int"]];
   const RESISTS = [["Сопр. рубящим", "Рубящие"], ["Сопр. дробящим", "Дробящие"], ["Сопр. колющим", "Колющие"],
     ["Сопр. огню", "Огонь"], ["Сопр. холоду", "Холод"], ["Сопр. энергии", "Энергия"], ["Сопр. менталу", "Ментал"]];
   const REQS = [["Требуемая сила", "Сила"], ["Требуемая ловкость", "Ловкость"], ["Требуемая мощь", "Мощь"], ["Требуемое знание", "Знание"]];
@@ -1004,8 +1045,8 @@
       </button>`;
     }).join("");
 
-    const statRows = BASE_STATS.map(([label, key, ico]) => `<tr>
-        <th><span class="st-ico">${ico}</span>${label}</th>
+    const statRows = BASE_STATS.map(([label, key]) => `<tr>
+        <th>${label}</th>
         <td class="b-base"><button class="st-btn" data-st="${key}" data-d="-1" title="−1 очко">−</button><input class="b-in" type="number"
           min="${STAT_START[key]}" step="${STAT_STEP[key] || 1}" data-base="${key}" value="${esc(build.base[key] ?? STAT_START[key])}"
           placeholder="${STAT_START[key]}"><button class="st-btn" data-st="${key}" data-d="1" title="+1 очко">+</button></td>
@@ -1058,10 +1099,10 @@
             </div>
           </div>
           <div class="b-actions">
-            <button class="btn" id="bShare">🔗 Ссылка на сборку</button>
+            <button class="btn" id="bShare">${svg("link")} Ссылка на сборку</button>
             <button class="btn" id="bClear">Снять всё</button>
           </div>
-          <p class="muted small">Нажмите на слот, чтобы выбрать вещь. Вещь можно надеть и из её карточки кнопкой 👕.</p>
+          <p class="muted small">Нажмите на слот, чтобы выбрать вещь. Вещь можно надеть и из её карточки кнопкой «Надеть».</p>
         </section>
         <section class="b-panel">
           ${r.problems.length ? `<div class="b-warn"><b>Не подходит:</b><ul>${r.problems.map(([s, e, why]) =>
@@ -1150,7 +1191,7 @@
         <div class="pk-head"><b>${esc(slot.name)}</b>
           <input type="search" id="pkQ" placeholder="Поиск по названию…" autocomplete="off">
           <label class="flt chk"><input type="checkbox" id="pkFit" checked> только подходящие</label>
-          <button class="icon-btn" id="pkClose" title="Закрыть">✕</button></div>
+          <button class="icon-btn" id="pkClose" title="Закрыть" aria-label="Закрыть">${svg("x")}</button></div>
         <div class="pk-list"></div>
         ${build.items[slot.id] ? `<button class="btn" id="pkOff">Снять</button>` : ""}
       </div>`;
@@ -1191,10 +1232,10 @@
       });
     } else if (kind === "fav") {
       const entries = favorites.values().map(id => db.byId.get(id)).filter(Boolean);
-      renderList("Избранное", "Отмечай записи звёздочкой ★ в карточке", entries, { showSection: true });
+      renderList("Избранное", "Отмечайте записи кнопкой «В избранное» в карточке", entries, { showSection: true });
     } else if (kind === "marks") {
       const entries = marks.values().map(id => db.byId.get(id)).filter(Boolean);
-      renderList("Есть у меня", "Отмечай записи кнопкой ✓ в карточке", entries,
+      renderList("Есть у меня", "Отмечайте записи кнопкой «Есть у меня» в карточке", entries,
         { showSection: true, empty: "Пока ничего не отмечено" });
     } else if (kind === "cmp") {
       renderCompare();
@@ -1218,9 +1259,43 @@
 
   const BACKREF_LIMIT = 40;
 
+  // Характеристики карточки группами, как в подсказке предмета в игре.
+  const PROP_GROUPS = [
+    ["Требования", k => /^Треб/.test(k)],
+    ["Характеристики", k => /^(Урон|Тип урона|Сила|Ловкость|Мощь|Знание|Интеллект|Здоровье|Мана|Выносливость)$/.test(k)],
+    ["Сопротивления", k => /^Сопр\. /.test(k)],
+  ];
+  function propsHtml(e, props) {
+    if (!props.length) return "";
+    const gear = e.section === "equipment" || e.section === "pets";
+    const groups = PROP_GROUPS.map(([title, test]) => [title, props.filter(([k]) => test(k))]);
+    const rest = props.filter(([k]) => !PROP_GROUPS.some(([, test]) => test(k)));
+    const diffNote = v => isDiff(v) ? ` <small class="muted">(${esc(DIFFS.find(d => d[0] === view.diff)[1].toLowerCase())})</small>` : "";
+    const val = (k, v) => FIELD_HELP[k] ? esc(fv(v)) : linkify(fv(v));
+    const rows = (list, kind) => `<dl class="kv">${list.map(([k, v]) => `<dt>${fieldLabel(k)}</dt>
+      <dd class="${kind}">${kind === "plus" && /^\d/.test(fv(v)) ? "+" : ""}${val(k, v)}${diffNote(v)}</dd>`).join("")}</dl>`;
+    const parts = [];
+    for (const [title, list] of groups) {
+      if (!list.length) continue;
+      if (title === "Сопротивления") {
+        parts.push([title, `<div class="res-tiles">${list.map(([k, v]) =>
+          `<div><b>${esc(fv(v))}</b>${esc(k.replace(/^Сопр\. /, ""))}</div>`).join("")}</div>`]);
+      } else {
+        parts.push([title, rows(list, title === "Требования" ? "req" : gear && title === "Характеристики" ? "plus" : "")]);
+      }
+    }
+    if (rest.length) parts.push(["Прочее", rows(rest, "")]);
+    // Если группа одна (например, у противников) — заголовок не нужен.
+    return `<div class="props">${parts.map(([title, body]) =>
+      `<section class="pgrp">${title && parts.length > 1 ? `<h4>${title}</h4>` : ""}${body}</section>`).join("")}</div>`;
+  }
+
   // Полоски здоровья / маны / выносливости.
   const BAR_LABELS = { "Здоровье": "hp", "Мана": "mana", "Выносливость": "stam" };
+  // Полоски — только у противников и НПС; у вещей здоровье и мана — бонусы в «Характеристиках».
+  const hasBars = e => e.section === "mobs" || e.section === "npc";
   function barsHtml(e) {
+    if (!hasBars(e)) return "";
     const bars = e.fields.filter(([k]) => BAR_LABELS[k]);
     if (!bars.length) return "";
     return `<div class="bars">${bars.map(([k, v]) => `<div class="bar ${BAR_LABELS[k]}"><span>${esc(k)}</span>
@@ -1235,7 +1310,7 @@
       return `<div class="block">
         <h3>${esc(g.title)} <i>${items.length}</i></h3>
         <div class="brefs" data-group="${gi}">${shown.map(t =>
-          `<a class="bref" href="${entryHrefHere(t)}" data-items="${esc(t.id)}">${iconHtml(t, "ico-sm")}<span>${esc(t.name)}</span></a>`).join("")}
+          `<a class="bref"${rarAttr(t)} href="${entryHrefHere(t)}" data-items="${esc(t.id)}">${iconHtml(t, "ico-sm")}<span>${esc(t.name)}</span></a>`).join("")}
           ${items.length > shown.length ? `<button class="link-btn" data-more="${gi}">ещё ${items.length - shown.length}</button>` : ""}
         </div>
       </div>`;
@@ -1260,23 +1335,23 @@
     const linkedMaps = new Set(e.blocks.flatMap(b => [...b.html.matchAll(/data-maps="([^"]+)"/g)].map(m => m[1])));
     const extraMaps = (db.mapsOf.get(e.id) || []).filter(mid => !linkedMaps.has(mid));
     // Нули и прочерки («Цена 0», «Шанс дропа … --») ничего не сообщают — не показываем.
-    const props = e.fields.filter(([k, v]) => !BAR_LABELS[k] && !isBlank(fv(v)));
+    const props = e.fields.filter(([k, v]) => !(hasBars(e) && BAR_LABELS[k]) && !isBlank(fv(v)));
 
     els.detail.innerHTML = `
       <div class="detail-bar">
-        <a class="icon-btn" ${prev ? `href="${entryHrefHere(prev)}"` : "aria-disabled=true"} title="Предыдущая (←)">‹</a>
-        <a class="icon-btn" ${next ? `href="${entryHrefHere(next)}"` : "aria-disabled=true"} title="Следующая (→)">›</a>
+        <a class="icon-btn" ${prev ? `href="${entryHrefHere(prev)}"` : "aria-disabled=true"} title="Предыдущая (←)" aria-label="Предыдущая">${svg("prev")}</a>
+        <a class="icon-btn" ${next ? `href="${entryHrefHere(next)}"` : "aria-disabled=true"} title="Следующая (→)" aria-label="Следующая">${svg("next")}</a>
         <span class="spacer"></span>
         <a class="icon-btn" href="e/${esc(e.id.replace(/[^A-Za-z0-9_.-]/g, "_"))}.html" target="_blank" rel="noopener"
-          title="Отдельная страница — удобно делиться ссылкой">🔗</a>
-        ${slotFor(e) ? `<button class="icon-btn" id="wearBtn" title="Надеть в переодевалке">👕</button>` : ""}
-        <button class="icon-btn" id="wideBtn" title="Шире / уже">⤢</button>
-        <button class="icon-btn mark-btn ${marks.has(e.id) ? "on" : ""}" id="markBtn" title="Есть у меня">✓</button>
-        <button class="icon-btn cmp-btn ${compare.has(e.id) ? "on" : ""}" id="cmpBtn" title="Сравнить">⚖</button>
-        <button class="icon-btn fav-btn ${favorites.has(e.id) ? "on" : ""}" id="favBtn" title="В избранное">★</button>
-        <button class="icon-btn" id="closeDetail" title="Закрыть (Esc)">✕</button>
+          title="Отдельная страница — удобно делиться ссылкой" aria-label="Ссылка">${svg("link")}</a>
+        ${slotFor(e) ? `<button class="icon-btn" id="wearBtn" title="Надеть в переодевалке" aria-label="Надеть">${svg("wear")}</button>` : ""}
+        <button class="icon-btn" id="wideBtn" title="Шире / уже" aria-label="Шире или уже">${svg("wide")}</button>
+        <button class="icon-btn mark-btn ${marks.has(e.id) ? "on" : ""}" id="markBtn" title="Есть у меня" aria-label="Есть у меня">${svg("check")}</button>
+        <button class="icon-btn cmp-btn ${compare.has(e.id) ? "on" : ""}" id="cmpBtn" title="Сравнить" aria-label="Сравнить">${svg("cmp")}</button>
+        <button class="icon-btn fav-btn ${favorites.has(e.id) ? "on" : ""}" id="favBtn" title="В избранное" aria-label="В избранное">${svg("star")}</button>
+        <button class="icon-btn" id="closeDetail" title="Закрыть (Esc)" aria-label="Закрыть">${svg("x")}</button>
       </div>
-      <div class="detail-head">
+      <div class="detail-head"${rarAttr(e)}>
         ${iconHtml(e, "ico-lg")}
         <div>
           <h2>${esc(e.name)}</h2>
@@ -1291,8 +1366,7 @@
       ${hasDiff(e) ? diffSwitch("diffDetail") : ""}
       ${e.image ? `<div class="model"><img src="${esc(e.image)}" alt="" onerror="this.parentNode.remove()"></div>` : ""}
       ${barsHtml(e)}
-      ${props.length ? `<table class="props">${props.map(([k, v]) =>
-        `<tr><th>${fieldLabel(k)}</th><td>${FIELD_HELP[k] ? esc(fv(v)) : linkify(fv(v))}${isDiff(v) ? ` <small class="muted">(${esc(DIFFS.find(d => d[0] === view.diff)[1].toLowerCase())})</small>` : ""}</td></tr>`).join("")}</table>` : ""}
+      ${propsHtml(e, props)}
       ${e.description ? `<div class="desc">${esc(e.description).replace(/\n/g, "<br>")}</div>` : ""}
       ${e.blocks.map(b => `<div class="block">
         ${b.title && b.title !== "Статья" ? `<h3>${esc(b.title)}</h3>` : ""}
@@ -1348,7 +1422,7 @@
       const box = b.parentNode;
       b.remove();
       box.insertAdjacentHTML("beforeend", g.ids.slice(BACKREF_LIMIT).map(id => db.byId.get(id)).filter(Boolean)
-        .map(t => `<a class="bref" href="${entryHrefHere(t)}" data-items="${esc(t.id)}">${iconHtml(t, "ico-sm")}<span>${esc(t.name)}</span></a>`).join(""));
+        .map(t => `<a class="bref"${rarAttr(t)} href="${entryHrefHere(t)}" data-items="${esc(t.id)}">${iconHtml(t, "ico-sm")}<span>${esc(t.name)}</span></a>`).join(""));
     }));
     $$(".card.selected").forEach(n => n.classList.remove("selected"));
     document.querySelector(`.card[data-id="${CSS.escape(e.id)}"]`)?.classList.add("selected");
@@ -1439,7 +1513,7 @@
       const usage = blockText(e, /^(Применение|Использование|Назначение)$/);
       const where = blockText(e, /^Локация$/);
       const desc = blockText(e, /^Описание$/);
-      tip.innerHTML = `<div class="tip-head">${iconHtml(e, "ico-sm")}<div><b>${esc(e.name)}</b>
+      tip.innerHTML = `<div class="tip-head"${rarAttr(e)}>${iconHtml(e, "ico-sm")}<div><b>${esc(e.name)}</b>
           <small>${esc(sec.title)}${cat ? " · " + esc(cat.name) : ""}</small></div></div>
         ${rows.length ? `<table>${rows.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(fv(v))}</td></tr>`).join("")}</table>` : ""}
         ${usage ? `<p class="tip-desc"><b>Для чего:</b> ${esc(cut(usage, 220))}</p>` : ""}
@@ -1482,10 +1556,10 @@
     const found = [...starts, ...contains, ...deep];
     const shown = found.slice(0, 40);
     activeResult = shown.length || mapsFound.length ? 0 : -1;
-    const mapRows = mapsFound.map(m => `<a class="sr" href="${mapHref(m.id)}"><div class="ico ico-sm ico-empty">🗺</div>
+    const mapRows = mapsFound.map(m => `<a class="sr" href="${mapHref(m.id)}"><div class="ico ico-sm ico-empty">К</div>
       <span class="sr-name">${esc(m.name)}</span><span class="sr-sec">Карта</span></a>`).join("");
     els.results.innerHTML = shown.length || mapsFound.length
-      ? shown.map(e => `<a class="sr" href="${entryHref(e)}">
+      ? shown.map(e => `<a class="sr"${rarAttr(e)} href="${entryHref(e)}">
           ${iconHtml(e, "ico-sm")}<span class="sr-name">${esc(e.name)}</span>
           <span class="sr-sec">${esc(db.sections[e.section].title)}</span></a>`).join("") + mapRows
         + (found.length > shown.length ? `<div class="sr-more">…и ещё ${found.length - shown.length}</div>` : "")
@@ -1539,6 +1613,8 @@
     }
   });
 
+  $("#menuBtn").innerHTML = svg("menu");
+  $("#themeBtn").innerHTML = svg("moon");
   $("#menuBtn").addEventListener("click", () => {
     document.body.classList.toggle("nav-open");
     els.backdrop.hidden = !document.body.classList.contains("nav-open") && els.detail.hidden;
