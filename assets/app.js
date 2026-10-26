@@ -254,7 +254,7 @@
   // Внутри карты, сравнения и т.п. карточка открывается поверх текущей страницы.
   const entryHrefHere = e => {
     const { parts } = parseRoute();
-    return ["maps", "cmp", "fav", "marks"].includes(parts[0]) ? href(parts, e.id) : entryHref(e);
+    return ["maps", "cmp", "fav", "marks", "craft"].includes(parts[0]) ? href(parts, e.id) : entryHref(e);
   };
   const mapHref = (mid, hl, e) => href(["maps", mid], e, { hl });
 
@@ -330,6 +330,7 @@
     html += item(kind === "cmp", "#/cmp", "Сравнение", compare.size || null);
     html += item(kind === "maps", "#/maps", "Карты", db.maps.length || null);
     html += item(kind === "build", "#/build", "Переодевалка", Object.keys(build.items).length || null);
+    html += item(kind === "craft", "#/craft", "Крафт", null);
     html += item(kind === "s" && secId === "equipment" && catId === "kits", href(["s", "equipment", "kits"]),
       "Комплекты", db.sections.equipment?.categories.find(c => c.id === "kits")?.count);
     html += `</div><div class="nav-title">Разделы</div><div class="nav-group">`;
@@ -1233,6 +1234,96 @@
     box.addEventListener("click", ev => { if (ev.target === box) box.hidden = true; });
   }
 
+  // ---------- калькулятор крафта ----------
+  // Рецепт «Создание: 2x A + 1x B + 15k» из блока «Рецепт». Одно создание даёт один предмет.
+  const recipes = new Map();
+  function recipeOf(id) {
+    if (recipes.has(id)) return recipes.get(id);
+    const e = db.byId.get(id);
+    const html = e?.blocks.find(b => b.title === "Рецепт" && b.html.includes("Создание:"))?.html;
+    let r = null;
+    if (html) {
+      const part = html.split("Создание:")[1].split(/<b>|<br/)[0];
+      const ing = [...part.matchAll(/(\d+)\s*x\s*<img[^>]*data-items="([^"]+)"/g)].map(m => [Number(m[1]), m[2]]);
+      const g = stripTags(part).replace(/\d+\s*x/g, "").match(/(\d+(?:[.,]\d+)?)\s*(kk|k)?\s*$/);
+      const gold = g ? Math.round(parseFloat(g[1].replace(",", ".")) * (g[2] === "kk" ? 1e6 : g[2] === "k" ? 1e3 : 1)) : 0;
+      if (ing.length) r = { ing, gold };
+    }
+    recipes.set(id, r);
+    return r;
+  }
+  const craftable = () => db.all.filter(e => recipeOf(e.id));
+  const inv = store.get("inv", {});   // «у меня есть» по предметам для калькулятора
+
+  // Дерево потребностей: запас из inv тратится по ходу обхода, общий для всех веток.
+  function craftPlan(id, n) {
+    const pool = { ...inv }, raw = new Map();
+    let gold = 0, crafts = 0;
+    const walk = (cid, need, depth) => {
+      const use = Math.min(pool[cid] || 0, need);
+      pool[cid] = (pool[cid] || 0) - use;
+      const left = need - use;
+      const r = depth < 8 ? recipeOf(cid) : null;
+      const node = { id: cid, need, use, left, kids: [] };
+      if (!left) return node;
+      if (!r) { raw.set(cid, (raw.get(cid) || 0) + left); return node; }
+      gold += r.gold * left;
+      crafts += left;
+      node.kids = r.ing.map(([q, iid]) => walk(iid, q * left, depth + 1));
+      return node;
+    };
+    return { tree: walk(id, n, 0), raw, gold, crafts };
+  }
+
+  const fmtInt = n => Math.round(n).toLocaleString("ru-RU");
+  function craftHtml(id, n) {
+    const plan = craftPlan(id, n);
+    const nodeHtml = (nd, top) => {
+      const e = db.byId.get(nd.id);
+      const name = e ? `<a class="ref-name"${rarAttr(e)} href="${entryHrefHere(e)}" data-items="${esc(e.id)}">${iconHtml(e, "ico-sm")}<span>${esc(e.name)}</span></a>` : esc(nd.id);
+      const have = top ? "" : `<label class="cf-have" title="Сколько уже есть">есть <input type="number" min="0" data-inv="${esc(nd.id)}" value="${inv[nd.id] || ""}" placeholder="0"></label>`;
+      return `<li><div class="cf-row"><b class="cf-n">${fmtInt(nd.need)}×</b>${name}${nd.use ? `<small class="cf-ok">−${fmtInt(nd.use)} из запаса</small>` : ""}${have}</div>
+        ${nd.kids.length ? `<ul>${nd.kids.map(k => nodeHtml(k)).join("")}</ul>` : ""}</li>`;
+    };
+    const raw = [...plan.raw].sort((a, b) => b[1] - a[1]).map(([rid, q]) => {
+      const e = db.byId.get(rid);
+      return `<li>${e ? `<a class="ref-name"${rarAttr(e)} href="${entryHrefHere(e)}" data-items="${esc(rid)}">${iconHtml(e, "ico-sm")}<span>${esc(e.name)}</span></a>` : esc(rid)}<b>${fmtInt(q)}</b></li>`;
+    }).join("");
+    return `<div class="cf">
+      <div class="cf-head"><label>Сколько создать <input type="number" min="1" id="cfN" value="${n}"></label>
+        <span class="cf-sum">Золото: <b>${fmtInt(plan.gold)}</b>, созданий: <b>${fmtInt(plan.crafts)}</b></span></div>
+      <h4>Итого сырья</h4><ul class="cf-raw">${raw || "<li>Всё уже есть в запасе</li>"}</ul>
+      <h4>Дерево</h4><ul class="cf-tree">${nodeHtml(plan.tree, true)}</ul>
+      <p class="muted small">Считается, что одно создание даёт один предмет. «Есть» — ваш запас: он вычитается по всему дереву и сохраняется в браузере.</p>
+    </div>`;
+  }
+
+  function bindCraft(root, id, rerender) {
+    root.querySelector("#cfN")?.addEventListener("change", ev => { view.craftN = Math.max(1, num(ev.target.value) || 1); rerender(); });
+    root.querySelectorAll("[data-inv]").forEach(inp => inp.addEventListener("change", () => {
+      const v = Math.max(0, num(inp.value) || 0);
+      if (v) inv[inp.dataset.inv] = v; else delete inv[inp.dataset.inv];
+      store.set("inv", inv);
+      rerender();
+    }));
+  }
+
+  // Страница «Крафт»: всё, что можно изготовить, и калькулятор для выбранного.
+  function renderCraft(route) {
+    const q = norm(view.query);
+    const list = craftable().filter(e => !q || e.search.includes(q)).sort((a, b) => a.name.localeCompare(b.name, "ru"));
+    view.list = list;
+    const sel = route.entryId && recipeOf(route.entryId) ? route.entryId : null;
+    els.main.innerHTML = `<h1 class="page-title">Крафт</h1>
+      <p class="page-sub">${craftable().length} предметов можно создать у НПС. Калькулятор разворачивает рецепт до сырья.</p>
+      <div class="toolbar" style="margin-top:14px"><input class="local-search" id="localSearch" type="search"
+        placeholder="Что создать: фляга, ингибитор, элемент…" value="${esc(view.query)}" autocomplete="off"></div>
+      <div class="result-count">${countLabel(list.length)}</div>
+      <div class="grid">${list.map(e => renderCard(e, true)).join("")}</div>`;
+    $("#localSearch").addEventListener("input", ev => { view.query = ev.target.value; refresh(); });
+    if (sel) document.querySelector(`.card[data-id="${CSS.escape(sel)}"]`)?.classList.add("selected");
+  }
+
   // ---------- main router ----------
 
   function renderMain(route) {
@@ -1270,6 +1361,8 @@
       renderAbout();
     } else if (kind === "build") {
       renderBuild(route);
+    } else if (kind === "craft") {
+      renderCraft(route);
     } else if (kind === "maps") {
       secId ? renderMap(secId, route.hl) : renderMapsList();
     } else {
@@ -1400,7 +1493,7 @@
       ${e.blocks.map(b => `<div class="block">
         ${b.title && b.title !== "Статья" ? `<h3>${esc(b.title)}</h3>` : ""}
         <div class="block-html">${b.html}</div>
-      </div>`).join("")}
+      </div>${b.title === "Рецепт" && recipeOf(e.id) ? `<div class="block"><h3>Калькулятор крафта</h3><div id="craftBox">${craftHtml(e.id, view.craftN || 1)}</div></div>` : ""}`).join("")}
       ${extraMaps.length ? `<div class="block"><h3>На карте</h3><div class="block-html">${extraMaps.map(mid =>
         `<span data-maps="${esc(mid)}">${esc(db.mapById.get(mid)?.name || mid)}</span>`).join(", ")}</div></div>` : ""}
       ${renderBackrefs(e)}
@@ -1422,6 +1515,11 @@
     els.backdrop.hidden = false;
 
     bindRefs(els.detail, e);
+    const craftBox = els.detail.querySelector("#craftBox");
+    if (craftBox) {
+      const rerenderCraft = () => { craftBox.innerHTML = craftHtml(e.id, view.craftN || 1); bindRefs(craftBox, e); bindCraft(craftBox, e.id, rerenderCraft); };
+      bindCraft(craftBox, e.id, rerenderCraft);
+    }
     bindDiff(els.detail);
     $("#closeDetail").addEventListener("click", closeDetail);
     $("#favBtn").addEventListener("click", () => { favorites.toggle(e.id); refresh(); });
@@ -1562,7 +1660,7 @@
 
   if (matchMedia("(hover: hover)").matches) {
     document.addEventListener("mousemove", ev => {
-      const node = ev.target.closest?.(".ref[data-items], .bref[data-items], .marker[data-items], .img-missing.ref");
+      const node = ev.target.closest?.(".ref[data-items], .bref[data-items], .ref-name[data-items], .marker[data-items], .img-missing.ref");
       if (node && node.getAttribute("data-items")) showTip(node, ev.clientX, ev.clientY);
       else if (!tip.hidden) { tip.hidden = true; tipFor = null; }
     });
