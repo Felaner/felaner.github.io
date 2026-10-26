@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09",
+ "updated": "2026-10-26",
  "categories": [
   {
    "id": "isyrie",
@@ -132,7 +132,7 @@
     },
     {
      "title": "Применение",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Предмет, нужный для призыва питомцев: <span data-items=\"aquaton1a\">Тона</span> а также <span data-items=\"treeture3a\">Хохграта</span>,</li></ul> <ul><li>Предмет, нужный для выполнения <span data-wikibr='Zadanie \"Obroża\"'>Ошейника</span> для питомцев.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Предмет, нужный для призыва питомцев: <span data-items=\"aquaton1a\">Тона</span> а также <span data-items=\"treeture3a\">Хохграта</span>,</li></ul> <ul><li>Предмет, нужный для выполнения <span data-items=\"wb_zadanie_obroza\">Ошейника</span> для питомцев.</li></ul> </td></tr></table></div>"
     },
     {
      "title": "Способы получения",
@@ -149,8 +149,7 @@
      "ids": [
       "item718",
       "item505",
-      "wb_surowce_i_skladniki",
-      "wb_zadanie_obroza"
+      "wb_surowce_i_skladniki"
      ]
     },
     {
@@ -196,7 +195,7 @@
     },
     {
      "title": "Применение",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Предмет, нужный для призыва питомцев: <span data-items=\"aquasol1a\">Сола</span> а также <span data-items=\"treeture3a\">Хохграта</span>,</li></ul> <ul><li>Предмет, нужный для выполнения <span data-wikibr='Zadanie \"Obroża\"'>Ошейника</span> для питомцев.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Предмет, нужный для призыва питомцев: <span data-items=\"aquasol1a\">Сола</span> а также <span data-items=\"treeture3a\">Хохграта</span>,</li></ul> <ul><li>Предмет, нужный для выполнения <span data-items=\"wb_zadanie_obroza\">Ошейника</span> для питомцев.</li></ul> </td></tr></table></div>"
     },
     {
      "title": "Способы получения",
@@ -213,8 +212,7 @@
      "ids": [
       "item719",
       "item505",
-      "wb_surowce_i_skladniki",
-      "wb_zadanie_obroza"
+      "wb_surowce_i_skladniki"
      ]
     },
     {
@@ -584,7 +582,7 @@
     },
     {
      "title": "Применение",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Предмет, нужный для призыва питомцев: <span data-items=\"aquaera1a\">Эры</span> а также <span data-items=\"treeture3a\">Хохграта</span>,</li></ul> <ul><li>Предмет, нужный для выполнения <span data-wikibr='Zadanie \"Obroża\"'>Ошейника</span> для питомцев.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Предмет, нужный для призыва питомцев: <span data-items=\"aquaera1a\">Эры</span> а также <span data-items=\"treeture3a\">Хохграта</span>,</li></ul> <ul><li>Предмет, нужный для выполнения <span data-items=\"wb_zadanie_obroza\">Ошейника</span> для питомцев.</li></ul> </td></tr></table></div>"
     },
     {
      "title": "Способы получения",
@@ -601,8 +599,7 @@
      "ids": [
       "item720",
       "item505",
-      "wb_surowce_i_skladniki",
-      "wb_zadanie_obroza"
+      "wb_surowce_i_skladniki"
      ]
     },
     {
@@ -1000,7 +997,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"giant4a\">Гнавк</span></li> <li>Морозный Великан</li> <li>Морозный Великан-Шаман</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"giant4a\">Гнавк</span></li> <li>Морозный Великан</li> <li>Морозный Великан-Шаман</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1098,7 +1095,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li>Трупный Усач</li></ul> <ul><li>Саркофаг</li></ul> <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"sarcophagus2a\">Венерина</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li>Трупный Усач</li></ul> <ul><li>Саркофаг</li></ul> <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"sarcophagus2a\">Венерина</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1144,7 +1141,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"burkan2a\">Бешенный Буркан</span></li> <li>Буркан</li> <li>Полосатый Буркан</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"burkan2a\">Бешенный Буркан</span></li> <li>Буркан</li> <li>Полосатый Буркан</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1207,15 +1204,15 @@
    "blocks": [
     {
      "title": "Описание",
-     "html": "Позволяет повышать уровень орбов в снаряжении. <br><img src=\"data/raresImg/lists/demupRU.png\"/><hr><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Позволяет повышать орбы в снаряжении. <p><b>Предмет нельзя передать</b>. </p> </td></tr></table></div><hr><div class=\"tscroll\"><table class=\"wb art\"><tr><td><img data-items=\"fishell3a\" src=\"data/wikibr/images/b/b9/Ichtion.png\"/><img data-items=\"geomorph1a\" src=\"data/wikibr/images/2/2b/Geomorph.png\"/><img data-items=\"ghostcastle1a\" src=\"data/wikibr/images/b/bc/Duch_energii.png\"/><img data-items=\"ghostcastle2a\" src=\"data/wikibr/images/f/fc/Duch_ognia.png\"/><img data-items=\"ghostcastle3a\" src=\"data/wikibr/images/3/3e/Duch_zimna.png\"/><img data-items=\"babadek1a\" src=\"data/wikibr/images/c/cb/Babadek.png\"/><img data-items=\"gregorius1a\" src=\"data/wikibr/images/c/c8/Gregorius.png\"/><img data-items=\"ghadira1a\" src=\"data/wikibr/images/9/92/Ghadira.png\"/><img data-items=\"masterofpuppets1a\" src=\"data/wikibr/images/f/fc/W%C5%82adca_marionetek.png\"/> </td><td><b>3</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"garthmog1a\" src=\"data/wikibr/images/8/88/Garthmog.png\"/><img data-items=\"construct11a\" src=\"data/wikibr/images/2/2a/Konstrukt.png\"/><img data-items=\"fyodor1a\" src=\"data/wikibr/images/2/2e/Fyodor.png\"/><img data-items=\"gmo1a\" src=\"data/wikibr/images/c/c3/Gmo.png\"/> </td><td><b>10</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"admiral2a\" src=\"data/wikibr/images/6/60/Komandor_utoru.png\"/><img data-items=\"castlespecter1a\" src=\"data/wikibr/images/7/7e/Duch_zamku.png\"/><img data-items=\"mantis1a\" src=\"data/wikibr/images/6/66/Modliszka.png\"/><img data-items=\"tiger1a\" src=\"data/wikibr/images/a/a6/Tygrys.png\"/><img data-items=\"utorinspector1a\" src=\"data/wikibr/images/c/c1/Heurokratos.png\"/><img src=\"data/wikibr/images/6/65/Ivravul.png\"/><img data-items=\"wendigo1a\" src=\"data/wikibr/images/8/8a/Wendigo.png\"/> </td><td><b>15</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"hvar1a\" src=\"data/wikibr/images/8/89/Hvar.png\"/> </td><td><b>25</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"tit1a\" src=\"data/wikibr/images/9/95/Jask%C3%B3%C5%82ka.png\"/><img data-items=\"valdarognew1a\" src=\"data/wikibr/images/a/a2/Valdarog.png\"/><img data-items=\"htaga1a\" src=\"data/wikibr/images/0/01/Angwalf-Htaga.png\"/> </td><td><b>40</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"aquaregis1a\" src=\"data/wikibr/images/d/d6/Aqua_regis.png\"/><img data-items=\"vough1a\" src=\"data/wikibr/images/9/91/Vough.png\"/><img data-items=\"nidhogg1a\" src=\"data/wikibr/images/d/d3/Nidhogg.png\"/><img data-items=\"vidvar1a\" src=\"data/wikibr/images/f/fc/Vidvar.png\"/><img data-items=\"construct11ac\" src=\"data/wikibr/images/2/2a/Konstrukt.png\"/> </td><td><b>60</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img src=\"data/wikibr/images/a/ad/Draugul.png\"/> </td><td><b>100</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"hawk2a\" src=\"data/wikibr/images/d/db/Jastrz%C4%99bior.png\"/> </td><td><b>150</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"morana1a\" src=\"data/wikibr/images/d/d9/Morana.png\"/><img data-items=\"lugus1a\" src=\"data/wikibr/images/1/17/Lugus.png\"/> </td><td><b>250</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"tarul4a\" src=\"data/wikibr/images/f/fa/Mahet.png\"/><img data-items=\"tarul1a\" src=\"data/wikibr/images/7/78/Tarul.png\"/> </td><td><b>275</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"admiral1a\" src=\"data/wikibr/images/e/eb/Admira%C5%82_utoru.png\"/> </td><td><b>500</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"ghost3a\" src=\"data/wikibr/images/1/1b/Selena.png\"/> </td><td><b>750</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr></table></div>"
+     "html": "Позволяет повышать уровень орбов в снаряжении. <br><img src=\"data/raresImg/lists/demupRU.png\"/><hr><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Позволяет повышать орбы в снаряжении. <p><b>Предмет нельзя передать</b>. </p> </td></tr></table></div><hr><div class=\"tscroll\"><table class=\"wb art\"><tr><td><img data-items=\"fishell3a\" src=\"data/wiki/images/b/b9/Ichtion.png\"/><img data-items=\"geomorph1a\" src=\"data/wiki/images/2/2b/Geomorph.png\"/><img data-items=\"ghostcastle1a\" src=\"data/wiki/images/b/bc/Duch_energii.png\"/><img data-items=\"ghostcastle2a\" src=\"data/wiki/images/f/fc/Duch_ognia.png\"/><img data-items=\"ghostcastle3a\" src=\"data/wiki/images/3/3e/Duch_zimna.png\"/><img data-items=\"babadek1a\" src=\"data/wiki/images/c/cb/Babadek.png\"/><img data-items=\"gregorius1a\" src=\"data/wiki/images/c/c8/Gregorius.png\"/><img data-items=\"ghadira1a\" src=\"data/wiki/images/9/92/Ghadira.png\"/><img data-items=\"masterofpuppets1a\" src=\"data/wiki/images/f/fc/W%C5%82adca_marionetek.png\"/> </td><td><b>3</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"garthmog1a\" src=\"data/wiki/images/8/88/Garthmog.png\"/><img data-items=\"construct11a\" src=\"data/wiki/images/2/2a/Konstrukt.png\"/><img data-items=\"fyodor1a\" src=\"data/wiki/images/2/2e/Fyodor.png\"/><img data-items=\"gmo1a\" src=\"data/wiki/images/c/c3/Gmo.png\"/> </td><td><b>10</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"admiral2a\" src=\"data/wiki/images/6/60/Komandor_utoru.png\"/><img data-items=\"castlespecter1a\" src=\"data/wiki/images/7/7e/Duch_zamku.png\"/><img data-items=\"mantis1a\" src=\"data/wiki/images/6/66/Modliszka.png\"/><img data-items=\"tiger1a\" src=\"data/wiki/images/a/a6/Tygrys.png\"/><img data-items=\"utorinspector1a\" src=\"data/wiki/images/c/c1/Heurokratos.png\"/><img src=\"data/wiki/images/6/65/Ivravul.png\"/><img data-items=\"wendigo1a\" src=\"data/wiki/images/8/8a/Wendigo.png\"/> </td><td><b>15</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"hvar1a\" src=\"data/wiki/images/8/89/Hvar.png\"/> </td><td><b>25</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"tit1a\" src=\"data/wiki/images/9/95/Jask%C3%B3%C5%82ka.png\"/><img data-items=\"valdarognew1a\" src=\"data/wiki/images/a/a2/Valdarog.png\"/><img data-items=\"htaga1a\" src=\"data/wiki/images/0/01/Angwalf-Htaga.png\"/> </td><td><b>40</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"aquaregis1a\" src=\"data/wiki/images/d/d6/Aqua_regis.png\"/><img data-items=\"vough1a\" src=\"data/wiki/images/9/91/Vough.png\"/><img data-items=\"nidhogg1a\" src=\"data/wiki/images/d/d3/Nidhogg.png\"/><img data-items=\"vidvar1a\" src=\"data/wiki/images/f/fc/Vidvar.png\"/><img data-items=\"construct11ac\" src=\"data/wiki/images/2/2a/Konstrukt.png\"/> </td><td><b>60</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img src=\"data/wiki/images/a/ad/Draugul.png\"/> </td><td><b>100</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"hawk2a\" src=\"data/wiki/images/d/db/Jastrz%C4%99bior.png\"/> </td><td><b>150</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"morana1a\" src=\"data/wiki/images/d/d9/Morana.png\"/><img data-items=\"lugus1a\" src=\"data/wiki/images/1/17/Lugus.png\"/> </td><td><b>250</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"tarul4a\" src=\"data/wiki/images/f/fa/Mahet.png\"/><img data-items=\"tarul1a\" src=\"data/wiki/images/7/78/Tarul.png\"/> </td><td><b>275</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"admiral1a\" src=\"data/wiki/images/e/eb/Admira%C5%82_utoru.png\"/> </td><td><b>500</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr><tr><td><img data-items=\"ghost3a\" src=\"data/wiki/images/1/1b/Selena.png\"/> </td><td><b>750</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/> </td></tr></table></div>"
     },
     {
      "title": "Босс",
-     "html": "<img data-items=\"frogboss1a\" src=\"data/wikibr/images/1/1b/Ropucha.png\"/>"
+     "html": "<img data-items=\"frogboss1a\" src=\"data/wiki/images/1/1b/Ropucha.png\"/>"
     },
     {
      "title": "Количество",
-     "html": "<b>1</b> × <img src=\"data/wikibr/images/5/5b/Daimonit.png\" title=\"Даймонит\"/>"
+     "html": "<b>1</b> × <img src=\"data/wiki/images/5/5b/Daimonit.png\" title=\"Даймонит\"/>"
     },
     {
      "title": "Примечания",
@@ -1281,7 +1278,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"valdarognew1a\">Вальдарог</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"icicle3a\">Метель</span></li> <li>Холод</li> <li>Сосулька</li> <li>Ноль</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"valdarognew1a\">Вальдарог</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"icicle3a\">Метель</span></li> <li>Холод</li> <li>Сосулька</li> <li>Ноль</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1327,7 +1324,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"tick2a\">Кровосос</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yak3a\">Як-Добытчик</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti5a\">Йети-Добытчик</span></li> <li>Клещ</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"tick2a\">Кровосос</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yak3a\">Як-Добытчик</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti5a\">Йети-Добытчик</span></li> <li>Клещ</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1556,7 +1553,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"ognik2a\">Висп</span></li> <li>Блуждающий Огонёк</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"ognik2a\">Висп</span></li> <li>Блуждающий Огонёк</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1701,7 +1698,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item158\">Гигантская Фляга Знания</span>,</li> <li>3 × <span data-items=\"item191\">Гигантская Фляга Выносливости</span>,</li> <li>3 × <span data-items=\"item188\">Гигантская Фляга Маны</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"tick2a\">Кровосос</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"giant4a\">Гнавк</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li></ul></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item158\">Гигантская Фляга Знания</span>,</li> <li>3 × <span data-items=\"item191\">Гигантская Фляга Выносливости</span>,</li> <li>3 × <span data-items=\"item188\">Гигантская Фляга Маны</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"tick2a\">Кровосос</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"giant4a\">Гнавк</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li></ul></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1756,7 +1753,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item154\">Гигантская Фляга Ловкости</span>,</li> <li>3 × <span data-items=\"item194\">Гигантская Фляга Уничтожения</span>,</li> <li>3 × <span data-items=\"item188\">Гигантская Фляга Маны</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti5a\">Йети-Добытчик</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"astronomer1a\">Астроном</span></li></ul></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item154\">Гигантская Фляга Ловкости</span>,</li> <li>3 × <span data-items=\"item194\">Гигантская Фляга Уничтожения</span>,</li> <li>3 × <span data-items=\"item188\">Гигантская Фляга Маны</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti5a\">Йети-Добытчик</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"astronomer1a\">Астроном</span></li></ul></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1811,7 +1808,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item146\">Гигантская Фляга Силы</span>,</li> <li>3 × <span data-items=\"item194\">Гигантская Фляга Уничтожения</span>,</li> <li>3 × <span data-items=\"item159\">Гигантская Фляга Здоровья</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"mammoth1a\">Мамонт</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yak3a\">Як-Добытчик</span></li></ul></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item146\">Гигантская Фляга Силы</span>,</li> <li>3 × <span data-items=\"item194\">Гигантская Фляга Уничтожения</span>,</li> <li>3 × <span data-items=\"item159\">Гигантская Фляга Здоровья</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"mammoth1a\">Мамонт</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yak3a\">Як-Добытчик</span></li></ul></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1866,7 +1863,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item191\">Гигантская Фляга Выносливости</span>,</li> <li>3 × <span data-items=\"item157\">Гигантская Фляга Мощи</span>,</li> <li>3 × <span data-items=\"item146\">Гигантская Фляга Силы</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"ognik2a\">Висп</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"fanatic1a\">Пожиратель</span></li></ul></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Изготовление во время <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Искушение Селены</i> у Верштейна в Беирне после доставки ингредиентов: <ul><li>1 × <span data-items=\"item695\">Элементарный глиф</span>,</li> <li>1 × <span data-items=\"item696\">Ученический глиф</span>,</li> <li>3 × <span data-items=\"item697\">Глиф Подмастерья</span>,</li> <li>3 × <span data-items=\"item191\">Гигантская Фляга Выносливости</span>,</li> <li>3 × <span data-items=\"item157\">Гигантская Фляга Мощи</span>,</li> <li>3 × <span data-items=\"item146\">Гигантская Фляга Силы</span>;</li></ul></li> <li>Добыча с противников: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"ognik2a\">Висп</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"smithoflugus1a\">Кузнец Лугуса</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"guardoflugus1a\">Страж Лугуса</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"fanatic1a\">Пожиратель</span></li></ul></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -1960,7 +1957,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghadira1a\">Кадира</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghadira1a\">Кадира</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -2518,7 +2515,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"kholdvardr1accc\">Колд Карл</span></li> <li>Колд</li> <li>Колд-вардр</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"kholdvardr1accc\">Колд Карл</span></li> <li>Колд</li> <li>Колд-вардр</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -3110,7 +3107,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"bat5a\">Кровопийца</span></li> <li>Блуттер</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"bat5a\">Кровопийца</span></li> <li>Блуттер</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -3340,7 +3337,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"treeture2acc\">Старый дубяк</span></li></ul> <ul><li>Древень</li></ul> <ul><li>Сгнивший Древень</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"treeture2acc\">Старый дубяк</span></li></ul> <ul><li>Древень</li></ul> <ul><li>Сгнивший Древень</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -3533,7 +3530,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"orcshaman2ac\">Ризурул</span></li> <li>Горный Орк-Шаман</li> <li>Орк-Шаман</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"orcshaman2ac\">Ризурул</span></li> <li>Горный Орк-Шаман</li> <li>Орк-Шаман</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -3783,7 +3780,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"rabble2a\">Тяжелая Лапа</span></li> <li>Чернь</li> <li>Чернь с арбалетом</li> <li>Ловец</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"rabble2a\">Тяжелая Лапа</span></li> <li>Чернь</li> <li>Чернь с арбалетом</li> <li>Ловец</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -3937,7 +3934,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"skeleton8a\">Драконий Жрец</span></li> <li><span data-items=\"skeleton7a\">Драконий Слуга</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"skeleton8a\">Драконий Жрец</span></li> <li><span data-items=\"skeleton7a\">Драконий Слуга</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4129,7 +4126,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li>Зед</li></ul> <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"zed2a\">Безумец</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li>Зед</li></ul> <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"zed2a\">Безумец</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4277,7 +4274,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"fishell4a\">Эуцерия</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"fishell4a\">Эуцерия</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4325,7 +4322,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"dogs5a\">Разъяренный Пес</span></li> <li>Пёс</li> <li>Псиок</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"dogs5a\">Разъяренный Пес</span></li> <li>Пёс</li> <li>Псиок</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4464,7 +4461,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"wb_leik\">Лейк</span></li> <li>Гоблин-шаман</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"wb_leik\">Лейк</span></li> <li>Гоблин-шаман</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4511,7 +4508,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"fishell3a\">Ихтион</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"fishell3a\">Ихтион</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4635,7 +4632,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"fishell3a\">Ихтион</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"frogboss1a\">Жаба</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"babadek1a\">Бабадук</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"gregorius1a\">Григорий</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghadira1a\">Кадира</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"geomorph1a\">Геоморф</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghostcastle1a\">Дух Энергии</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghostcastle2a\">Дух Огня</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghostcastle3a\">Дух Холода</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"masterofpuppets1a\">Повелитель марионеток</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"fishell3a\">Ихтион</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"frogboss1a\">Жаба</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"babadek1a\">Бабадук</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"gregorius1a\">Григорий</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghadira1a\">Кадира</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"geomorph1a\">Геоморф</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghostcastle1a\">Дух Энергии</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghostcastle2a\">Дух Огня</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghostcastle3a\">Дух Холода</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"masterofpuppets1a\">Повелитель марионеток</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4685,7 +4682,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"garthmog1a\">Гартмог</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"fyodor1a\">Фёдор</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"gmo1a\">Гмо</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"castlespecter1a\">Дух Замка</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"construct11a\">Ослабленный Конструкт</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"wendigo1a\">Вендиго</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"mantis1a\">Богомол</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tiger1a\">Тигр</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"bear1a\">Медведь</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"utorinspector1a\">Геурократос</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"admiral2a\">Уторский Командор</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"garthmog1a\">Гартмог</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"fyodor1a\">Фёдор</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"gmo1a\">Гмо</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"castlespecter1a\">Дух Замка</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"construct11a\">Ослабленный Конструкт</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"wendigo1a\">Вендиго</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"mantis1a\">Богомол</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tiger1a\">Тигр</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"bear1a\">Медведь</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"utorinspector1a\">Геурократос</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"admiral2a\">Уторский Командор</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4741,7 +4738,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> Ивравул</li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"valdarognew1a\">Вальдарог</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tit1a\">Ласточка</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"construct11ac\">Конструкт</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"aquaregis1a\">Аква Регис</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"hvar1a\">Хвар</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"htaga1a\">Ангвальф-Хтага</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> Ивравул</li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"valdarognew1a\">Вальдарог</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tit1a\">Ласточка</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"construct11ac\">Конструкт</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"aquaregis1a\">Аква Регис</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"hvar1a\">Хвар</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"htaga1a\">Ангвальф-Хтага</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4799,7 +4796,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> Драугул</li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"hawk2a\">Ястреб</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghost3a\">Селена</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"admiral1a\">Уторский Адмирал</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"lugus1a\">Лугус</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"morana1a\">Морана</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tarul4a\">Махет</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tarul1a\">Тарул</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"sidraga1a\">Сидрага</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> Драугул</li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"hawk2a\">Ястреб</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"ghost3a\">Селена</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"admiral1a\">Уторский Адмирал</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"lugus1a\">Лугус</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"morana1a\">Морана</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tarul4a\">Махет</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"tarul1a\">Тарул</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"sidraga1a\">Сидрага</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4860,7 +4857,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"spider6a\">Шнюк</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"spider6a\">Шнюк</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -4999,7 +4996,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"bear1a\">Медведь</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"bear1a\">Медведь</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5045,7 +5042,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"vorlingdruid1a\">Олм</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"vorlingdruid1a\">Олм</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5092,7 +5089,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"halmengir1a\">Хальменгир</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"halmengir1a\">Хальменгир</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5139,7 +5136,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"vorlingdruid1a\">Олм</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"vorlingdruid1a\">Олм</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5186,7 +5183,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"halmengir1a\">Хальменгир</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"nidhogg1a\">Нидхёгг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vough1a\">Воуг</span></li> <li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"vidvar1a\">Видвар</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"halmengir1a\">Хальменгир</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5233,7 +5230,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"traveler2a\">Бродяга</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"traveler2a\">Бродяга</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5284,7 +5281,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"amorpha1a\">Аморфа</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"amorpha1a\">Аморфа</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5389,7 +5386,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"pijak1a\">Алкаш</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"pijak1a\">Алкаш</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5494,7 +5491,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"hobgoblin6a\">Утопец</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"hobgoblin6a\">Утопец</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5588,7 +5585,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"mage2a\">Шазза-маг</span></li> <li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"archer2a\">Эой-лучник</span></li> <li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"barb2a\">Кхаагар-варвар</span></li> <li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"voodoo2a\">Джеовалл-друид</span></li> <li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"knight2a\">Юргао-рыцарь</span></li> <li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"sheed1a\">Шид Саи</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"mage2a\">Шазза-маг</span></li> <li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"archer2a\">Эой-лучник</span></li> <li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"barb2a\">Кхаагар-варвар</span></li> <li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"voodoo2a\">Джеовалл-друид</span></li> <li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"knight2a\">Юргао-рыцарь</span></li> <li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"sheed1a\">Шид Саи</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5780,7 +5777,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Зерно Хаоса</i> у Варника в Логове Варника.</li></ul> <ul><li>Получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Ключ от лаборатории</i> у Кай в Лесу Колдов,</li></ul> <ul><li>Получаем за победу над <img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"hobgoblin3ac\">Хобгоблин-Ключник</span>.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Зерно Хаоса</i> у Варника в Логове Варника.</li></ul> <ul><li>Получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Ключ от лаборатории</i> у Кай в Лесу Колдов,</li></ul> <ul><li>Получаем за победу над <img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"hobgoblin3ac\">Хобгоблин-Ключник</span>.</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -5912,7 +5909,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"wolf5a\">Альфа</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"wolf5a\">Альфа</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -6118,7 +6115,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>1 × Отвар прорыва покупаем за 100 000 золота и 5 любых <span data-items=\"wb_flasze_ulepszen\">малых фляг улучшений</span> у Лохматого в Логове Оставшихся,</li></ul> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Зерно Хаоса</i> у Варника в Логове Варника.</li></ul> <ul><li>Можем получить за победу над <img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"mutantfailure2a\">Ненажравшийся</span>.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>1 × Отвар прорыва покупаем за 100 000 золота и 5 любых <span data-items=\"wb_flasze_ulepszen\">малых фляг улучшений</span> у Лохматого в Логове Оставшихся,</li></ul> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Зерно Хаоса</i> у Варника в Логове Варника.</li></ul> <ul><li>Можем получить за победу над <img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"mutantfailure2a\">Ненажравшийся</span>.</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -6374,7 +6371,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i> у Бедисы в Корчме под Вершиной,</li> <li>Награда за участие в ивенте <i>Ястреб</i>,</li> <li>Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"tick1ac\">Аргасид</span>,</li> <li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"yak1ac\">Бугай</span>,</li> <li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"hawk1ac\">Разъяренный Ястребенок</span>.</li></ul></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i> у Бедисы в Корчме под Вершиной,</li> <li>Награда за участие в ивенте <i>Ястреб</i>,</li> <li>Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"tick1ac\">Аргасид</span>,</li> <li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"yak1ac\">Бугай</span>,</li> <li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"hawk1ac\">Разъяренный Ястребенок</span>.</li></ul></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -6420,7 +6417,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Зерно Хаоса</i> у Варника в Логове Варника,</li> <li>Награда за участие в ивенте <i>Вендиго</i>,</li> <li>Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"wb_elita_szalona_gorgona\">Безумная Горгона</span>.</li></ul></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можем получить за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Зерно Хаоса</i> у Варника в Логове Варника,</li> <li>Награда за участие в ивенте <i>Вендиго</i>,</li> <li>Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"wb_elita_szalona_gorgona\">Безумная Горгона</span>.</li></ul></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -7512,7 +7509,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Подзамок — Осыпь (20, 90) </p> <div> <img data-items=\"wb_podzamcze\" src=\"data/wikibr/images/d/d4/Podzamcze.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Подзамок — Осыпь (20, 90) </p> <div> <img data-items=\"wb_podzamcze\" src=\"data/wiki/images/d/d4/Podzamcze.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -7559,7 +7556,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Разбойничий Лес — Роща (81, 52) </p> <div> <img data-items=\"wb_zbojecki_las\" src=\"data/wikibr/images/c/c8/Zbojecki_Las_Map.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Разбойничий Лес — Роща (81, 52) </p> <div> <img data-items=\"wb_zbojecki_las\" src=\"data/wiki/images/c/c8/Zbojecki_Las_Map.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": []
@@ -7941,7 +7938,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Разбойничий Лес — Паучья роща (155, 40) </p> <div> <img data-items=\"wb_zbojecki_las\" src=\"data/wikibr/images/c/c8/Zbojecki_Las_Map.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Разбойничий Лес — Паучья роща (155, 40) </p> <div> <img data-items=\"wb_zbojecki_las\" src=\"data/wiki/images/c/c8/Zbojecki_Las_Map.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -7987,7 +7984,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Рыбацкая Деревня — Луг (87, 50) </p> <div> <img data-items=\"wb_wioska_rybacka\" src=\"data/wikibr/images/7/7f/Wioska_RybackaMap.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Рыбацкая Деревня — Луг (87, 50) </p> <div> <img data-items=\"wb_wioska_rybacka\" src=\"data/wiki/images/7/7f/Wioska_RybackaMap.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -8033,7 +8030,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Рыбацкая Деревня — Заросли (95, 90) </p> <div> <img data-items=\"wb_wioska_rybacka\" src=\"data/wikibr/images/7/7f/Wioska_RybackaMap.png\"/> </div> <p>Замерзшее Озеро — Лес (101, 108) </p> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Рыбацкая Деревня — Заросли (95, 90) </p> <div> <img data-items=\"wb_wioska_rybacka\" src=\"data/wiki/images/7/7f/Wioska_RybackaMap.png\"/> </div> <p>Замерзшее Озеро — Лес (101, 108) </p> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -8113,7 +8110,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Приселок Трентиса — Картофельное поле (104, 53) </p> <div> <img data-items=\"wb_przysiolek_trentis\" src=\"data/wikibr/images/a/ac/Mapa_Przysi%C3%B3%C5%82ek_Trentis.png\"/> </div> <p>Приселок Трентиса — Картофельное поле (42, 104) </p> <div> <img data-items=\"wb_przysiolek_trentis\" src=\"data/wikibr/images/a/ac/Mapa_Przysi%C3%B3%C5%82ek_Trentis.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Приселок Трентиса — Картофельное поле (104, 53) </p> <div> <img data-items=\"wb_przysiolek_trentis\" src=\"data/wiki/images/a/ac/Mapa_Przysi%C3%B3%C5%82ek_Trentis.png\"/> </div> <p>Приселок Трентиса — Картофельное поле (42, 104) </p> <div> <img data-items=\"wb_przysiolek_trentis\" src=\"data/wiki/images/a/ac/Mapa_Przysi%C3%B3%C5%82ek_Trentis.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -8165,7 +8162,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Приселок Трентиса — Лужайка (10, 110) </p> <div> <img data-items=\"wb_przysiolek_trentis\" src=\"data/wikibr/images/a/ac/Mapa_Przysi%C3%B3%C5%82ek_Trentis.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Приселок Трентиса — Лужайка (10, 110) </p> <div> <img data-items=\"wb_przysiolek_trentis\" src=\"data/wiki/images/a/ac/Mapa_Przysi%C3%B3%C5%82ek_Trentis.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -8211,7 +8208,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Трентис — Льняное поле (38, 10) </p> <div> <img data-items=\"wb_trentis\" src=\"data/wikibr/images/e/e8/TrentisMap.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Трентис — Льняное поле (38, 10) </p> <div> <img data-items=\"wb_trentis\" src=\"data/wiki/images/e/e8/TrentisMap.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -8257,7 +8254,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Вымершее поселение — Урочище (20, 120) </p> <div> <img data-items=\"wb_wymarla_osada\" src=\"data/wikibr/images/b/bd/120_Wymarla_Osada.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Вымершее поселение — Урочище (20, 120) </p> <div> <img data-items=\"wb_wymarla_osada\" src=\"data/wiki/images/b/bd/120_Wymarla_Osada.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -8697,7 +8694,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Южная Пещера — Залежи минералов (104, 86) </p> <div> <img data-items=\"wb_jaskinia_poludniowa\" src=\"data/wikibr/images/2/27/Jaskinia_Po%C5%82udniowa_map.png\"/> </div> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Сбор в локации: <br/>Южная Пещера — Залежи минералов (104, 86) </p> <div> <img data-items=\"wb_jaskinia_poludniowa\" src=\"data/wiki/images/2/27/Jaskinia_Po%C5%82udniowa_map.png\"/> </div> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -10204,7 +10201,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>5 × <span data-items=\"item469\">Объедки</span> можно обменять на 1 × Еда у Ведьмы Хоберль на Болоте,</li></ul> <ul><li>9 × <span data-items=\"item470\">Сырое Мясо</span> можно обменять на 10 × Еда у Саны в Лесу Колдов,</li></ul> <ul><li>1 × <span data-items=\"item471\">Труп вендиго</span> можно обменять на 200 × Еда у Диллега в Горах Колдов,</li></ul> <ul><li>1 × <span data-items=\"item927\">Печень чудовища</span> можно обменять на 200 × Еда у Странствующего торговца в Гарнизоне Дмортер (появляется случайно),</li></ul> <ul><li>80 × Еда получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Раглит</i> у Турвилла в Деревне друидов,</li></ul> <ul><li>200 × Еда получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Взыскание долгов</i> у Акима в Нижнем Кеменаке,</li></ul> <ul><li>350 × Еда получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Поручение на корм</i> у Берера в Гарнизоне Дмортер (комната Берера),</li></ul> <ul><li>Покупка за талеры <img src=\"data/wikibr/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wikibr/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе,</li></ul> <ul><li>Покупка за империалы <img src=\"data/wikibr/images/b/be/Imperia%C5%82y.png\"/> у Странствующего торговца в Гарнизоне Дмортер (НПС появляется случайно).</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>5 × <span data-items=\"item469\">Объедки</span> можно обменять на 1 × Еда у Ведьмы Хоберль на Болоте,</li></ul> <ul><li>9 × <span data-items=\"item470\">Сырое Мясо</span> можно обменять на 10 × Еда у Саны в Лесу Колдов,</li></ul> <ul><li>1 × <span data-items=\"item471\">Труп вендиго</span> можно обменять на 200 × Еда у Диллега в Горах Колдов,</li></ul> <ul><li>1 × <span data-items=\"item927\">Печень чудовища</span> можно обменять на 200 × Еда у Странствующего торговца в Гарнизоне Дмортер (появляется случайно),</li></ul> <ul><li>80 × Еда получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Раглит</i> у Турвилла в Деревне друидов,</li></ul> <ul><li>200 × Еда получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Взыскание долгов</i> у Акима в Нижнем Кеменаке,</li></ul> <ul><li>350 × Еда получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Поручение на корм</i> у Берера в Гарнизоне Дмортер (комната Берера),</li></ul> <ul><li>Покупка за талеры <img src=\"data/wiki/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wiki/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе,</li></ul> <ul><li>Покупка за империалы <img src=\"data/wiki/images/b/be/Imperia%C5%82y.png\"/> у Странствующего торговца в Гарнизоне Дмортер (НПС появляется случайно).</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -11242,7 +11239,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>4 × <span data-items=\"item468\">Морской кристалл</span> можно обменять на 5 × Кристаллы у Снабженца в Поместье Ландау,</li></ul> <ul><li>5 × <span data-items=\"item48\">Галит</span> можно обменять на 1 × Кристаллы у Снабженца в Поместье Ландау,</li></ul> <ul><li>1 × <span data-items=\"item121\">Арагонит</span> можно обменять на 6 × Кристаллы у Диллега в Горах Колдов,</li></ul> <ul><li>200 × Кристаллы получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Ледяной кристалл</i> у Мастера Арканегрина в Нижнем Кеменаке,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wikibr/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wikibr/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>4 × <span data-items=\"item468\">Морской кристалл</span> можно обменять на 5 × Кристаллы у Снабженца в Поместье Ландау,</li></ul> <ul><li>5 × <span data-items=\"item48\">Галит</span> можно обменять на 1 × Кристаллы у Снабженца в Поместье Ландау,</li></ul> <ul><li>1 × <span data-items=\"item121\">Арагонит</span> можно обменять на 6 × Кристаллы у Диллега в Горах Колдов,</li></ul> <ul><li>200 × Кристаллы получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Ледяной кристалл</i> у Мастера Арканегрина в Нижнем Кеменаке,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wiki/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wiki/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -11286,7 +11283,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>4 × <span data-items=\"wb_szczapy_drewna\">Поленья</span> можно обменять на 7 × Доски у Ларса в Аларилe,</li></ul> <ul><li>10 × <span data-items=\"item462\">Пни</span> можно обменять на 5 × Доски у Диллега в Горах Колдов,</li></ul> <ul><li>20 × Доски получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Коварный батрак</i> у Лукаса Ландау в Поместье Ландау,</li></ul> <ul><li>60 × Доски получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Архиплуты</i> у Секретаря Кеменака в Доме Первого,</li></ul> <ul><li>200 × Доски получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Лакомство от Йоко</i> у Изидрула Алти в Лесу Орков,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wikibr/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wikibr/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>4 × <span data-items=\"wb_szczapy_drewna\">Поленья</span> можно обменять на 7 × Доски у Ларса в Аларилe,</li></ul> <ul><li>10 × <span data-items=\"item462\">Пни</span> можно обменять на 5 × Доски у Диллега в Горах Колдов,</li></ul> <ul><li>20 × Доски получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Коварный батрак</i> у Лукаса Ландау в Поместье Ландау,</li></ul> <ul><li>60 × Доски получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Архиплуты</i> у Секретаря Кеменака в Доме Первого,</li></ul> <ul><li>200 × Доски получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Лакомство от Йоко</i> у Изидрула Алти в Лесу Орков,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wiki/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wiki/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -11330,7 +11327,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>5 × <span data-items=\"item458c\">Щебень</span> можно обменять на 1 × Камни у Каменщика в Порту,</li></ul> <ul><li>6 × <span data-items=\"item459\">Гранит</span> можно обменять на 2 × Камни у Снабженца в Поместье Ландау,</li></ul> <ul><li>10 × <span data-items=\"item458\">Полевой шпат</span> можно обменять на 5 × Камни у Диллега в Горах Колдов,</li></ul> <ul><li>60 × Камни получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Старое вино</i> у Лезгара в Корчме у Лезгара,</li></ul> <ul><li>150 × Камни получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Каменный котёнок</i> у Диллега в Горах Колдов,</li></ul> <ul><li>60 × Камни получаем за победу над отрядом <img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"kholdpriest3a\">Морквирр</span>,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wikibr/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wikibr/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>5 × <span data-items=\"item458c\">Щебень</span> можно обменять на 1 × Камни у Каменщика в Порту,</li></ul> <ul><li>6 × <span data-items=\"item459\">Гранит</span> можно обменять на 2 × Камни у Снабженца в Поместье Ландау,</li></ul> <ul><li>10 × <span data-items=\"item458\">Полевой шпат</span> можно обменять на 5 × Камни у Диллега в Горах Колдов,</li></ul> <ul><li>60 × Камни получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Старое вино</i> у Лезгара в Корчме у Лезгара,</li></ul> <ul><li>150 × Камни получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Каменный котёнок</i> у Диллега в Горах Колдов,</li></ul> <ul><li>60 × Камни получаем за победу над отрядом <img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"kholdpriest3a\">Морквирр</span>,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wiki/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wiki/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -11376,7 +11373,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>5 × <span data-items=\"item464\">Лом из Павших</span> можно обменять на 2 × Железо у Воберга в Трентисе,</li></ul> <ul><li>5 × <span data-items=\"item466\">Обломки руды</span> можно обменять на 1 × Железо у Снабженца в Поместье Ландау,</li></ul> <ul><li>2 × <span data-items=\"item465\">Железная руда</span> можно обменять на 1 × Железо у Диллега в Горах Колдов,</li></ul> <ul><li>60 × Железо получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Способ добыть железо</i> у Пограничника в Аларилe,</li></ul> <ul><li>200 × Железо получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Колды и браконьеры</i> у Херевальда в Горах Колдов,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wikibr/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wikibr/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>5 × <span data-items=\"item464\">Лом из Павших</span> можно обменять на 2 × Железо у Воберга в Трентисе,</li></ul> <ul><li>5 × <span data-items=\"item466\">Обломки руды</span> можно обменять на 1 × Железо у Снабженца в Поместье Ландау,</li></ul> <ul><li>2 × <span data-items=\"item465\">Железная руда</span> можно обменять на 1 × Железо у Диллега в Горах Колдов,</li></ul> <ul><li>60 × Железо получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Способ добыть железо</i> у Пограничника в Аларилe,</li></ul> <ul><li>200 × Железо получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Колды и браконьеры</i> у Херевальда в Горах Колдов,</li></ul> <ul><li>Покупка за талеры <img src=\"data/wiki/images/5/5f/Talar.png\"/> у Хайне в Трентисе,</li></ul> <ul><li>Покупка за шелеги <img src=\"data/wiki/images/7/7d/Szelag.png\"/> у Парвана Разоффа в Трентисе.</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -13863,7 +13860,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"hobgoblin5a\">Йоко</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"hobgoblin5a\">Йоко</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -13913,7 +13910,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"wendigo1a\">Вендиго</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"wendigo1a\">Вендиго</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -13964,7 +13961,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"mammoth1a\">Мамонт</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"traveler1a\">Путешественник</span></li> <li><img src=\"data/wikibr/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"mammoth1a\">Мамонт</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"nightmare5a\">Кошмар</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"lurker2a\">Великий Кукловод</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"traveler1a\">Путешественник</span></li> <li><img src=\"data/wiki/images/8/85/Czempiony_korona.png\" title=\"Чемпион\"/> <span data-items=\"yeti3a\">Зимний тролль</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -14002,7 +13999,7 @@
     },
     {
      "title": "Применение",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>1 × Камень дрессировщика можно обменять на 22 000 опыта для питомца у дрессировщика Питера в Лесу Колдов.</li> <li>Предмет, нужный на одном из этапов задания <span data-wikibr='Zadanie \"Obroża\"'>Ошейник</span>.</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>1 × Камень дрессировщика можно обменять на 22 000 опыта для питомца у дрессировщика Питера в Лесу Колдов.</li> <li>Предмет, нужный на одном из этапов задания <span data-items=\"wb_zadanie_obroza\">Ошейник</span>.</li></ul> </td></tr></table></div>"
     },
     {
      "title": "Способы получения",
@@ -14015,7 +14012,6 @@
      "ids": [
       "item438",
       "wb_frakcje",
-      "wb_zadanie_obroza",
       "wb_zwierzaki"
      ]
     }
@@ -14101,7 +14097,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"tiger6a\">Самка сабельтига</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"tiger6a\">Самка сабельтига</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -14153,7 +14149,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"construct11ac\">Конструкт</span></li> <li>Датчик</li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/9/95/Bossy_korona.png\" title=\"Босс\"/> <span data-items=\"construct11ac\">Конструкт</span></li> <li>Датчик</li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -14349,7 +14345,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"geomorph3a\">Раглитовый Голем</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"geomorph3a\">Раглитовый Голем</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -14426,7 +14422,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Бычок Стаськи</i>, можно изготовить эликсир у Рени за 50 000 золота. Для этого нужно: </p> <ul><li>3 × <span data-items=\"item783\">Элодея</span></li> <li>6 × <span data-items=\"item784\">Плод асфоделуса</span></li></ul> <img src=\"data/wikibr/images/a/af/Youtube.png\"/> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Бычок Стаськи</i>, можно изготовить эликсир у Рени за 50 000 золота. Для этого нужно: </p> <ul><li>3 × <span data-items=\"item783\">Элодея</span></li> <li>6 × <span data-items=\"item784\">Плод асфоделуса</span></li></ul> <img src=\"data/wiki/images/a/af/Youtube.png\"/> </td></tr></table></div>"
     }
    ],
    "backrefs": []
@@ -14465,7 +14461,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Мочарку можно собрать только во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Бычок Стаськи</i>. </p><p>Для сбора мочарки нужны инструменты (<span data-items=\"item791\">Секира</span> и <span data-items=\"item792\">Багор</span>), покупаем их у Верштейна за 10 000 золота. </p><p>Мочарку добываем на Замерзшем озере из проруби перед входом в пещеры Подо льдом. </p> Добыча в локации: <p>Замерзшее озеро (113, 56) </p> <img src=\"data/wikibr/images/a/af/Youtube.png\"/> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Мочарку можно собрать только во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Бычок Стаськи</i>. </p><p>Для сбора мочарки нужны инструменты (<span data-items=\"item791\">Секира</span> и <span data-items=\"item792\">Багор</span>), покупаем их у Верштейна за 10 000 золота. </p><p>Мочарку добываем на Замерзшем озере из проруби перед входом в пещеры Подо льдом. </p> Добыча в локации: <p>Замерзшее озеро (113, 56) </p> <img src=\"data/wiki/images/a/af/Youtube.png\"/> </td></tr></table></div>"
     }
    ],
    "backrefs": []
@@ -14816,7 +14812,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Наскальные грибы можно собрать только во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сбор грибов</i>.<br/> Грибы растут на скалах, собирать их можно, когда они подсвечены. Находятся в локации: <br/>Склон → Пещера Великанов → Пещера Великанов </p><p> <img src=\"data/wikibr/images/a/af/Youtube.png\"/> </p> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Наскальные грибы можно собрать только во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сбор грибов</i>.<br/> Грибы растут на скалах, собирать их можно, когда они подсвечены. Находятся в локации: <br/>Склон → Пещера Великанов → Пещера Великанов </p><p> <img src=\"data/wiki/images/a/af/Youtube.png\"/> </p> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -14893,7 +14889,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можно изготовить во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Эфирные лампы.</i></li></ul> <img src=\"data/wikibr/images/a/af/Youtube.png\"/> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Можно изготовить во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Эфирные лампы.</i></li></ul> <img src=\"data/wiki/images/a/af/Youtube.png\"/> </td></tr></table></div>"
     }
    ],
    "backrefs": [
@@ -15672,7 +15668,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Покупка у Стаськи за 50 000 золота во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i>. <p>Если Габрыся принесёт <span data-items=\"item790\">Разбитое яйцо ястребенка</span>, её можно купить снова. </p> <br/> <img src=\"data/wikibr/images/a/af/Youtube.png\"/> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Покупка у Стаськи за 50 000 золота во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i>. <p>Если Габрыся принесёт <span data-items=\"item790\">Разбитое яйцо ястребенка</span>, её можно купить снова. </p> <br/> <img src=\"data/wiki/images/a/af/Youtube.png\"/> </td></tr></table></div>"
     }
    ],
    "backrefs": []
@@ -15711,7 +15707,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Используя <span data-items=\"item786\">Габрысю</span> во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i>. </p> <img src=\"data/wikibr/images/a/af/Youtube.png\"/> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Используя <span data-items=\"item786\">Габрысю</span> во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i>. </p> <img src=\"data/wiki/images/a/af/Youtube.png\"/> </td></tr></table></div>"
     }
    ],
    "backrefs": []
@@ -15750,7 +15746,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Если во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i> получим Разбитое яйцо ястребка — нужно снова пойти к Стаське и ещё раз купить <span data-items=\"item786\">Габрысю</span>. </p> <img src=\"data/wikibr/images/a/af/Youtube.png\"/> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <p>Если во время активного <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Сокольничья</i> получим Разбитое яйцо ястребка — нужно снова пойти к Стаське и ещё раз купить <span data-items=\"item786\">Габрысю</span>. </p> <img src=\"data/wiki/images/a/af/Youtube.png\"/> </td></tr></table></div>"
     }
    ],
    "backrefs": []
@@ -17824,7 +17820,7 @@
     },
     {
      "title": "Как добыть",
-     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wikibr/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"scoundrelarcher3ac\">Коварный Разбойник</span></li></ul> </td></tr></table></div>"
+     "html": "<div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> Получаем за победу над: <ul><li><img src=\"data/wiki/images/0/04/Elity_korona.png\" title=\"Элита\"/> <span data-items=\"scoundrelarcher3ac\">Коварный Разбойник</span></li></ul> </td></tr></table></div>"
     }
    ],
    "backrefs": [

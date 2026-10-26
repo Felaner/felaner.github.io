@@ -97,10 +97,10 @@ async (urls) => {
 
 
 def download_images(start, args):
-    """Скачивает картинки, нужные вики, через браузер (как и страницы) в data/wikibr/."""
+    """Скачивает картинки, нужные вики, через браузер (как и страницы) в data/wiki/."""
     root = Path(__file__).resolve().parent
     listing = root / "source" / "needed_wikibr.txt"
-    out = root.parent / "data" / "wikibr"
+    out = root.parent / "data" / "wiki"
     paths = [x.strip() for x in listing.read_text("utf-8").splitlines() if x.strip()] if listing.exists() else []
     todo = [x for x in paths if not (out / unquote(x).lstrip("/")).exists()]
     print(f"Картинок в списке: {len(paths)}, скачать: {len(todo)}")
@@ -138,7 +138,7 @@ def main():
                     help="MediaWiki: дополнительно обойти сайт браузером (обычно не нужно — всё берётся через API)")
     ap.add_argument("--shots", type=int, default=25, help="сколько первых страниц сфотографировать")
     ap.add_argument("--images", action="store_true",
-                    help="скачать картинки из scraper/source/needed_wikibr.txt в data/wikibr/ (после build.py)")
+                    help="скачать картинки из scraper/source/needed_wikibr.txt в data/wiki/ (после build.py)")
     ap.add_argument("--delay", type=float, default=0.3, help="пауза между страницами, сек")
     ap.add_argument("--wait", type=int, default=600, help="ожидание отрисовки страницы, мс")
     args = ap.parse_args()

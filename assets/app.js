@@ -183,6 +183,7 @@
   }
 
   const fieldOf = (e, label) => e.fields.find(([k]) => k === label)?.[1];
+  const isBlank = v => /^(0|-+|—|)$/.test(String(v ?? "").trim());
 
   // ---------- routing ----------
 
@@ -232,6 +233,8 @@
     atk: "",
     mapZoom: 1,
     wide: store.get("wide", false),
+    showFilters: false, // на телефоне фильтры свёрнуты под кнопку
+
     list: [],           // текущий отображаемый список (для навигации стрелками)
     routeKey: "",
   };
@@ -318,7 +321,7 @@
   function renderHome() {
     let html = db.demo ? demoBanner() : "";
     html += `<h1 class="page-title">Broken Ranks Fandom Wiki</h1>
-      <p class="page-sub">Личная база по игре: экипировка, питомцы, противники, предметы, НПС и навыки.</p>
+      <p class="page-sub">Фанатская база по игре: экипировка, питомцы, противники, предметы, НПС, навыки, статьи и карты.</p>
       <div class="notice">Это <b>неофициальная</b> фанатская вики, сделанная игроками. Она не связана с разработчиком
         игры и не одобрена им. <a href="#/about">Подробнее</a><br>
         Есть идея, нашли ошибку или хотите что-то спросить — пишите в Telegram: ${TG}</div>
@@ -442,8 +445,9 @@
         <button data-mode="grid" class="${view.mode === "grid" ? "active" : ""}" title="Карточки">▦</button>
         <button data-mode="table" class="${view.mode === "table" ? "active" : ""}" title="Таблица">☰</button>
       </div>
+      <button class="btn flt-toggle ${filtersActive ? "on" : ""}" id="fltBtn" aria-expanded="${view.showFilters}">Фильтры${filtersActive ? " •" : ""}</button>
     </div>
-    <div class="filters">
+    <div class="filters ${view.showFilters ? "" : "collapsed"}">
       ${hasLevels ? `<label class="flt">Ур.
           <input id="lvlMin" type="number" min="0" placeholder="от" value="${esc(view.lvlMin)}">
           <input id="lvlMax" type="number" min="0" placeholder="до" value="${esc(view.lvlMax)}"></label>
@@ -488,7 +492,7 @@
   function renderCard(e, showSection) {
     const sec = db.sections[e.section];
     const cat = sec.categories.find(c => c.id === e.category);
-    const preview = PREVIEW.map(rx => e.fields.find(([k, v]) => rx.test(k) && !/^(0|-|)$/.test(String(fv(v)).trim())))
+    const preview = PREVIEW.map(rx => e.fields.find(([k, v]) => rx.test(k) && !isBlank(fv(v))))
       .filter(Boolean);
     const lvl = fv(fieldOf(e, "Уровень")) || e.level;
     return `<a class="card ${favorites.has(e.id) ? "fav" : ""} ${marks.has(e.id) ? "have" : ""}"
@@ -553,6 +557,7 @@
     on("#markSel", "change", ev => { view.mark = ev.target.value; refresh(); });
     on("#atkSel", "change", ev => { view.atk = ev.target.value; refresh(); });
     on("#resetFlt", "click", () => { resetFilters(); refresh(); });
+    on("#fltBtn", "click", () => { view.showFilters = !view.showFilters; refresh(); });
     $$(".facet").forEach(s => s.addEventListener("change", () => { view.facets[s.dataset.facet] = s.value; refresh(); }));
     $$(".main .seg:not(.diff-seg) button").forEach(b => b.addEventListener("click", () => {
       view.mode = b.dataset.mode;
@@ -1254,6 +1259,8 @@
     // Карты, где объект отмечен точкой, но которых нет в его блоках «Где найти» / «Путь».
     const linkedMaps = new Set(e.blocks.flatMap(b => [...b.html.matchAll(/data-maps="([^"]+)"/g)].map(m => m[1])));
     const extraMaps = (db.mapsOf.get(e.id) || []).filter(mid => !linkedMaps.has(mid));
+    // Нули и прочерки («Цена 0», «Шанс дропа … --») ничего не сообщают — не показываем.
+    const props = e.fields.filter(([k, v]) => !BAR_LABELS[k] && !isBlank(fv(v)));
 
     els.detail.innerHTML = `
       <div class="detail-bar">
@@ -1284,7 +1291,7 @@
       ${hasDiff(e) ? diffSwitch("diffDetail") : ""}
       ${e.image ? `<div class="model"><img src="${esc(e.image)}" alt="" onerror="this.parentNode.remove()"></div>` : ""}
       ${barsHtml(e)}
-      ${e.fields.filter(([k]) => !BAR_LABELS[k]).length ? `<table class="props">${e.fields.filter(([k]) => !BAR_LABELS[k]).map(([k, v]) =>
+      ${props.length ? `<table class="props">${props.map(([k, v]) =>
         `<tr><th>${fieldLabel(k)}</th><td>${FIELD_HELP[k] ? esc(fv(v)) : linkify(fv(v))}${isDiff(v) ? ` <small class="muted">(${esc(DIFFS.find(d => d[0] === view.diff)[1].toLowerCase())})</small>` : ""}</td></tr>`).join("")}</table>` : ""}
       ${e.description ? `<div class="desc">${esc(e.description).replace(/\n/g, "<br>")}</div>` : ""}
       ${e.blocks.map(b => `<div class="block">
@@ -1366,6 +1373,11 @@
       node.title = "Открыть карту";
       node.addEventListener("click", () => { location.hash = mapHref(mid, e?.id, e?.id); });
     });
+    // Крупные картинки (карты локаций и т.п.) уменьшены — по клику открываем в полном размере.
+    root.querySelectorAll(".block-html img.big").forEach(img => {
+      img.title = "Открыть в полном размере";
+      img.addEventListener("click", () => window.open(img.src, "_blank", "noopener"));
+    });
     root.querySelectorAll(".block-html img").forEach(img => {
       img.loading = "lazy";
       img.addEventListener("error", () => {
@@ -1423,7 +1435,7 @@
       tipFor = e.id;
       const sec = db.sections[e.section];
       const cat = sec.categories.find(c => c.id === e.category);
-      const rows = e.fields.filter(([k, v]) => !TIP_SKIP.test(k) && !/^(0|-|)$/.test(String(fv(v)).trim())).slice(0, 6);
+      const rows = e.fields.filter(([k, v]) => !TIP_SKIP.test(k) && !isBlank(fv(v))).slice(0, 6);
       const usage = blockText(e, /^(Применение|Использование|Назначение)$/);
       const where = blockText(e, /^Локация$/);
       const desc = blockText(e, /^Описание$/);
@@ -1490,6 +1502,8 @@
     items[activeResult].scrollIntoView({ block: "nearest" });
   }
 
+  // Подсказка про клавишу «/» на телефоне не нужна и не помещается.
+  if (!matchMedia("(hover: hover)").matches) els.search.placeholder = "Поиск по вики…";
   els.search.addEventListener("input", renderSearch);
   els.search.addEventListener("focus", renderSearch);
   els.search.addEventListener("keydown", ev => {

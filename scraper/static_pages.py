@@ -111,13 +111,24 @@ def fix_html(html, known, depth=1):
     return html
 
 
+def have_file(src):
+    """Картинка есть в репозитории (часть моделей и иконок у источника отдаёт 404)."""
+    from urllib.parse import unquote
+    return bool(src) and (ROOT / unquote(src)).is_file()
+
+
+def blank(v):
+    """Нули и прочерки («Цена 0», «--») ничего не сообщают — их не показываем."""
+    return str(v).strip() in ("", "0", "-", "--", "—")
+
+
 def describe(e, sec_title, cat_name):
     """Описание для поисковой выдачи (до ~160 символов)."""
     head = f"{e['name']} — {sec_title.lower()}" + (f" ({cat_name.lower()})" if cat_name else "")
     if e.get("level"):
         head += f", {e['level']} уровень"
     parts = [head + ". Broken Ranks."]
-    facts = [f"{k}: {fv(v)}" for k, v in e.get("fields", []) if fv(v) and "уровень" not in k.lower()][:4]
+    facts = [f"{k}: {fv(v)}" for k, v in e.get("fields", []) if not blank(fv(v)) and "уровень" not in k.lower()][:4]
     if facts:
         parts.append("; ".join(facts) + ".")
     first = next((text_of(b["html"]) for b in e.get("blocks", []) if text_of(b["html"])), "")
@@ -134,7 +145,7 @@ def entry_page(e, sid, cats, known):
     title = f"{e['name']} — {kind}" + (f", {e['level']} ур." if e.get("level") else "") + f" | {SITE_NAME}"
     wiki = f"../index.html#/s/{sid}/{e['category']}?e={e['id']}"
     icon = f'<div class="ico ico-lg"><img src="../{esc(e["icon"])}" alt="{esc(e["name"])}"></div>' \
-        if e.get("icon") else ""
+        if have_file(e.get("icon")) else ""
     atk = ""
     if e.get("attacks"):
         atk = '<div class="atk-line">Атакует: <span class="atk">' + "".join(
@@ -149,11 +160,12 @@ def entry_page(e, sid, cats, known):
   {atk}
 </div></div>
 <p><a class="static-open" href="{esc(wiki)}">Открыть в интерактивной вики →</a></p>"""]
-    if e.get("image"):
+    if have_file(e.get("image")):
         body.append(f'<div class="model"><img src="../{esc(e["image"])}" alt="{esc(e["name"])}"></div>')
-    if e.get("fields"):
+    props = [(k, fv(v)) for k, v in e.get("fields", []) if not blank(fv(v))]
+    if props:
         body.append('<table class="props">' + "".join(
-            f"<tr><th>{esc(k)}</th><td>{esc(fv(v))}</td></tr>" for k, v in e["fields"]) + "</table>")
+            f"<tr><th>{esc(k)}</th><td>{esc(v)}</td></tr>" for k, v in props) + "</table>")
     for b in e.get("blocks", []):
         t = b.get("title") or ""
         h2 = f"<h2>{esc(t)}</h2>" if t and t != "Статья" else ""

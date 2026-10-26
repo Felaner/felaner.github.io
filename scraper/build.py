@@ -801,12 +801,18 @@ def tidy_mobs(maps):
             e["blocks"].remove(b)
         names += respawn.get(e["id"], []) + art_refs.get(e["id"], [])
         names += [MAP_NAMES.get(m, m) for m in points.get(e["id"], [])]
-        seen, uniq = set(), []
+        # Одна локация в разных падежах («Тюрьма Ангвальф-Хтаги» / «…-Хтага») — одна строка;
+        # оставляем вариант, который совпадает с картой или статьёй (он станет ссылкой).
+        stem = lambda n: " ".join(w[:-1] if len(w) > 4 else w for w in re.split(r"[\s-]+", nkey(n)))
+        linkable = lambda n: nkey(n) in map_exact or nkey(n) in articles
+        uniq = {}
         for n in names:
-            if nkey(n) and nkey(n) not in seen:
-                seen.add(nkey(n))
-                uniq.append(n)
-        names_of[e["id"]] = uniq
+            if not nkey(n):
+                continue
+            k = stem(n)
+            if k not in uniq or (linkable(n) and not linkable(uniq[k])):
+                uniq[k] = n
+        names_of[e["id"]] = list(uniq.values())
     # Упоминание по названию (без ссылки) в статьях о локациях и инстансах.
     art_text = [(a["name"], nkey(" ".join(b["html"] for b in a["blocks"]))) for a in guides
                 if a["category"] in ("locations", "instances")]
@@ -959,6 +965,11 @@ def build_maps():
         if mp["name"] in ("Название", mp["id"]):
             mp["name"] = f"Безымянная локация №{mp['id'][1:]}"
             mp["unnamed"] = True
+    # Безымянная карта без точек, переходов и входов — просто картинка, в списке она только мешает.
+    inbound = {p["to"] for mp in maps.values() for p in mp["portals"]}
+    for mid in [m for m, mp in maps.items()
+                if mp.get("unnamed") and not mp["points"] and not mp["portals"] and m not in inbound]:
+        del maps[mid]
     return sorted(maps.values(), key=lambda x: (bool(x.get("unnamed")), int(re.sub(r"\D", "", x["id"]) or 0)))
 
 
@@ -1240,9 +1251,11 @@ def add_wikibr():
 
     def convert(html, self_id=None):
         def link(m):
-            tid = title_to_id.get(m.group(1)) or title_to_id.get(redirects.get(m.group(1), ""))
+            title = H.unescape(m.group(2))
+            tid = title_to_id.get(title) or title_to_id.get(redirects.get(title, ""))
             return f'data-items="{tid}"' if tid else ""
-        html = re.sub(r'data-wikibr="([^"]+)"', link, html)
+        # Заголовок с кавычками внутри bs4 пишет в одинарных кавычках: data-wikibr='Zadanie "Obroża"'.
+        html = re.sub(r"""data-wikibr=(["'])(.+?)\1""", link, html)
         html = re.sub(r'data-wikibr-img="([^"]+)"', lambda m: f'src="{wb_img(m.group(1))}"', html)
         return tidy_article(tr_html(html), self_id)
 
@@ -1397,8 +1410,11 @@ def tidy_article(html, self_id=None):
             t["class"] = ["lead"]
     for img in soup.find_all("img"):
         par = img.parent
-        if par is not None and par.name in ("p", "[document]") and not img.find_parent("table") \
-                and not par.get_text(strip=True) and len(par.find_all("img")) == 1 and not img.get("data-items"):
+        if img.find_parent("table") or img.get("data-items"):
+            continue
+        alone = par is not None and par.name in ("p", "div", "[document]") \
+            and not par.get_text(strip=True) and len(par.find_all("img")) == 1
+        if alone or img_width(img.get("src", "")) >= 300:
             img["class"] = ["big"]
     out = str(soup)
     out = re.sub(r"(\s*<br/?>\s*){2,}", "<br/>", out)
@@ -1409,12 +1425,26 @@ def tidy_article(html, self_id=None):
     return out
 
 
-def wb_img(path):
-    """'/images/5/56/X.png' -> 'data/wikibr/images/5/56/X.png' (+ в список на скачивание)."""
+def img_width(src):
+    """Ширина скачанной картинки PNG/GIF по заголовку файла (0 — неизвестно)."""
     from urllib.parse import unquote
-    if not (DATA / "wikibr" / unquote(path).lstrip("/")).exists():
+    f = ROOT / unquote(src) if src.startswith("data/") else None
+    if not f or not f.is_file():
+        return 0
+    head = f.read_bytes()[:24]
+    if head[:8] == b"\x89PNG\r\n\x1a\n":
+        return int.from_bytes(head[16:20], "big")
+    if head[:3] == b"GIF":
+        return int.from_bytes(head[6:8], "little")
+    return 0
+
+
+def wb_img(path):
+    """'/images/5/56/X.png' -> 'data/wiki/images/5/56/X.png' (+ в список на скачивание)."""
+    from urllib.parse import unquote
+    if not (DATA / "wiki" / unquote(path).lstrip("/")).exists():
         needed_wikibr.add(path)
-    return "data/wikibr" + path
+    return "data/wiki" + path
 
 
 def write(sid, cats, entries):

@@ -1,2 +1,5 @@
 __pycache__/
 scraper/recon/
+scraper/mirror/
+scraper/cache/
+.claude/
