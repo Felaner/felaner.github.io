@@ -769,6 +769,12 @@
     const pts = m.points.map(p => ({ ...p, e: db.byId.get(p.id) })).filter(p => p.e);
     view.list = [...new Map(pts.map(p => [p.e.id, p.e])).values()];
     const z = view.mapZoom;
+    // Слои карты: что показывать точками.
+    const layerOf = p => p.e.section === "npc" ? "npc" : p.e.section === "mobs" ? "mobs" : "items";
+    const LAYERS = [["npc", "НПС"], ["mobs", "Противники"], ["items", "Предметы"], ["portals", "Переходы"]];
+    const layers = view.mapLayers ||= { npc: true, mobs: true, items: true, portals: true };
+    const counts = { portals: m.portals.length };
+    for (const p of pts) counts[layerOf(p)] = (counts[layerOf(p)] || 0) + 1;
     let html = `<div class="list-head"><div>
         <h1 class="page-title">${esc(m.name)}</h1>
         <p class="page-sub"><a href="#/maps">Карты</a> / ${esc(m.name)}</p>
@@ -778,12 +784,16 @@
         <span>${Math.round(z * 100)}%</span>
         <button class="icon-btn" data-zoom="1" title="Увеличить">+</button>
       </div></div>
-      <div class="map-wrap"><div class="map-canvas ${m.image ? "" : "noimg"}" style="width:${z * 100}%">
+      <div class="map-tools">
+        ${LAYERS.filter(([k]) => counts[k]).map(([k, n]) => `<button class="pill ${layers[k] ? "on" : ""}" data-layer="${k}">${n} ${counts[k]}</button>`).join("")}
+        <input class="local-search" id="mapFind" type="search" placeholder="Найти на карте" value="${esc(view.mapFind || "")}" autocomplete="off">
+      </div>
+      <div class="map-wrap" title="Масштаб: Ctrl + колесо мыши"><div class="map-canvas ${m.image ? "" : "noimg"}" style="width:${z * 100}%">
         ${m.image ? `<img class="map-img" src="${esc(m.image)}" alt=""
           onerror="this.parentNode.classList.add('noimg');this.remove()">` : ""}
-        ${m.portals.map(p => `<a class="marker portal" href="${mapHref(p.to)}" style="left:${p.x}%;top:${p.y}%"
-            title="→ ${esc(p.name)}"><span>➜</span><em>${esc(p.name)}</em></a>`).join("")}
-        ${pts.map(p => `<a class="marker point ${p.id === hl ? "hl" : ""}" data-items="${esc(p.id)}"
+        ${layers.portals ? m.portals.map(p => `<a class="marker portal" href="${mapHref(p.to)}" style="left:${p.x}%;top:${p.y}%"
+            title="→ ${esc(p.name)}"><span>➜</span><em>${esc(p.name)}</em></a>`).join("") : ""}
+        ${pts.filter(p => layers[layerOf(p)]).map(p => `<a class="marker point ${p.id === hl ? "hl" : ""}" data-items="${esc(p.id)}"
             href="${mapHref(mid, hl, p.id)}" style="left:${p.x}%;top:${p.y}%">${iconHtml(p.e, "ico-sm")}</a>`).join("")}
       </div></div>`;
     if (hl && !pts.some(p => p.id === hl)) {
@@ -807,6 +817,27 @@
       view.mapZoom = Math.min(4, Math.max(1, view.mapZoom + Number(b.dataset.zoom) * 0.5));
       refresh();
     }));
+    $$("[data-layer]").forEach(b => b.addEventListener("click", () => { layers[b.dataset.layer] = !layers[b.dataset.layer]; refresh(); }));
+    // Поиск точки: совпавшие подсвечиваются, остальные приглушаются.
+    const find = () => {
+      const q = norm(view.mapFind || "");
+      els.main.querySelectorAll(".marker.point").forEach(mk => {
+        const hit = q && norm(db.byId.get(mk.dataset.items)?.name).includes(q);
+        mk.classList.toggle("found", !!hit);
+        mk.classList.toggle("dim", !!q && !hit);
+      });
+      const first = els.main.querySelector(".marker.found");
+      if (first) first.scrollIntoView({ block: "center", inline: "center", behavior: "smooth" });
+    };
+    $("#mapFind").addEventListener("input", ev => { view.mapFind = ev.target.value; find(); });
+    if (view.mapFind) find();
+    // Ctrl + колесо — масштаб, как в картах; обычное колесо прокручивает.
+    els.main.querySelector(".map-wrap").addEventListener("wheel", ev => {
+      if (!ev.ctrlKey) return;
+      ev.preventDefault();
+      view.mapZoom = Math.min(4, Math.max(1, view.mapZoom + (ev.deltaY < 0 ? 0.5 : -0.5)));
+      refresh();
+    }, { passive: false });
     const hlNode = els.main.querySelector(".marker.hl");
     if (hlNode) setTimeout(() => hlNode.scrollIntoView({ block: "center", inline: "center", behavior: "smooth" }), 50);
   }
@@ -1605,6 +1636,18 @@
     els.backdrop.hidden = false;
 
     bindRefs(els.detail, e);
+    // Оглавление длинной статьи: пункты прокручивают панель (якоря в адресе заняты маршрутами сайта).
+    const heads = [...els.detail.querySelectorAll(".block-html h3")].filter(h => !h.closest("table"));
+    if (heads.length >= 3) {
+      const toc = document.createElement("nav");
+      toc.className = "toc";
+      toc.innerHTML = `<h4>Содержание</h4><ol>${heads.map((h, i) => `<li><button type="button" data-toc="${i}">${esc(h.textContent.trim())}</button></li>`).join("")}</ol>`;
+      els.detail.querySelector(".block")?.before(toc);
+      toc.addEventListener("click", ev => {
+        const b = ev.target.closest("[data-toc]");
+        if (b) heads[Number(b.dataset.toc)].scrollIntoView({ block: "start", behavior: "smooth" });
+      });
+    }
     const craftBox = els.detail.querySelector("#craftBox");
     if (craftBox) {
       const rerenderCraft = () => { craftBox.innerHTML = craftHtml(e.id, view.craftN || 1); bindRefs(craftBox, e); bindCraft(craftBox, e.id, rerenderCraft); };
@@ -1754,6 +1797,29 @@
       if (node && node.getAttribute("data-items")) showTip(node, ev.clientX, ev.clientY);
       else if (!tip.hidden) { tip.hidden = true; tipFor = null; }
     });
+    window.addEventListener("hashchange", () => { tip.hidden = true; tipFor = null; });
+  } else {
+    // На телефоне наведения нет: подсказка — по долгому нажатию, закрывается касанием в любом месте.
+    const TIP_NODES = ".ref[data-items], .bref[data-items], .ref-name[data-items], .marker[data-items], .img-missing.ref, .card[data-id]";
+    let pressTimer = null, pressed = false;
+    document.addEventListener("touchstart", ev => {
+      const node = ev.target.closest?.(TIP_NODES);
+      if (!tip.hidden) { tip.hidden = true; tipFor = null; }
+      if (!node) return;
+      const touch = ev.touches[0];
+      pressed = false;
+      pressTimer = setTimeout(() => {
+        pressed = true;
+        if (!node.getAttribute("data-items") && node.dataset.id) node.setAttribute("data-items", node.dataset.id);
+        showTip(node, touch.clientX, touch.clientY);
+      }, 450);
+    }, { passive: true });
+    const cancel = () => clearTimeout(pressTimer);
+    document.addEventListener("touchmove", cancel, { passive: true });
+    document.addEventListener("touchend", cancel);
+    // Долгое нажатие не должно открывать ссылку.
+    document.addEventListener("click", ev => { if (pressed) { ev.preventDefault(); ev.stopPropagation(); pressed = false; } }, true);
+    document.addEventListener("contextmenu", ev => { if (ev.target.closest?.(TIP_NODES)) ev.preventDefault(); });
     window.addEventListener("hashchange", () => { tip.hidden = true; tipFor = null; });
   }
 
@@ -1961,6 +2027,11 @@
       lastListKey = listKey;
     }
     renderDetail(route);
+  }
+
+  // Офлайн-режим (sw.js): только по http(s), при открытии с диска не нужен.
+  if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+    navigator.serviceWorker.register("sw.js").catch(() => { /* без офлайна сайт работает как обычно */ });
   }
 
   loadData().then(() => {
