@@ -1463,6 +1463,14 @@ def dedupe_second_source():
                 have = set(re.findall(r'data-items="([^"]+)"', main))
                 if not have:
                     continue
+                # Конкретные предметы, которые есть только в одном источнике, — показать в карточке как спорные.
+                second = "".join(re.findall(r'<div class="src2">(.*?)</div>(?=<hr>|$)', b["html"], flags=re.S))
+                real = lambda ids: {i for i in ids if i.startswith(("item", "pet"))}
+                only_main = real(have) - real(re.findall(r'data-items="([^"]+)"', second))
+                only_second = real(re.findall(r'data-items="([^"]+)"', second)) - real(have)
+                if real(re.findall(r'data-items="([^"]+)"', second)) and (only_main or only_second):
+                    e.setdefault("disputes", []).append({"field": b["title"], "only": [
+                        ["только в основной базе", sorted(only_main)], ["только во второй вики", sorted(only_second)]]})
 
                 def clean(m):
                     nonlocal removed
@@ -1566,6 +1574,9 @@ def apply_brokenpedia():
                     fields.append([label, fmt(b)])
                 fixed += 1
             elif w is None or w != (ours or 0):
+                e.setdefault("disputes", []).append({"field": label, "values": [
+                    ["основная база", row[1] if row else "—"], ["Brokenpedia", fmt(b)],
+                    ["вторая вики", fmt(w) if w is not None else "нет данных"]]})
                 unresolved.append(f"{e['name']} ({it['name']}, {e['id']}) | {label} | у нас {row[1] if row else '—'} | "
                                   f"Brokenpedia {fmt(b)} | вторая вики {fmt(w) if w is not None else '—'}")
     (SRC / "conflicts_stats.txt").write_text("".join(x + "\n" for x in unresolved), "utf-8")

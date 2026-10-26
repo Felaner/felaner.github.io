@@ -821,3 +821,12 @@ body.static { background: var(--bg); }
 .cf-have input { width: 64px; height: 26px; margin-left: 4px; padding: 0 6px; border: 1px solid var(--line-2); border-radius: 4px; background: var(--bg); color: var(--text); font: inherit; font-size: 13px; }
 .ref-name { display: inline-flex; align-items: center; gap: 6px; color: var(--rc, var(--text)); }
 .ref-name .ico-sm { width: 26px; height: 26px; }
+
+/* ---------- спорные значения ---------- */
+.disp { display: inline-grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; font-size: 11px; font-weight: 700;
+  color: var(--bg); background: var(--warn); vertical-align: 1px; cursor: help; }
+.disputes { margin: -6px 0 16px; padding: 10px 14px; border: 1px dashed color-mix(in srgb, var(--warn) 60%, var(--line)); border-radius: 8px; font-size: 14px; }
+.disputes h4 { margin: 0 0 6px; font: 500 13px var(--sans); color: var(--warn); }
+.disputes ul { margin: 0; padding-left: 18px; }
+.disputes li { margin: 3px 0; }
+.disputes p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }

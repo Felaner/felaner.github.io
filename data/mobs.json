@@ -2167,6 +2167,25 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills11\" src=\"data/raresImg/skills/11.skills.png\" title=\"Удар Головой\"/> <span data-items=\"skills11\">Удар Головой</span> <small>— кровотечение</small></li><li><img class=\"skill-ico\" data-items=\"skills3\" src=\"data/raresImg/skills/3.skills.png\" title=\"Бросок камнем\"/> <span data-items=\"skills3\">Бросок камнем</span></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "itemMflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item38"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -2814,6 +2833,23 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость перед лицом смерти <p>Устойчивость к обездвиживанию </p> </div><div><b>Команда</b> </div><div><img data-items=\"magowiesidragi4a\" src=\"data/wiki/images/6/6f/Hellar.png\"/> или <img data-items=\"magowiesidragi2a\" src=\"data/wiki/images/9/96/Isher.png\"/> или <img data-items=\"magowiesidragi3a\" src=\"data/wiki/images/6/6e/Eldingur.png\"/> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item268"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -7471,6 +7507,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div><img data-items=\"mage2a\" src=\"data/wiki/images/e/ec/Shazza_magik.png\"/><img data-items=\"knight2a\" src=\"data/wiki/images/d/d6/Jurghao_rycerz.png\"/><img data-items=\"sheed1a\" src=\"data/wiki/images/1/1f/Saey_sheed.png\"/><img data-items=\"barb2a\" src=\"data/wiki/images/4/49/Khaagar_barbarzy%C5%84ca.png\"/> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -9387,6 +9440,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость перед лицом смерти <p>Устойчивость к обездвиживанию </p> </div><div><b>Команда</b> </div><div><img data-items=\"magowiesidragi4a\" src=\"data/wiki/images/6/6f/Hellar.png\"/> или <img data-items=\"magowiesidragi1a\" src=\"data/wiki/images/4/46/Brenadir.png\"/> или <img data-items=\"magowiesidragi3a\" src=\"data/wiki/images/6/6e/Eldingur.png\"/> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item268"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -11066,6 +11136,23 @@
     {
      "title": "Команда",
      "html": "<div class=\"src2\"><div class=\"kv\"><div><img data-items=\"voodoo2a\" src=\"data/wiki/images/3/3e/Jeovall_druid.png\"/><img data-items=\"archer2a\" src=\"data/wiki/images/0/0f/Eoy_%C5%82ucznik.png\"/><img data-items=\"sheed1a\" src=\"data/wiki/images/1/1f/Saey_sheed.png\"/><img data-items=\"knight2a\" src=\"data/wiki/images/d/d6/Jurghao_rycerz.png\"/> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -17817,6 +17904,23 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills5\" src=\"data/raresImg/skills/5.skills.png\" title=\"Обычная атака\"/> <span data-items=\"skills5\">Обычная атака</span> <small>— укус</small></li><li><img class=\"skill-ico\" data-items=\"skills145c\" src=\"data/raresImg/skills/145.skills.png\" title=\"Плевок\"/> <span data-items=\"skills145c\">Плевок</span></li><li><img class=\"skill-ico\" data-items=\"skills2\" src=\"data/raresImg/skills/2.skills.png\" title=\"Боевой Клич\"/> <span data-items=\"skills2\">Боевой Клич</span></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item17"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -20915,6 +21019,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость к обездвиживанию <p>Устойчивость перед лицом смерти </p> </div><div><b>Команда</b> </div><div><img data-items=\"magowiesidragi1a\" src=\"data/wiki/images/4/46/Brenadir.png\"/> или <img data-items=\"magowiesidragi2a\" src=\"data/wiki/images/9/96/Isher.png\"/> или <img data-items=\"magowiesidragi3a\" src=\"data/wiki/images/6/6e/Eldingur.png\"/> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item268"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -21454,6 +21575,23 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills5\" src=\"data/raresImg/skills/5.skills.png\" title=\"Обычная атака\"/> <span data-items=\"skills5\">Обычная атака</span> <small>— укус</small></li><li><img class=\"skill-ico\" data-items=\"skills145c\" src=\"data/raresImg/skills/145.skills.png\" title=\"Плевок\"/> <span data-items=\"skills145c\">Плевок</span></li><li><img class=\"skill-ico\" data-items=\"skills2\" src=\"data/raresImg/skills/2.skills.png\" title=\"Боевой Клич\"/> <span data-items=\"skills2\">Боевой Клич</span></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item37"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -21611,6 +21749,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div><img data-items=\"voodoo2a\" src=\"data/wiki/images/3/3e/Jeovall_druid.png\"/><img data-items=\"knight2a\" src=\"data/wiki/images/d/d6/Jurghao_rycerz.png\"/><img data-items=\"barb2a\" src=\"data/wiki/images/4/49/Khaagar_barbarzy%C5%84ca.png\"/><img data-items=\"archer2a\" src=\"data/wiki/images/0/0f/Eoy_%C5%82ucznik.png\"/> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -21720,6 +21875,23 @@
     {
      "title": "Команда",
      "html": "<div class=\"src2\"><div class=\"kv\"><div><img data-items=\"barb2a\" src=\"data/wiki/images/4/49/Khaagar_barbarzy%C5%84ca.png\"/><img data-items=\"knight2a\" src=\"data/wiki/images/d/d6/Jurghao_rycerz.png\"/><img data-items=\"voodoo2a\" src=\"data/wiki/images/3/3e/Jeovall_druid.png\"/><img data-items=\"archer2a\" src=\"data/wiki/images/0/0f/Eoy_%C5%82ucznik.png\"/> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -22075,6 +22247,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость перед лицом смерти <p>Устойчивость к обездвиживанию </p> </div><div><b>Команда</b> </div><div><img data-items=\"magowiesidragi4a\" src=\"data/wiki/images/6/6f/Hellar.png\"/> или <img data-items=\"magowiesidragi2a\" src=\"data/wiki/images/9/96/Isher.png\"/> или <img data-items=\"magowiesidragi1a\" src=\"data/wiki/images/4/46/Brenadir.png\"/> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item268"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Упоминается в",
@@ -22143,6 +22332,23 @@
     {
      "title": "Команда",
      "html": "<div class=\"src2\"><div class=\"kv\"><div><img data-items=\"knight2a\" src=\"data/wiki/images/d/d6/Jurghao_rycerz.png\"/><img data-items=\"sheed1a\" src=\"data/wiki/images/1/1f/Saey_sheed.png\"/><img data-items=\"barb2a\" src=\"data/wiki/images/4/49/Khaagar_barbarzy%C5%84ca.png\"/><img data-items=\"mage2a\" src=\"data/wiki/images/e/ec/Shazza_magik.png\"/> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -22287,6 +22493,23 @@
     {
      "title": "Команда",
      "html": "<div class=\"src2\"><div class=\"kv\"><div><img data-items=\"voodoo2a\" src=\"data/wiki/images/3/3e/Jeovall_druid.png\"/><img data-items=\"archer2a\" src=\"data/wiki/images/0/0f/Eoy_%C5%82ucznik.png\"/><img data-items=\"mage2a\" src=\"data/wiki/images/e/ec/Shazza_magik.png\"/><img data-items=\"barb2a\" src=\"data/wiki/images/4/49/Khaagar_barbarzy%C5%84ca.png\"/> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -22745,6 +22968,23 @@
      "html": "<ul class=\"plain-list\"><li>Пробитие защиты <small>— таран, обычная атака</small></li><li>Бросок</li><li><img class=\"skill-ico\" data-items=\"skills14\" src=\"data/raresImg/skills/14.skills.png\" title=\"Толстокожесть\"/> <span data-items=\"skills14\">Толстокожесть</span> <small>— ярость, боевой клич</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1217"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -22877,6 +23117,23 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div><div>Призыв: <span data-items=\"spider12a\">Маленький паук</span></div> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1217"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -23015,6 +23272,23 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills30\" src=\"data/raresImg/skills/30.skills.png\" title=\"Поджог\"/> <span data-items=\"skills30\">Поджог</span></li><li><img class=\"skill-ico\" data-items=\"skills38\" src=\"data/raresImg/skills/38.skills.png\" title=\"Огненный Дождь\"/> <span data-items=\"skills38\">Огненный Дождь</span> <small>— метеорит, огненный шар, магическая искра</small></li><li><img class=\"skill-ico\" data-items=\"skills33\" src=\"data/raresImg/skills/33.skills.png\" title=\"Огненная сфера\"/> <span data-items=\"skills33\">Огненная сфера</span> <small>— инкантация, чувствительность к огню</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -23156,6 +23430,23 @@
      "html": "<ul class=\"plain-list\"><li>Поражение</li><li><img class=\"skill-ico\" data-items=\"skills58\" src=\"data/raresImg/skills/58.skills.png\" title=\"Буря\"/> <span data-items=\"skills58\">Буря</span> <small>— молния, шаровая молния</small></li><li><img class=\"skill-ico\" data-items=\"skills53\" src=\"data/raresImg/skills/53.skills.png\" title=\"Побуждение\"/> <span data-items=\"skills53\">Побуждение</span> <small>— электромагнитные помехи</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -23293,6 +23584,23 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills1\" src=\"data/raresImg/skills/1.skills.png\" title=\"Удар кулаком\"/> <span data-items=\"skills1\">Удар кулаком</span></li><li><img class=\"skill-ico\" data-items=\"skills1008\" src=\"data/raresImg/skills/1008.skills.png\" title=\"Град\"/> <span data-items=\"skills1008\">Град</span> <small>— ледяной снаряд</small></li><li><img class=\"skill-ico\" data-items=\"skills45\" src=\"data/raresImg/skills/45.skills.png\" title=\"Ледяной Щит\"/> <span data-items=\"skills45\">Ледяной Щит</span> <small>— аура холода, замораживание</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -23435,6 +23743,23 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills5\" src=\"data/raresImg/skills/5.skills.png\" title=\"Обычная атака\"/> <span data-items=\"skills5\">Обычная атака</span></li><li>Землетрясение <small>— бросок</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -23566,6 +23891,23 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills11\" src=\"data/raresImg/skills/11.skills.png\" title=\"Удар Головой\"/> <span data-items=\"skills11\">Удар Головой</span> <small>— кровотечение, пробитие защиты, обычная атака</small></li><li><img class=\"skill-ico\" data-items=\"skills145c\" src=\"data/raresImg/skills/145.skills.png\" title=\"Плевок\"/> <span data-items=\"skills145c\">Плевок</span></li><li><img class=\"skill-ico\" data-items=\"skills17\" src=\"data/raresImg/skills/17.skills.png\" title=\"Заражение\"/> <span data-items=\"skills17\">Заражение</span></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -23704,6 +24046,23 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li>Обвал <small>— болезненный удар, таран, обычная атака</small></li><li><img class=\"skill-ico\" data-items=\"skills3\" src=\"data/raresImg/skills/3.skills.png\" title=\"Бросок камнем\"/> <span data-items=\"skills3\">Бросок камнем</span></li><li><img class=\"skill-ico\" data-items=\"skills14\" src=\"data/raresImg/skills/14.skills.png\" title=\"Толстокожесть\"/> <span data-items=\"skills14\">Толстокожесть</span> <small>— боевой клич</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -23847,6 +24206,23 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills63\" src=\"data/raresImg/skills/63.skills.png\" title=\"Высасывание Души\"/> <span data-items=\"skills63\">Высасывание Души</span> <small>— обычная атака</small></li><li><img class=\"skill-ico\" data-items=\"skills66\" src=\"data/raresImg/skills/66.skills.png\" title=\"Теневой Удар\"/> <span data-items=\"skills66\">Теневой Удар</span></li><li>Удар в живот <small>— отупление, булавка в глаз, явление смерти, укол куклы, отравление</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -23981,6 +24357,23 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills11\" src=\"data/raresImg/skills/11.skills.png\" title=\"Удар Головой\"/> <span data-items=\"skills11\">Удар Головой</span> <small>— критический удар, обычная атака</small></li><li>Бросок</li><li><img class=\"skill-ico\" data-items=\"skills2\" src=\"data/raresImg/skills/2.skills.png\" title=\"Боевой Клич\"/> <span data-items=\"skills2\">Боевой Клич</span> <small>— паника</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -24113,6 +24506,25 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills0\" src=\"data/raresImg/skills/0.skills.png\" title=\"Кровотечение\"/> <span data-items=\"skills0\">Кровотечение</span> <small>— рвота, обычная атака</small></li><li><img class=\"skill-ico\" data-items=\"skills145c\" src=\"data/raresImg/skills/145.skills.png\" title=\"Плевок\"/> <span data-items=\"skills145c\">Плевок</span></li><li><img class=\"skill-ico\" data-items=\"skills153\" src=\"data/raresImg/skills/153.skills.png\" title=\"Ядовитый щит\"/> <span data-items=\"skills153\">Ядовитый щит</span></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item147"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -24259,6 +24671,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость к ближним атакам <p>Иммунитет к дальним атакам </p> <p>Иммунитет к ментальным атакам</p> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -24375,6 +24804,24 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills11\" src=\"data/raresImg/skills/11.skills.png\" title=\"Удар Головой\"/> <span data-items=\"skills11\">Удар Головой</span> <small>— кровотечение, таран</small></li><li>Землетрясение</li><li><img class=\"skill-ico\" data-items=\"skills16\" src=\"data/raresImg/skills/16.skills.png\" title=\"Ярость\"/> <span data-items=\"skills16\">Ярость</span> <small>— паника</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item695",
+        "item696"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -24515,6 +24962,24 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills0\" src=\"data/raresImg/skills/0.skills.png\" title=\"Кровотечение\"/> <span data-items=\"skills0\">Кровотечение</span> <small>— обычная атака</small></li><li>Дыхание <small>— теневой удар</small></li><li><img class=\"skill-ico\" data-items=\"skills67\" src=\"data/raresImg/skills/67.skills.png\" title=\"Отупление\"/> <span data-items=\"skills67\">Отупление</span> <small>— паника, укол куклы, отравление</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -24810,6 +25275,26 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills58\" src=\"data/raresImg/skills/58.skills.png\" title=\"Буря\"/> <span data-items=\"skills58\">Буря</span> <small>— шаровая молния, молния</small></li><li><img class=\"skill-ico\" data-items=\"skills68\" src=\"data/raresImg/skills/68.skills.png\" title=\"Теневая аура\"/> <span data-items=\"skills68\">Теневая аура</span> <small>— энергетическое шило, удар в живот, отупление, булавка в глаз, явление смерти, укол куклы, отравление</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item695",
+        "item696",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -24948,6 +25433,26 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills58\" src=\"data/raresImg/skills/58.skills.png\" title=\"Буря\"/> <span data-items=\"skills58\">Буря</span> <small>— шар энергии, молния</small></li><li><img class=\"skill-ico\" data-items=\"skills68\" src=\"data/raresImg/skills/68.skills.png\" title=\"Теневая аура\"/> <span data-items=\"skills68\">Теневая аура</span> <small>— отупление, булавка в глаз, электромагнитные помехи, отравление</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item695",
+        "item696",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -25089,6 +25594,26 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills1\" src=\"data/raresImg/skills/1.skills.png\" title=\"Удар кулаком\"/> <span data-items=\"skills1\">Удар кулаком</span> <small>— обычная атака, пробитие защиты, удар в печень, удар головой</small></li><li>Бросок <small>— землетрясение</small></li><li><img class=\"skill-ico\" data-items=\"skills18\" src=\"data/raresImg/skills/18.skills.png\" title=\"Паника\"/> <span data-items=\"skills18\">Паника</span></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item695",
+        "item696",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -25236,6 +25761,25 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Призыв: Скрежет </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703",
+        "itemSflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -25373,6 +25917,28 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills0\" src=\"data/raresImg/skills/0.skills.png\" title=\"Кровотечение\"/> <span data-items=\"skills0\">Кровотечение</span> <small>— удар головой, обычная атака</small></li><li><img class=\"skill-ico\" data-items=\"skills145c\" src=\"data/raresImg/skills/145.skills.png\" title=\"Плевок\"/> <span data-items=\"skills145c\">Плевок</span> <small>— групповая дальняя атака</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item695",
+        "item696",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item149"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -25521,6 +26087,26 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Иммунитет к обездвиживанию </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item695",
+        "item696",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -25667,6 +26253,26 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость перед лицом смерти <p>Устойчивость к обездвиживанию </p> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item695",
+        "item696",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -25811,6 +26417,24 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills11\" src=\"data/raresImg/skills/11.skills.png\" title=\"Удар Головой\"/> <span data-items=\"skills11\">Удар Головой</span> <small>— укус, обычная атака</small></li><li><img class=\"skill-ico\" data-items=\"skills3\" src=\"data/raresImg/skills/3.skills.png\" title=\"Бросок камнем\"/> <span data-items=\"skills3\">Бросок камнем</span></li><li><img class=\"skill-ico\" data-items=\"skills16\" src=\"data/raresImg/skills/16.skills.png\" title=\"Ярость\"/> <span data-items=\"skills16\">Ярость</span> <small>— боевой клич, рёв</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -25953,6 +26577,24 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Групповой разворот <p>Призыв: Гарпиёнок </p> <p>Устойчивость к ближним атакам</p> <p>Иммунитет к дальним атакам</p> <p>Иммунитет к ментальным атакам</p> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -26121,6 +26763,26 @@
     {
      "title": "Вариант 3: Дроп",
      "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Рары </td><td colspan=\"2\">Синергетики </td><td colspan=\"2\">Эпики </td></tr><tr><td colspan=\"2\"><img data-items=\"wb_rary\" src=\"data/wiki/images/f/fc/Harttraum.png\"/><img data-items=\"wb_rary\" src=\"data/wiki/images/e/ec/Otwieracz.png\"/><img data-items=\"wb_rary\" src=\"data/wiki/images/3/39/Sigil.png\"/> </td><td colspan=\"2\"><span data-items=\"wb_synergetyki\"><span class=\"c-purple\"><b>30-70 ур.</b></span></span> </td><td colspan=\"2\"><img data-items=\"wb_epiki\" src=\"data/wiki/images/f/f6/Tak.png\" title=\"Да\"/> </td></tr><tr><td colspan=\"6\"><b>Прочее:</b> <img data-items=\"item695\" src=\"data/wiki/images/0/02/Glif_elementarny.png\"/> <img data-items=\"item697\" src=\"data/wiki/images/1/13/Glif_bakalarski.png\"/> <img data-items=\"item1219\" src=\"data/wiki/images/d/da/Trop_trwogi.png\"/> <img data-items=\"item807\" src=\"data/wiki/images/7/73/Dielektryk.png\"/> </td></tr></table></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1219",
+        "item1222",
+        "item697",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -26366,6 +27028,25 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills144\" src=\"data/raresImg/skills/144.skills.png\" title=\"Групповой зев\"/> <span data-items=\"skills144\">Групповой зев</span> <small>— кровотечение, замораживание, обычная атака</small></li><li><img class=\"skill-ico\" data-items=\"skills1008\" src=\"data/raresImg/skills/1008.skills.png\" title=\"Град\"/> <span data-items=\"skills1008\">Град</span> <small>— ледяной снаряд, групповая дальняя атака</small></li><li>Групповое сопротивление менталу <small>— массовая аура холода, отупление, очищение, повышение точности, усиление характеристик, замораживание, ледяной щит</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703",
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -26499,6 +27180,33 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость к обездвиживанию </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item520",
+        "item697",
+        "item703",
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item151",
+        "item520c",
+        "item521",
+        "item522",
+        "item526"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -26643,6 +27351,33 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость к обездвиживанию <p>Устойчивость перед лицом смерти </p> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item520",
+        "item697",
+        "item703",
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item151",
+        "item520c",
+        "item521",
+        "item522",
+        "item526"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -26775,6 +27510,33 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills19\" src=\"data/raresImg/skills/19.skills.png\" title=\"Критический Удар\"/> <span data-items=\"skills19\">Критический Удар</span> <small>— фронтальный удар, таран</small></li><li>Бросок</li><li><img class=\"skill-ico\" data-items=\"skills2\" src=\"data/raresImg/skills/2.skills.png\" title=\"Боевой Клич\"/> <span data-items=\"skills2\">Боевой Клич</span> <small>— толстокожесть, ярость, паника</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item520",
+        "item697",
+        "item703",
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item151",
+        "item520c",
+        "item521",
+        "item522",
+        "item526"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -26911,6 +27673,24 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость перед лицом смерти </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -27040,6 +27820,24 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills144\" src=\"data/raresImg/skills/144.skills.png\" title=\"Групповой зев\"/> <span data-items=\"skills144\">Групповой зев</span></li><li><img class=\"skill-ico\" data-items=\"skills1008\" src=\"data/raresImg/skills/1008.skills.png\" title=\"Град\"/> <span data-items=\"skills1008\">Град</span> <small>— ледяной снаряд, плевок</small></li><li><img class=\"skill-ico\" data-items=\"skills16\" src=\"data/raresImg/skills/16.skills.png\" title=\"Ярость\"/> <span data-items=\"skills16\">Ярость</span> <small>— транс, обостренные чувства, аура холода, развеивание, отупление, снижение од, булавка в глаз, замораживание</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -27195,6 +27993,26 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость перед лицом смерти <p>Устойчивость к обездвиживанию </p><p>Трансформация </p> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item697",
+        "item703",
+        "itemBflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -27455,6 +28273,24 @@
      "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"6\"> <p>Групповой разворот </p><p>Призыв: Фанатик </p><p>Устойчивость к кровотечению </p><p>Устойчивость к рубящему урону </p><p>Устойчивость к дробящему урону </p><p>Устойчивость к ближним атакам </p><p>Иммунитет к дальним атакам </p><p>Иммунитет к ментальным атакам </p> </td></tr></table></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -27603,6 +28439,24 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div> <p>Устойчивость к обездвиживанию </p><p>Призыв: Ястребёнок </p> </div><div><b>Команда</b> </div><div><img src=\"data/wiki/images/5/53/Jastrz%C4%85bek.png\"/> <img src=\"data/wiki/images/5/53/Jastrz%C4%85bek.png\"/> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -27743,6 +28597,24 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div> <p>Устойчивость к колющему урону </p><p>Устойчивость к дробящему урону </p><p>Устойчивость к рубящему урону </p><p>Устойчивость перед лицом смерти </p><p>Обмануть Судьбу </p> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -27878,6 +28750,29 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div> <p>Неуязвимость </p><p>Устойчивость перед лицом смерти </p> </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1215",
+        "item1222",
+        "item703",
+        "item801",
+        "item802"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "petB6"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -28022,6 +28917,25 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Групповой разворот <p>Иммунитет к оглушению </p><p>Призыв: Уторский Ог </p><p>Устойчивость к рубящему урону </p> Устойчивость к дробящему урону </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item697",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -28169,6 +29083,25 @@
      "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"6\">Устойчивость к кровотечению <p>Устойчивость перед лицом смерти </p><p>Устойчивость к обездвиживанию </p><p>Устойчивость к рубящему урону </p><p>Устойчивость к дробящему урону </p><p>Устойчивость к колющему урону </p> </td></tr></table></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703",
+        "item801"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -28304,6 +29237,24 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div> <p>Устойчивость перед лицом смерти </p><p>Устойчивость к рубящему урону </p><p>Устойчивость к дробящему урону </p><p>Устойчивость к колющему урону </p> </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1222",
+        "item703"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -28417,6 +29368,23 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"6\">Устойчивость к обездвиживанию <p>Устойчивость перед лицом смерти </p><p>Устойчивость к рубящему урону </p><p>Прорыв Защиты </p><p>Призыв: Возвращённый Ишер </p><p>Призыв: Возвращённый Бренадир </p><p>Призыв: Возвращённый Эльдингур </p> Призыв: Возвращённый Хеллар </td></tr></table></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item697"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -28542,6 +29510,26 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"6\">Кровавая жертва <p>Устойчивость к колющему урону </p><p>Устойчивость к дробящему урону </p><p>Устойчивость к рубящему урону </p><p>Устойчивость перед лицом смерти </p><p>Устойчивость к обездвиживанию </p><p>Призыв: Хеморф </p> Призыв: Кровотень </td></tr></table></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item1220",
+        "item692",
+        "item693",
+        "itemGflyagi"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -28704,6 +29692,25 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills26\" src=\"data/raresImg/skills/26.skills.png\" title=\"Мощный Удар\"/> <span data-items=\"skills26\">Мощный Удар</span></li><li><img class=\"skill-ico\" data-items=\"skills58\" src=\"data/raresImg/skills/58.skills.png\" title=\"Буря\"/> <span data-items=\"skills58\">Буря</span> <small>— шаровая молния, бросок</small></li><li><img class=\"skill-ico\" data-items=\"skills68\" src=\"data/raresImg/skills/68.skills.png\" title=\"Теневая аура\"/> <span data-items=\"skills68\">Теневая аура</span> <small>— удар в живот, боевой клич, отупление, булавка в глаз, явление смерти, отравление</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item756",
+        "item757",
+        "item758"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -29545,6 +30552,28 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills0\" src=\"data/raresImg/skills/0.skills.png\" title=\"Кровотечение\"/> <span data-items=\"skills0\">Кровотечение</span></li><li><img class=\"skill-ico\" data-items=\"skills41\" src=\"data/raresImg/skills/41.skills.png\" title=\"Ледяной снаряд\"/> <span data-items=\"skills41\">Ледяной снаряд</span></li><li><img class=\"skill-ico\" data-items=\"skills42\" src=\"data/raresImg/skills/42.skills.png\" title=\"Массовая аура холода\"/> <span data-items=\"skills42\">Массовая аура холода</span> <small>— паника, укол куклы, отравление</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item520"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item520c",
+        "item521",
+        "item522",
+        "item526"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -30768,6 +31797,28 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills11\" src=\"data/raresImg/skills/11.skills.png\" title=\"Удар Головой\"/> <span data-items=\"skills11\">Удар Головой</span> <small>— кровотечение, отравление, обычная атака</small></li><li>Бросок</li><li><img class=\"skill-ico\" data-items=\"skills18\" src=\"data/raresImg/skills/18.skills.png\" title=\"Паника\"/> <span data-items=\"skills18\">Паника</span> <small>— заражение, отравление</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item520"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item520c",
+        "item521",
+        "item522",
+        "item526"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -31306,6 +32357,23 @@
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills22\" src=\"data/raresImg/skills/22.skills.png\" title=\"Вымеренный Удар\"/> <span data-items=\"skills22\">Вымеренный Удар</span> <small>— обычная атака</small></li><li>Землетрясение <small>— бросок</small></li><li><img class=\"skill-ico\" data-items=\"skills23\" src=\"data/raresImg/skills/23.skills.png\" title=\"Блок Щитом\"/> <span data-items=\"skills23\">Блок Щитом</span> <small>— защита, боевой клич, паника</small></li></ul>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item249"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -31394,6 +32462,28 @@
     {
      "title": "Иммунитеты / особые умения",
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость к обездвиживанию </div></div></div>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item520"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item520c",
+        "item521",
+        "item522",
+        "item526"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -31511,6 +32601,23 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills0\" src=\"data/raresImg/skills/0.skills.png\" title=\"Кровотечение\"/> <span data-items=\"skills0\">Кровотечение</span></li><li><img class=\"skill-ico\" data-items=\"skills1007\" src=\"data/raresImg/skills/1007.skills.png\" title=\"Звуковая волна\"/> <span data-items=\"skills1007\">Звуковая волна</span></li><li><img class=\"skill-ico\" data-items=\"skills17\" src=\"data/raresImg/skills/17.skills.png\" title=\"Заражение\"/> <span data-items=\"skills17\">Заражение</span></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item171"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -31925,6 +33032,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость к заморозке </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item927"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -32041,6 +33165,23 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills11\" src=\"data/raresImg/skills/11.skills.png\" title=\"Удар Головой\"/> <span data-items=\"skills11\">Удар Головой</span> <small>— кровотечение</small></li><li><img class=\"skill-ico\" data-items=\"skills1008\" src=\"data/raresImg/skills/1008.skills.png\" title=\"Град\"/> <span data-items=\"skills1008\">Град</span></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item367"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -32487,6 +33628,26 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Устойчивость перед лицом смерти </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item520"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item520c",
+        "item522"
+       ]
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -32859,6 +34020,23 @@
      "html": "<div class=\"src2\"><div class=\"kv\"><div>Иммунитет к обездвиживанию </div></div></div>"
     }
    ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item549"
+       ]
+      ],
+      [
+       "только во второй вики",
+       []
+      ]
+     ]
+    }
+   ],
    "backrefs": [
     {
      "title": "Дропает",
@@ -33080,6 +34258,23 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills5\" src=\"data/raresImg/skills/5.skills.png\" title=\"Обычная атака\"/> <span data-items=\"skills5\">Обычная атака</span></li><li><img class=\"skill-ico\" data-items=\"skills66\" src=\"data/raresImg/skills/66.skills.png\" title=\"Теневой Удар\"/> <span data-items=\"skills66\">Теневой Удар</span></li><li>Удар в живот <small>— отупление, булавка в глаз, укол куклы, отравление</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       []
+      ],
+      [
+       "только во второй вики",
+       [
+        "item170"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [
@@ -33549,6 +34744,26 @@
     {
      "title": "Умения",
      "html": "<ul class=\"plain-list\"><li><img class=\"skill-ico\" data-items=\"skills5\" src=\"data/raresImg/skills/5.skills.png\" title=\"Обычная атака\"/> <span data-items=\"skills5\">Обычная атака</span></li><li>Бросок</li><li><img class=\"skill-ico\" data-items=\"skills16\" src=\"data/raresImg/skills/16.skills.png\" title=\"Ярость\"/> <span data-items=\"skills16\">Ярость</span> <small>— толстокожесть, боевой клич, паника</small></li></ul>"
+    }
+   ],
+   "disputes": [
+    {
+     "field": "Дроп",
+     "only": [
+      [
+       "только в основной базе",
+       [
+        "item520"
+       ]
+      ],
+      [
+       "только во второй вики",
+       [
+        "item521",
+        "item526"
+       ]
+      ]
+     ]
     }
    ],
    "backrefs": [

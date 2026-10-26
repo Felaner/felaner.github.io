@@ -188,6 +188,7 @@
       lists: Array.isArray(e.lists) ? e.lists : [],
       blocks: Array.isArray(e.blocks) ? e.blocks : [],
       lazy: !!e.lazy,
+      disputes: Array.isArray(e.disputes) ? e.disputes : [],
       backrefs: Array.isArray(e.backrefs) ? e.backrefs : [],
       attacks: e.attacks || null,
       skillClass: e.skillClass || "",
@@ -1392,7 +1393,9 @@
     const rest = props.filter(([k]) => !PROP_GROUPS.some(([, test]) => test(k)));
     const diffNote = v => isDiff(v) ? ` <small class="muted">(${esc(DIFFS.find(d => d[0] === view.diff)[1].toLowerCase())})</small>` : "";
     const val = (k, v) => FIELD_HELP[k] ? esc(fv(v)) : linkify(fv(v));
-    const rows = (list, kind) => `<dl class="kv">${list.map(([k, v]) => `<dt>${fieldLabel(k)}</dt>
+    const disputed = new Set(e.disputes.map(d => d.field));
+    const rows = (list, kind) => `<dl class="kv">${list.map(([k, v]) => `<dt>${fieldLabel(k)}${disputed.has(k)
+      ? ` <span class="disp" title="Источники расходятся — см. ниже">?</span>` : ""}</dt>
       <dd class="${kind}">${kind === "plus" && /^\d/.test(fv(v)) ? "+" : ""}${val(k, v)}${diffNote(v)}</dd>`).join("")}</dl>`;
     const parts = [];
     for (const [title, list] of groups) {
@@ -1408,6 +1411,18 @@
     // Если группа одна (например, у противников) — заголовок не нужен.
     return `<div class="props">${parts.map(([title, body]) =>
       `<section class="pgrp">${title && parts.length > 1 ? `<h4>${title}</h4>` : ""}${body}</section>`).join("")}</div>`;
+  }
+
+  // Расхождения источников, которые не удалось решить сверкой: проверить в игре.
+  function disputesHtml(e) {
+    if (!e.disputes.length) return "";
+    const nameOf = id => { const t = db.byId.get(id); return t ? `<a href="${entryHrefHere(t)}"${rarAttr(t)}>${esc(t.name)}</a>` : esc(id); };
+    const rows = e.disputes.map(d => d.values
+      ? `<li><b>${esc(d.field)}:</b> ${d.values.map(([src, v]) => `${esc(src)} — ${esc(v)}`).join("; ")}</li>`
+      : `<li><b>${esc(d.field)}:</b> ${d.only.filter(([, ids]) => ids.length).map(([src, ids]) =>
+          `${esc(src)} — ${ids.map(nameOf).join(", ")}`).join("; ")}</li>`).join("");
+    return `<div class="disputes"><h4>Источники расходятся</h4><ul>${rows}</ul>
+      <p>Значения выше взяты из основной базы. Как в игре — проверьте на месте.</p></div>`;
   }
 
   // Полоски здоровья / маны / выносливости.
@@ -1488,6 +1503,7 @@
       ${e.image ? `<div class="model"><img src="${esc(e.image)}" alt="" onerror="this.parentNode.remove()"></div>` : ""}
       ${barsHtml(e)}
       ${propsHtml(e, props)}
+      ${disputesHtml(e)}
       ${e.description ? `<div class="desc">${esc(e.description).replace(/\n/g, "<br>")}</div>` : ""}
       ${e.lazy ? `<p class="muted">Загрузка статьи…</p>` : ""}
       ${e.blocks.map(b => `<div class="block">
