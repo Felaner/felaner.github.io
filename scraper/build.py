@@ -1477,6 +1477,142 @@ def dedupe_second_source():
     print(f"Дубли второй вики в «Дроп»/«Команда» убраны в {removed} блоках")
 
 
+# ---------- Brokenpedia и правки по патчам ----------
+
+BP_FIELDS = {"requiredLevel": "Требуемый уровень", "requiredStrength": "Требуемая сила", "requiredDexterity": "Требуемая ловкость",
+             "requiredPower": "Требуемая мощь", "requiredKnowledge": "Требуемое знание", "damage": "Урон",
+             "strength": "Сила", "dexterity": "Ловкость", "power": "Мощь", "knowledge": "Знание", "health": "Здоровье",
+             "mana": "Мана", "stamina": "Выносливость", "armorSlashing": "Сопр. рубящим", "armorCrushing": "Сопр. дробящим",
+             "armorPiercing": "Сопр. колющим", "mentalResistance": "Сопр. менталу", "fireResistance": "Сопр. огню",
+             "energyResistance": "Сопр. энергии", "coldResistance": "Сопр. холоду", "capacity": "Вместимость дрифов",
+             "value": "Цена", "weight": "Вес"}
+# Те же характеристики в карточках второй вики («*Siła: +11»).
+WB_STAT = {"Siła": "strength", "Zręczność": "dexterity", "Moc": "power", "Wiedza": "knowledge", "PŻ": "health",
+           "Mana": "mana", "Kondycja": "stamina", "Waga": "weight", "Pojemność": "capacity", "Wartość": "value",
+           "Wymagany poziom": "requiredLevel", "Obrażenia": "damage", "Pancerz sieczne": "armorSlashing",
+           "Pancerz obuchowe": "armorCrushing", "Pancerz kłute": "armorPiercing", "Odporność uroki": "mentalResistance",
+           "Odporność ogień": "fireResistance", "Odporność energia": "energyResistance", "Odporność zimno": "coldResistance"}
+
+
+def wb_item_cards():
+    """Статы легендарных предметов из карточек второй вики: {польское имя: {поле Brokenpedia: число}}."""
+    import gzip
+    f = SRC.parent / "mirror" / "wikibr.pl" / "mediawiki" / "wikitext.jsonl.gz"
+    cards = {}
+    if not f.exists():
+        return cards
+    for line in gzip.open(f, "rt", encoding="utf-8"):
+        w = json.loads(line).get("wikitext") or ""
+        # Имя карточки — ссылкой ('''[[Имя|…]]''') или просто цветным текстом на странице «Sety» ('''<span …>Имя</span>''').
+        for m in re.finditer(r"'''(?:\[\[([^|\]]+)\|[^\]]*\]\]|<span[^>]*>([^<]+)</span>)'''(.*?)(?=\|\s*style=|\|\}|$)", w, re.S):
+            name, body = (m.group(1) or m.group(2)).strip().lower(), m.group(3)
+            vals = {}
+            for k, field in WB_STAT.items():
+                mm = re.search(r"\*\s*(?:\[\[[^\]]*\]\]\s*)?" + re.escape(k) + r"\s*:?\s*\+?\s*(\d[\d ]*)", body)
+                if mm:
+                    vals[field] = float(re.sub(r"\s", "", mm.group(1)))
+            if len(vals) >= 3:
+                cards.setdefault(name, vals)
+    return cards
+
+
+def apply_brokenpedia():
+    """Сверяет экипировку с Brokenpedia; спор решает карточка второй вики (2 источника из 3).
+    Вес и вместимость, которых нет в основной базе, дополняются. Неразрешённое — в conflicts_stats.txt."""
+    f = SRC / "brokenpedia" / "legendary.json"
+    if not f.exists():
+        return
+    bp = {}
+    for it in json.loads(f.read_text("utf-8")):
+        # Эпик 120 уровня у Brokenpedia — «Legendarny/-a/-e <имя>»; у нас это та же запись с другим уровнем.
+        bp.setdefault(re.sub(r"^legendarn[yae] ", "", it["name"].strip().lower()), []).append(it)
+    wb = wb_item_cards()
+    num = lambda v: (lambda m: float(m.group()) if m else None)(
+        re.search(r"-?\d+(?:\.\d+)?", str(v).replace(" ", "").replace(" ", "").replace(",", ".")))
+    fixed = added = 0
+    unresolved = []
+    for e in SECTIONS_OUT["equipment"][1]:
+        pl = (e.get("namePL") or "").strip().lower()
+        if pl not in bp:
+            continue
+        fields = e["fields"]
+        lvl = num(next((v for k, v in fields if k == "Требуемый уровень"), None))
+        it = next((x for x in bp[pl] if x.get("requiredLevel") == lvl), None) or \
+            (bp[pl][0] if len(bp[pl]) == 1 and lvl is None else None)
+        if not it:
+            continue
+        card = wb.get(pl, {})
+        for key, label in BP_FIELDS.items():
+            b = it.get(key)
+            row = next((r for r in fields if r[0] == label), None)
+            if row is not None and isinstance(row[1], dict):
+                continue  # значения по сложностям — не трогаем
+            ours = num(row[1]) if row else None
+            if (ours or 0) == (b or 0):
+                continue
+            if b in (None, 0):
+                continue  # у Brokenpedia поля нет — оставляем наше
+            if row is None and key in ("weight", "capacity"):
+                # Поля нет в основной базе — дополняем (вес — после цены).
+                at = next((i + 1 for i, r in enumerate(fields) if r[0] == "Цена"), len(fields))
+                fields.insert(at, [label, fmt(b)])
+                added += 1
+                continue
+            w = card.get(key)
+            if w is not None and w == b:
+                if row:
+                    row[1] = fmt(b)
+                else:
+                    fields.append([label, fmt(b)])
+                fixed += 1
+            elif w is None or w != (ours or 0):
+                unresolved.append(f"{e['name']} ({it['name']}, {e['id']}) | {label} | у нас {row[1] if row else '—'} | "
+                                  f"Brokenpedia {fmt(b)} | вторая вики {fmt(w) if w is not None else '—'}")
+    (SRC / "conflicts_stats.txt").write_text("".join(x + "\n" for x in unresolved), "utf-8")
+    print(f"Brokenpedia: исправлено значений {fixed}, дополнено (вес, вместимость) {added}, "
+          f"спорных без третьего мнения {len(unresolved)} (scraper/source/conflicts_stats.txt)")
+
+
+def apply_patch_overrides(maps):
+    """Ручные правки, которых ещё нет в базах (scraper/source/patch_overrides.json): изменения из официальных
+    патчноутов и ошибки основной базы, подтверждённые двумя другими источниками."""
+    f = SRC / "patch_overrides.json"
+    if not f.exists():
+        return
+    ov = json.loads(f.read_text("utf-8"))
+    by_id = {e["id"]: e for _, ents in SECTIONS_OUT.values() for e in ents}
+    n = 0
+    for patch in ov["patches"]:
+        for oid, vals in patch.get("fields", {}).items():
+            e = by_id[oid]
+            for label, val in vals.items():
+                row = next((r for r in e["fields"] if r[0] == label), None)
+                if row:
+                    row[1] = val
+                else:
+                    e["fields"].append([label, val])
+                n += 1
+        for oid, places in patch.get("remove_locations", {}).items():
+            e = by_id[oid]
+            for b in e["blocks"]:
+                if b["title"] == "Локация":
+                    for p in places:
+                        b["html"] = re.sub(r"<li>(?:(?!</li>).)*?" + re.escape(p) + r"(?:(?!</li>).)*?</li>", "", b["html"])
+            mids = {m["id"] for m in maps if m["name"] in places}
+            for m in maps:
+                if m["id"] in mids:
+                    m["points"] = [p for p in m["points"] if p["id"] != oid]
+            n += 1
+        for oid, blocks in patch.get("replace_in_block", {}).items():
+            for b in by_id[oid]["blocks"]:
+                for old, new in blocks.get(b["title"], []):
+                    if old not in b["html"]:
+                        print(f"  ! правка не применилась: {oid} / {b['title']}: {old}")
+                    b["html"] = b["html"].replace(old, new)
+                    n += 1
+    print(f"Правки по патчам: {n}")
+
+
 def write(sid, cats, entries):
     SECTIONS_OUT[sid] = (cats, entries)
 
@@ -1508,9 +1644,11 @@ def main():
     write("skills", [], [build_entry(o, "skills", "_") for o in DB["skillsMain"].values()])
     add_wikibr()
     dedupe_second_source()
+    apply_brokenpedia()
     add_attacks()
     maps = build_maps()
     tidy_mobs(maps)
+    apply_patch_overrides(maps)
     tag_skills()
     add_backrefs()
     for sid, (cats, entries) in SECTIONS_OUT.items():

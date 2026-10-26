@@ -1,0 +1,28 @@
+{
+ "comment": "Изменения из официальных патчноутов (brokenranks.com/en/news), которых ещё нет в базах. Когда база их учтёт — запись можно удалить.",
+ "patches": [
+  {
+   "patch": "Update 12.64 (13.10.2026)",
+   "url": "https://brokenranks.com/en/news/update-1264",
+   "notes": "Changed the aspect of goblins to Velhar and druids to Farao. Replaced Grizzly with groups made up of nearby mobs in the Forlorn Settlement.",
+   "fields": {
+    "goblin3a": {"Аспект": "Velhar"},
+    "goblin1a": {"Аспект": "Velhar"},
+    "goblin2a": {"Аспект": "Velhar"},
+    "druid1a": {"Аспект": "Farao"},
+    "druid2a": {"Аспект": "Farao"}
+   },
+   "remove_locations": {
+    "bear2a": ["Вымершее поселение"]
+   }
+  },
+  {
+   "patch": "Сверка источников 26.10.2026",
+   "notes": "Бонус сетов: Brokenpedia и вторая вики (страница «Sety») — 9% поглощения и 5% двойной атаки, в основной базе 10% и 7%.",
+   "replace_in_block": {
+    "luk100List": {"Бонус комплекта": [["Шанс поглощения урона +10", "Шанс поглощения урона +9"], ["Шанс двойной атаки +7", "Шанс двойной атаки +5"]]},
+    "monk100List": {"Бонус комплекта": [["Шанс поглощения урона +10", "Шанс поглощения урона +9"], ["Шанс двойной атаки +7", "Шанс двойной атаки +5"]]}
+   }
+  }
+ ]
+}

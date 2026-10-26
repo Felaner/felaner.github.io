@@ -1,0 +1,677 @@
+[
+ {
+  "description": "Skrót nazwy profesji: Druid",
+  "entry": "Dr, dt, drut, lekarz",
+  "id": 1
+ },
+ {
+  "description": "Skrót nazwy profesji: Rycerz",
+  "entry": "Rc, ryc, cyc, kn",
+  "id": 2
+ },
+ {
+  "description": "Skrót nazwy profesji: Barbarzyńca",
+  "entry": "Bb, barb",
+  "id": 3
+ },
+ {
+  "description": "Skrót nazwy profesji: Łucznik",
+  "entry": "Uk, łuk, kusznik, ar",
+  "id": 4
+ },
+ {
+  "description": "Skrót nazwy profesji: Voodoo",
+  "entry": "Vd, szpila",
+  "id": 5
+ },
+ {
+  "description": "Skrót nazwy profesji: Sheed",
+  "entry": "Sh",
+  "id": 6
+ },
+ {
+  "description": "Skrót nazwy profesji: Mag Ognia",
+  "entry": "Mo, moś, fm",
+  "id": 7
+ },
+ {
+  "description": "Profesje specjalizujące się w zadawaniu obrażeń: Mag ognia i Barbarzyńca",
+  "entry": "Dps, dmg",
+  "id": 8
+ },
+ {
+  "description": "Profesje specjalizujące się w osłabianiu przeciwników / kontroli walki: Voodoo, Sheed, Łucznik. NIE używaj słowa buffer. Buffa to rycerz :D",
+  "entry": "Debuff, debuffer",
+  "id": 9
+ },
+ {
+  "description": "Proces polegajacy na zwiększaniu ilości/jakości gwiazdek w rarach, setach, epikach. Zwiększa on statystyki tych przedmiotów",
+  "entry": "Inkrustacja",
+  "id": 10
+ },
+ {
+  "description": "Profesje specjalizujące się we wspieraniu drużyny: Druid i Rycerz, ewentualnie platforma pomocy graczom dostępna pod `esc` w grze.\nJeśli potrzebujesz z niej skorzystać musisz utworzyć tam konto z takim samym mailem jak konto w grze.",
+  "entry": "Support",
+  "id": 11
+ },
+ {
+  "description": "jestem wolny, poszukuję drużyny, jestem chętny pójść na jakąś wyprawę na bossa",
+  "entry": "Jw, lfg, szukam slota",
+  "id": 12
+ },
+ {
+  "description": "Zwiększanie statystyk przedmiotu za pomocą flasz ulepszeń, inhibitora oraz opcjonalnie esencji, reoli i dviggów",
+  "entry": "Ulepy, ulepszenia, kręcenie eq, śmigło, kręcenie śmiglem, klikanie eq, kliki",
+  "id": 13
+ },
+ {
+  "description": "Przedmioty jakie nosi się na postaci, np. broń, zbroja, pierścienie",
+  "entry": "Eq, gear",
+  "id": 14
+ },
+ {
+  "description": "Przedmiot z niebieskim kolorem nazwy, zdobywany z Bossów. Wyróżnia się:\n- Najwyższymi statystykami bazowymi\n- Możliwością osadzenia drifów 1-3\n- Możliością inkrustowania\n- Możliwością osadzenia orba",
+  "entry": "Rar, niebieski",
+  "id": 15
+ },
+ {
+  "description": "Przeciwnik, która znajduje się na końcu instancji. Można zdobywać z niej rzadkie przedmioty jak: rary, epiki, drify, synergetyki",
+  "entry": "Boss",
+  "id": 16
+ },
+ {
+  "description": "Przeciwnik pojawiający się cyklicznie na otwartym świecie pośród standardowych przeciwników, można zdobyć z niego przedmioty setowe, drify, synergetyki a z silniejszych epiki",
+  "entry": "Czempion, czemp",
+  "id": 17
+ },
+ {
+  "description": "Przeciwnik zazwyczaj bardzo podobny do szeregowych przeciwników wyrózniający się większą siłą i nagrodami. Można zdobyć z niego drify czy synergetyki, czasami dedykowane przedmioty do zleceń jak np. młody sabeltig do zlecenia na kamień.",
+  "entry": "Elita",
+  "id": 18
+ },
+ {
+  "description": "Zestaw przedmiotów wyróżniający się zielonym kolorem nazw przedmiotów oraz unikalnym zestawem bonusów za złożenie w większej cześci lub całości. Często również określenie do pojedynczego przedmiotu z zestawu. Wyróżnia się:\n- Możliwością osadzenia drifów 1, po osadzeniu zawsze ma maksmyalny poziom\n- Możliością inkrustowania\n- Możliwością osadzenia orba",
+  "entry": "Set",
+  "id": 19
+ },
+ {
+  "description": "Przedmiot dropiący z Bossów, czempionów i elit. Jest zazwyczaj nieco słabszy od przedmiotów setowych czy rarów ale posiada zawsze jedną wbudowaną psychowłaściwość, która progresuja wraz z tym przedmiotem. Synergetyki można ze sobą łączyć aby powstała z nich lepsza wersja.",
+  "entry": "Synergetyk, syng",
+  "id": 20
+ },
+ {
+  "description": "Proces polegający na połączeniu ze sobą synergetyków według zasad:\n- Oba synergetyki muszą być na ten sam poziom\n- Muszą być na ten sam slot w ekwipunku postaci, np. rekąwiczki z rękawiczkami\n- Psychowląsciwość, wytrzymałość, bycie uszkodzonym losuje się spośród obu wykorzystanych przedmiotów\n- Podpisanie ZAWSZE przechodzi, niezależnie czy podpisany jest przedmiot na górze czy na dole\n- Ulepszenia pozostają takie jakie był na górnym przedmiocie\nPo połączeniu wzrasta wymagany poziom oraz statystyki do założenia oraz same statystyki, które dodaje przedmiot naszej postaci.",
+  "entry": "Mergowanie / łączenie synergetyków",
+  "id": 21
+ },
+ {
+  "description": "Want to buy - kupię",
+  "entry": "Buy, Wtb",
+  "id": 22
+ },
+ {
+  "description": "Want to sell - sprzedam",
+  "entry": "Sell, Wts",
+  "id": 23
+ },
+ {
+  "description": "Przedmiot o żółtej nazwie wyróżniający się unikalnymi właściwościami. Można go zdobyć z prawie każdego bossa w grze (wyjątki: Herszt, Krzyżak, Babadek). Wypada też z silniejszych czempionów (większość na lvl 60+ już ma taką szansę) oraz wyjątkowo np. z eliarnej grupy przyzywanej w drodze na Bossa Angwalf-Htaga w celu zdobycia Duszy Vorlinga będącej wejściówka na tego bossa. Cechy:\n- Każda profesja w grze posiada po jednym takim przedmiocie do założenia\n- Zawsze jest to broń\n- Posiada unikalny bonus w postaci jednego dodatkowego PA\n- Zawsze ma w sobie psychowłaściwość zwiększająca szansę na trafienie krytyczne (drif band)\n- Oraz dodatkowy drif dedykowany dla danej profesji, np. wyssanie many (err) na Latarni Życia (Epik dla Druida)",
+  "entry": "Epik",
+  "id": 24
+ },
+ {
+  "description": "Lokacja z Bossem lub powiązana z wykonywanym questem. Można to zauważyć po kłódce na góze ekranu obok Twojej lokalizacji. Zazwyczaj utrudnione lub niemożliwe jest wprowadzanie dodatkowych osób po za drużyną z która weszło się początkowo.",
+  "entry": "Insta, instancja",
+  "id": 25
+ },
+ {
+  "description": "Przedmiot, może to być np. część ekwipunku, wejściówka na instancję czy np. flasza ulepszeń",
+  "entry": "Item",
+  "id": 26
+ },
+ {
+  "description": "Przedmiot / przedmioty wymagane do wejścia na daną lokację, np. z bossem. Mogą to być np. Ogniwa, Czarna Perła czy Klucz do Labolatorium",
+  "entry": "Wejściówka",
+  "id": 27
+ },
+ {
+  "description": "Przedmiot, często bardzo cenny - zależnie od właściwości jaką posiada, możliwy do osadzenia w rarach, setach i epikach v2 (Legendach). Dzieli się na kilka typów:\n- obrażeń (pomarańczowe) np. Modyfikator Obrażeń Fizycznych (Astah)\n- specjalny (zielone) np. Regeneracja Kondycji (Eras)\n- celności (żółte) np. Modyfikator Trafień Wręcz (Ulk)\n- obrony (fioletowe) np. Odporność na trafienie Krytyczne (Grod)\n- redukcji (niebieskie) np. Redukcja Obrażeń (Alorn)\n\nWAŻNE!\nDrify unn, val, kalh, err można osadzić tylko na broniach.\nPonadto unn, val i kalh działają tylko kiedy umiejętność używa we wzorze obrażenia z broni i atak jest wykonywany z bliska (nie może być obszarowy). Oznacza to, że te 3 drify są warte uwagi TYLKO dla rycerza, sheeda i barbarzyńcy, opcjonalnie na druida kiedy używa przeważnie uderzenia jako umiejętności do zadawania obrażeń\n\nMożna je expić (tzw. psychodoświadczenie) kiedy są osadzone w założonym przedmiocie i są włączone do expienia (nie są wyszarzone). Psychodoświadczenie zdobywa się głównie za zabijanie bossów, elit i czempionów, niektóre zlecenia czy daily questy, dodatkowo jest też przedmiot dielektryk.\n\nWięcej o drifach przeczytasz tutaj: https://brokenpedia.com/post/drify-najwieksza-zmiana-w-sprzecie-od-lat",
+  "entry": "Drif, kamień, kamyk",
+  "id": 28
+ },
+ {
+  "description": "Informujesz w ten sposób innych graczy, że wbiłeś kolejny poziom postaci",
+  "entry": "Ding",
+  "id": 29
+ },
+ {
+  "description": "Gratulujesz czegoś, np. zdobycia rara",
+  "entry": "Gz, gratki",
+  "id": 30
+ },
+ {
+  "description": "Maksymalna Suma Leveli - określenie stosowane często w przypadku turniei na arenie w Trentis aby określić limity poziomów dla drużyn.",
+  "entry": "MSL",
+  "id": 31
+ },
+ {
+  "description": "Określenie ilości / wartości z pominięciem zer. Kolejno tysiące, miliony, miliardy.\nPrzykłady:\n- 12k = 12 000\n- 2kk = 2 000 000\n- 1kkk = 1 000 000 000",
+  "entry": "K, KK, KKK",
+  "id": 32
+ },
+ {
+  "description": "Gracz kontra Gracz, walka pomiędzy graczami",
+  "entry": "PvP",
+  "id": 33
+ },
+ {
+  "description": "Gracz kontra Środowisko, walka przeciwko przeciwnikom nie stwrowanym przez innego gracza. Np. Zed, Psiok, Herszt.",
+  "entry": "PvE",
+  "id": 34
+ },
+ {
+  "description": "Screenshoot, zrzut ekranu zrobiony z jakiegos ciekawego elementu gry i udostepniony np. poprzez stronę imgur.",
+  "entry": "Ss",
+  "id": 35
+ },
+ {
+  "description": "Miejsce, zazwyczaj dla dowolnej profesji na wyprawę na instancję",
+  "entry": "Slot, sl",
+  "id": 36
+ },
+ {
+  "description": "Prywatna wiadomość",
+  "entry": "Pw, priv",
+  "id": 37
+ },
+ {
+  "description": "Informacja dla prowadzącego drużynę, że jesteś gotowy na nastepną walkę. Wersja ze znakiem zapytania jest pytaniem czy drużyna jest gotowa.",
+  "entry": "R, r?",
+  "id": 38
+ },
+ {
+  "description": "Wydarzenie / event polegający na zaiększeniu doświdczenia i psychodoświadczenia z zabijania potworów. Zazwyczaj mnożnik jest x2 na exp na postać i x1.5 na psychoexp.",
+  "entry": "HH",
+  "id": 39
+ },
+ {
+  "description": "Dzięki, bądź skrót od instancji z Bossem Duch Zamku",
+  "entry": "Dz",
+  "id": 40
+ },
+ {
+  "description": "Wydarzenie, dowolna dodatkowa aktywność lub bonus do standardowej rozgrywki dająca zazwyczaj większe nagrody niż otrzymujesz zazwyczaj. Może to być np.:\n- HH\n- Event Dziady polegajacy na biciu grupek i oddawaniu zdobtych z nich rzeczy do NPC\n- Event walentynkowy polegający na wykonywaniu ciągu zadań",
+  "entry": "Event, ev",
+  "id": 41
+ },
+ {
+  "description": "Non-Player Character - postać nieazależna z która zazwyczaj wchodzi w interakcję poprzez dialogi. Są to też np. handlarze u których sprzedajemy i kupujemy rzeczy, modyfikujemy sprzęt itd.",
+  "entry": "NPC",
+  "id": 42
+ },
+ {
+  "description": "Wydarzenie odbywające się cyklicznie jako standardowy element świata gry. Każdy taki event ma swoje etapy z rożnymi zadaniami do wykonania i za każdy z nich otrzymuje się nagrody jak złoto, exp. Przykłady eventów:\n- Stonski na przysiółku Trentis\n- Najaz Orków w lesie koldów",
+  "entry": "Event dynamiczny",
+  "id": 43
+ },
+ {
+  "description": "Umiejętność, np. leczenie, ukłucie lalki, okrzyk",
+  "entry": "Skill, umka",
+  "id": 44
+ },
+ {
+  "description": "tak",
+  "entry": "+",
+  "id": 45
+ },
+ {
+  "description": "nie",
+  "entry": "-",
+  "id": 46
+ },
+ {
+  "description": "Resistance, odporności. Zazwyczaj przez graczy rozumiane jako odporności na ataki magiczne - ogień, energia, zimno, urok.",
+  "entry": "Resy",
+  "id": 47
+ },
+ {
+  "description": "Fizyczne odporności: sieczne, obuchowe, kłute",
+  "entry": "Pancerze, pance",
+  "id": 48
+ },
+ {
+  "description": "Drużyna, czyli osoby będące z Toba w składzie, czasami pojawia się tekst \"pt na modliszki\". Niektóre instancje mają cześć drogi wspólną i im więcej drużyn na nią chodzi tym szybciej można dotrzeć do bossa.",
+  "entry": "Party, pt",
+  "id": 49
+ },
+ {
+  "description": "Mikstury regenerujące zasoby",
+  "entry": "Poty, poty",
+  "id": 50
+ },
+ {
+  "description": "Flasze ulepszeń z rozróżnieniem na wielkość:\nMF - małe flasze\nŚF - średnie flasze\nWF - wielkie flasze\nOF - olbrzymie flasze",
+  "entry": "MF, ŚF, WF, OF",
+  "id": 51
+ },
+ {
+  "description": "Zadania, posiadające swoją fabułę. Spotykamy ich wiele podczas swojej przygody w grze. Możliwość wzięcia zadania symobilozwana jest żółtą ikona nad NPC czy przedmiotem na mapie.",
+  "entry": "Q, quest, zadanie",
+  "id": 52
+ },
+ {
+  "description": "Zadanie polegające zazwyczaj na zabiciu grupy/grup potworów czy przyniesieniu czegoś. Wyróżnia się tym, że po wykonaniu takowego nalicza sie cooldown, w czasie którego nie możemy przyjąć następnego zlecenia.",
+  "entry": "Zlecenie, zlecko",
+  "id": 53
+ },
+ {
+  "description": "Czas w któym nie możemy przyjąć np. kolejnego zadania bądź daily questa.",
+  "entry": "Cd, cooldown",
+  "id": 54
+ },
+ {
+  "description": "Zadanie dzienne, specjalna grupa zadań możliwa do wykonania raz dziennie. Kolejne wykonanie odblokowuje się codziennie o 4:00 polskiego czasu. NPC lub miejsca z możliwością wzięcia takiego zdania wyróżniają się ciemnoniebieską ikoną.",
+  "entry": "DQ, daily quest",
+  "id": 55
+ },
+ {
+  "description": "gildia",
+  "entry": "G",
+  "id": 56
+ },
+ {
+  "description": "Oferta, wykorzystywane na czacie handlowym w celu zaproszenia graczy do składania ofert za wystawiany towar. Bądź odpowiedź na pytanie typu \"jaka cena za ...\".",
+  "entry": "Ofka, oferty",
+  "id": 57
+ },
+ {
+  "description": "Przedmioty służące do ładowania przedmiotów aby będące w nich drify / psychowłaściwości działały, do rozbijania przedmiotów w celu pozyskania odłamków czy ulepszania sprzętu aby zwiększyć szansę powodzenia ulepszania.",
+  "entry": "Eski, esencje",
+  "id": 58
+ },
+ {
+  "description": "Proces mający na celu uzyskanie esencji. W trakcie zużywany jest rar/set/drif oraz ekstraktor (20k złota). Opcjonalnie można zwiększyć ilość pozyskania esencji o 30% używając inhibitor odpowiadający randze przedmiotu lub wyższej. W przypadku drifów jest nieco inaczej:\n- subdrif - minimum I ranga\n- bidrif - minimum IV ranga\n- magnidrif - minimum VII ranga\n- Arcydrif- minimum X ranga",
+  "entry": "Eskowanie",
+  "id": 59
+ },
+ {
+  "description": "Proces mający na celu uzyskanie odłamków. W trakcie zużywany jest rar/set/orb/synergetyk oraz młot taralaxa (20k złota). Opcjonalnie można zwiększyć ilość pozyskania esencji o 30% używając inhibitor odpowiadający randze przedmiotu lub wyższej.",
+  "entry": "Rozbijanie, odłamkowanie",
+  "id": 60
+ },
+ {
+  "description": "Określenie na ile jest ulepszony przedmiot, ten dopisek znajdziesz przy jego nazwie.",
+  "entry": "+1 +2 +3 +4...",
+  "id": 61
+ },
+ {
+  "description": "Osoba pełnijąca funkcję na czatach w grze, jego zadaniem jest pomoc graczom oraz kneblowanie tych, którzy łamią zasady czatu.",
+  "entry": "Mod, moderator",
+  "id": 62
+ },
+ {
+  "description": "Odebranie możliwości korzystania z czatu, zazwyczaj na 60 minut lub dłużej.",
+  "entry": "Knebel",
+  "id": 63
+ },
+ {
+  "description": "Osoby dostępne pod komendą pod komendą w grze /ekipa. To one pracują na supporcie i rozwiązują różne nasze problemy. Ponadto banują tych nieuczciwych pilnując przestrzegania regulaminu gry.",
+  "entry": "GM, game master",
+  "id": 64
+ },
+ {
+  "description": "Silniejsza wersja podstawowych epików, wytwarzana właśnie z nich. Wyróznia się tym, że te trzeba wytworzyć wykonując szereg zadań oraz zbierając dużo różnych materiałów. Charakteryzuje się:\n- dodatkowym kołem ruchu\n- dodatkowym miejscem na orba (łaćznie dwa)\n- możliwościa zmiany drifów (w epikach podstawowych nie jest to możliwe)\n- zmiana rangi z IX na XII",
+  "entry": "Epik V2, Legenda",
+  "id": 65
+ },
+ {
+  "description": "Efekty otrzymywane z drifów, setu, epików, buffów gildyjnych lub lokacyjnych czy synergetyków. Np. Szansa na trafienie krytyczne czy skok farida.",
+  "entry": "Psychowłaściwość, modyfikator, mod",
+  "id": 66
+ },
+ {
+  "description": "Świeże Miecho dropione z Alphy aby móc przyzwać Bossa w Gawrze o nazwie Niedźwiedź.",
+  "entry": "Mięsko, mięsko",
+  "id": 67
+ },
+ {
+  "description": "Kolejno skróty od instancji z Bossami Konstrukt V1 i Konstrukt V2. Na konstrukta V1 wchodzi się uprzednio kładąc naładowane ognio na pulpit nieopodal drzwi na instancję.",
+  "entry": "V1, V2, koparka, puszka",
+  "id": 68
+ },
+ {
+  "description": "jednowyrazowe określenie trzech instancji z Bossami:\n- Vidvar\n- Vough\n- Nidhogg\nWejście na jedną z tych instancji jest losowe a płaci się 5x Flaszka Gorzały aby na nią wejść.",
+  "entry": "Loski, gorzałka",
+  "id": 69
+ },
+ {
+  "description": "Ze względu na specyfikę niektórych instancji (np. Konstrukt V1, Angwalf-Htaga) gdzie są one stosunkowo szybkie a wejściówki są niepodzielne gracze umawiają się na pójście na nią 5 razy, np. dają po jednym ogniwie każdy. Często zdarza się, że ten dopisek nawet nie występuje i automatycznie jest zakładane, że idzie się w taki właśnie sposób. Jeśli nie jest podana nazwa bossa tylko samo 5x zazwyczaj mowa tutaj o instancji z Bossami Mahet oraz Tarul.",
+  "entry": "5x",
+  "id": 70
+ },
+ {
+  "description": "Skrót dotyczący instancji z Bossem Angwalf-Htaga. Na instancję z bossem można wejść uprzednio posiadając Duszę Vorlinga, która można zdobyć po ubiciu przyzwanej grupki z sarkofagu (wymagane są do tego specjalne runy i esencje) lub np. zdobywając ją z eventu czy zlecenie od Kimerula Maga.",
+  "entry": "Po zestawie, po z/d, zd",
+  "id": 71
+ },
+ {
+  "description": "NPC respiący się w losowych miejscach od Lasu Koldów po Garnizon. Znika po wzięciu od niego zlecenia. Zadanie polega znalezieniu klucza, którego lokalizację wskazuje nam gra. Natomiast Kimerula musimy odszukać już sami, stąd gracze często w ten sposób poszukują informacji na jego temat na czatach.",
+  "entry": "Mag, Kimek",
+  "id": 72
+ },
+ {
+  "description": "Boss Admirał",
+  "entry": "Adek",
+  "id": 73
+ },
+ {
+  "description": "Kryształ Czasu, wejściówka na Bossy:\n- Draugul\n- Mahet i Tarul",
+  "entry": "Krycha, kryształ",
+  "id": 74
+ },
+ {
+  "description": "Eteryczny Proszek dropiący z Błędnych Ogników w okolicahc Beirn. Wymagany np. do Daily Questa Eteryczna Lampa.",
+  "entry": "Proszki",
+  "id": 75
+ },
+ {
+  "description": "Przedmiot zdobywalny z instancji Konstrukt V2, który można wymienić za małą opłatą (17000 złota) na nieco psychodoświadczenia w norze dveirów (środkowe przejsćie na rozdrożach w kierunku północnym). Przedmiot często pojawia się jako jedna z nagród podczas aktywności eventowych.",
+  "entry": "Dielki, diele, dielektryk",
+  "id": 76
+ },
+ {
+  "description": "Przedmioty potrzebne do przywania grupki dropiącej Duszę Vorlinga będącą wejściówką na instancję z Bossem Angwalf-Htaga.",
+  "entry": "Kostka, kostki, runy",
+  "id": 77
+ },
+ {
+  "description": "Boss Krzyżak",
+  "entry": "Krzyż",
+  "id": 78
+ },
+ {
+  "description": "Boss Ichtion",
+  "entry": "Ichi, Iczi, ihi",
+  "id": 79
+ },
+ {
+  "description": "Boss Władca Marionetek",
+  "entry": "Mario",
+  "id": 80
+ },
+ {
+  "description": "Boss Ropucha",
+  "entry": "Żaba, żabka",
+  "id": 81
+ },
+ {
+  "description": "Boss Geomporph, czasami też odniesienie do rarowej laski Geomorph Core",
+  "entry": "Geo",
+  "id": 82
+ },
+ {
+  "description": "Zazwyczaj odniesienie do Bossa Garthmoga, mimo, że mamy w grze dwa smoki Bossy. Drugim jest Valdarog.",
+  "entry": "Smok, smoczek",
+  "id": 83
+ },
+ {
+  "description": "Boss Niedźwiedź",
+  "entry": "Miś, misiek",
+  "id": 84
+ },
+ {
+  "description": "Instancja z trzema Bossami:\n- Duch Ognia\n- Duch Energii\n- Duch Zimna",
+  "entry": "Duszki",
+  "id": 85
+ },
+ {
+  "description": "Boss Gregorius",
+  "entry": "Grześ, Grzesiek, Grego",
+  "id": 86
+ },
+ {
+  "description": "Boss Ghadira",
+  "entry": "Grażyna, Grażka, Graża, Ghadi",
+  "id": 87
+ },
+ {
+  "description": "Odniesienie do instancji dwubosowej, zawierającej Bossa Fyodor'a oraz GMO.",
+  "entry": "Chram, fio, Fyo, Fyodor",
+  "id": 88
+ },
+ {
+  "description": "Określenie instancji, która na swoim końcu może wylosować nam jednego z dwóch bossów:\n- Modliszkę\n- Tygrysa\nSzansa na Tygrysa jest zdecydowanie mniejsza",
+  "entry": "Modla, modła, tiger, tygliszka",
+  "id": 89
+ },
+ {
+  "description": "Boss Wendigo respiący się w otwartym świecie na obszarze wąwozu zakręt oraz płaskowyżu.",
+  "entry": "Wend, chomik",
+  "id": 90
+ },
+ {
+  "description": "Boss Valdarog",
+  "entry": "Valdek, Lodowy smok",
+  "id": 91
+ },
+ {
+  "description": "Boss Aqua Regis",
+  "entry": "Aqua",
+  "id": 92
+ },
+ {
+  "description": "Boss Jaskółka",
+  "entry": "Jaska, cycata",
+  "id": 93
+ },
+ {
+  "description": "Boss Angwalf-Htaga",
+  "entry": "Szatan, Htaga",
+  "id": 94
+ },
+ {
+  "description": "Boss Jastrzębior respiący się w otwartym świecie na obszarze Beirn oraz na półce skalnej nieopodal Garnizonu.",
+  "entry": "Ptak, Wrona",
+  "id": 95
+ },
+ {
+  "description": "Boss Lugus",
+  "entry": "Lug",
+  "id": 96
+ },
+ {
+  "description": "Boss Morana",
+  "entry": "Morka, mora",
+  "id": 97
+ },
+ {
+  "description": "Skrót od instancji dwubosowej zawierającej w sobie bossy Mahet oraz Tarul.",
+  "entry": "Tarul [sigmowy]",
+  "id": 98
+ },
+ {
+  "description": "Sidraga",
+  "entry": "Sidra",
+  "id": 99
+ },
+ {
+  "description": "Licznik czasu do rozpoczęcia się rundy / wysłania Twojej taktyki do serwera gry.",
+  "entry": "Zegar",
+  "id": 100
+ },
+ {
+  "description": "Boss Bibliotekarz respiący się w otwarym świecie na obszarze zamku Gastelhof.",
+  "entry": "Biblio",
+  "id": 101
+ },
+ {
+  "description": "Czempion Zaklinacz Kruków",
+  "entry": "Zaklinacz",
+  "id": 102
+ },
+ {
+  "description": "Czempion Kapłan Śmierci",
+  "entry": "Kapłan",
+  "id": 103
+ },
+ {
+  "description": "Czempion Troll Zimowy, jeśli gracze szukają na trolle to w celu bicia zwykłych trolli aby poexpić.",
+  "entry": "Troll",
+  "id": 104
+ },
+ {
+  "description": "Czempion Pacynkarz",
+  "entry": "Pacyna",
+  "id": 105
+ },
+ {
+  "description": "Czempion Żywiciel Jak, w grze występują też zwykłe moby o nazwie Jak",
+  "entry": "Jak",
+  "id": 106
+ },
+ {
+  "description": "Czempion Żywiciel Jeti, w grze występują też zwykłe moby o nazwie Jeti",
+  "entry": "Jeti",
+  "id": 107
+ },
+ {
+  "description": "Czempion Straż Lugusa",
+  "entry": "Straż",
+  "id": 108
+ },
+ {
+  "description": "Czempion Kowal Lugusa",
+  "entry": "Kowal",
+  "id": 109
+ },
+ {
+  "description": "Czempion Halmengir",
+  "entry": "Halm",
+  "id": 110
+ },
+ {
+  "description": "Boss Heurokratos",
+  "entry": "Heuro, Kratos",
+  "id": 111
+ },
+ {
+  "description": "Brama do śmiercichy, jedna z grupek konieczna do pokonania w drodze na instancję Morany i Lugusa",
+  "entry": "Brama",
+  "id": 112
+ },
+ {
+  "description": "Kolekcjoner",
+  "entry": "Kołek",
+  "id": 113
+ },
+ {
+  "description": "Aktualizacja gry wprowadzająca jakieś zmiany i/lub nowości",
+  "entry": "Up, upek",
+  "id": 114
+ },
+ {
+  "description": "Ostatnie miejsce w składzie / ostatnia poszukiwana osoba do wyprawy na instancję",
+  "entry": "Last, lasty",
+  "id": 115
+ },
+ {
+  "description": "Skrót od trudnej wersji instancji, np. hmora / h morana. W grze są poziomy trudności instancji, w przypadku trudnych do wejścia po za standardową wejściówką potrzebne są jeszcze tropy zależne od rang przedmiotów z niej dropiących. Z tych instancji dropi Daimonit potrzebny do wzmocnienia orbów czy wytworzenia epika V2.",
+  "entry": "Hard, h",
+  "id": 116
+ },
+ {
+  "description": "Przedmioty do zdobycia podczas zabijania bossów w dowolnym poziomie trudności. Dzięki nim można wejść na trudniejszą wersję instancji.\n\nW grze tropy są podzielone na cztery (4) tiery (poziomy trudności) w zależności od rang rarów dropiących z bossów:\n- I - III - Trop Niepokoju\n- IV - VI - Trop Lęku\n- VII - IX - Trop Trwogi\n- X - XII - Trop Przerażenia",
+  "entry": "Trop, tropy",
+  "id": 117
+ },
+ {
+  "description": "Przedmiot do zdobycia z trudnych wersji instancji. Ilość zależna jest od rangi włożonych tropów i czy jest to instancja dedykowana dla wypraw w pojedynkę. Jest potrzebny do wzmocnienia orbów czy wytworzenia epika V2 / Legendy.",
+  "entry": "Daimonit, daimo, dalmonit",
+  "id": 118
+ },
+ {
+  "description": "Łatwa wersja instancji, czasami w innym kontekście izi w sensie - łątwo.",
+  "entry": "Easy, izi, łatwe",
+  "id": 119
+ },
+ {
+  "description": "Orby to specjalne przedmioty, które zdobywamy razem z rarami (znajdują się wewnątrz nich). Do naszej dyspozycji mamy ich wyjmowanie, łączenie w silniejsze oraz ulepszanie.\n\nOrby mają trzy rodzaje, uniwersalne, defensywne, ofensywne i konkretne typy możemy włożyć do określonych rarów, epików, setów.\n\nUniwersalne włożymy do:\n- Pierścieni\n- Amuletów\n\nDefensywne włożymy do:\n- Hełmu\n- Zbroi\n- Spodni\n- Butów\n- Tarczy\n- Karwaszy\n\nOfensywne włożymy do:\n- Rękawic\n- Karwaszy\n- Pasa\n- Peleryny\n- Broni",
+  "entry": "Orb",
+  "id": 120
+ },
+ {
+  "description": "Należy w drodze na instancje Morany i Lugusa ubić na tyle fantyków na dziedzińcu aby zebrać 25 odkruchów zimy a następnie cofnąć się na poprzednią mapę aby zniszczyć bramę i zdobyć za wydarzenie pozostałe potrzebne punkty.",
+  "entry": "25 i brama",
+  "id": 121
+ },
+ {
+  "description": "Instancja z Bossem Duch Zamku",
+  "entry": "Dzet, dzety, dz",
+  "id": 123
+ },
+ {
+  "description": "Skrót nazwy regionu Wąwóz Zakręt, jest to kraina miedzy Kemenak a Płaskowyżem",
+  "entry": "Wąwóz, ww",
+  "id": 124
+ },
+ {
+  "description": "Teren Harpi, miejsca z białymi polami na Płaskowyżu",
+  "entry": "Th",
+  "id": 125
+ },
+ {
+  "description": "Therionax, przeciwnik z obstawy Bossa Heurokratosa",
+  "entry": "Thermomix, termomix",
+  "id": 126
+ },
+ {
+  "description": "Granie w kilka osób na jednym koncie. Jest to niedozwolone w Broken Ranks. Zasada \"jeden gracz jedno konto\".",
+  "entry": "Zasiadanie",
+  "id": 127
+ },
+ {
+  "description": "Granie równocześnie lub na zmianę na kilku kontach. Jest to niedozwolone w Broken Ranks. Zasada \"jeden gracz jedno konto\".",
+  "entry": "Multikonto, multi",
+  "id": 128
+ },
+ {
+  "description": "Tiery czyli przedziały rang:\nTier 1 - Cień: Sub tier, rary I - III, Subdrify, Suborby, bossy dropiące rary z tego przedziału\nTier 2 - Mrok: Bi tier, rary IV - VI, Bidrify, Biorby, bossy dropiące rary z tego przedziału\nTier 3 - Głębia: Magni tier, rary VII - IX, Magnidrify, Magniorby, bossy dropiące rary z tego przedziału\nTier 4 - Otchłań: Arcy tier, rary X - XII, Arcydrify, Arcyorby, bossy dropiące rary z tego przedziału",
+  "entry": "Tier 1, Tier 2, Tier 3, Tier 4, T1, T2, T3, T4, Sub, Bi, Magni, Arcu, Cień, Mrok, Głębia, Otchłań",
+  "id": 129
+ },
+ {
+  "description": "Kup Teraz, cena za przedmiot za która sprzedawca od razu go sprzeda",
+  "entry": "Kt",
+  "id": 130
+ },
+ {
+  "description": "Najwyższa oferta za przedmiot",
+  "entry": "Naj",
+  "id": 131
+ },
+ {
+  "description": "Myje, druid informuje, że odczaruje kogoś z drużyny. Np. \"m ryc\".",
+  "entry": "M",
+  "id": 133
+ },
+ {
+  "description": "Statystyki: Siła, zręczność, wiedza moc",
+  "entry": "Stata bojowa / Staty bojowe",
+  "id": 134
+ },
+ {
+  "description": "Szukanie na instancję Jastrzębiora",
+  "entry": "25x 10x",
+  "id": 135
+ },
+ {
+  "description": "Niektóre instancje (obecnie tylko Jastrzębiora) maja dodatkowe wzmocnienia kiedy są zbyt duże różnice powera (mocy postaci)",
+  "entry": "Do x Powera, Max power ",
+  "id": 136
+ },
+ {
+  "description": "Określenie challenge areny (prób loży) o określonej trudności.",
+  "entry": "arena t1, arena t2, arena t3, arena t4, arena t5",
+  "id": 137
+ }
+]

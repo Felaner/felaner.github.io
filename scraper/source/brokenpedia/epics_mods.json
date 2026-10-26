@@ -1,0 +1,37 @@
+[
+ {
+  "effect": "DOUBLE_HIT_CHANCE",
+  "epicName": "Żmij",
+  "id": 1
+ },
+ {
+  "effect": "EXTRA_FIRE_DAMAGE",
+  "epicName": "Gorthdar",
+  "id": 2
+ },
+ {
+  "effect": "MAGICAL_HIT_MODIFIER",
+  "epicName": "Attawa",
+  "id": 3
+ },
+ {
+  "effect": "RANGE_HIT_MODIFIER",
+  "epicName": "Imisindo",
+  "id": 4
+ },
+ {
+  "effect": "PHYSICAL_HIT_MODIFIER",
+  "epicName": "Washi",
+  "id": 5
+ },
+ {
+  "effect": "PHYSICAL_DAMAGE_INCREASE",
+  "epicName": "Allenor",
+  "id": 6
+ },
+ {
+  "effect": "MANA_DRAIN",
+  "epicName": "Latarnia Życia",
+  "id": 7
+ }
+]

@@ -2426,7 +2426,7 @@
     ],
     [
      "Аспект",
-     "Hegun"
+     "Farao"
     ],
     [
      "Здоровье",
@@ -5038,7 +5038,7 @@
     ],
     [
      "Аспект",
-     "Farao"
+     "Velhar"
     ],
     [
      "Здоровье",
@@ -5085,7 +5085,7 @@
     ],
     [
      "Аспект",
-     "Farao"
+     "Velhar"
     ],
     [
      "Здоровье",
@@ -5132,7 +5132,7 @@
     ],
     [
      "Аспект",
-     "Farao"
+     "Velhar"
     ],
     [
      "Здоровье",
@@ -5202,7 +5202,7 @@
    "blocks": [
     {
      "title": "Локация",
-     "html": "<ul class=\"plain-list\"><li>Логово Урага</li><li>m536</li><li><small>в одной группе с: <span data-items=\"ogre8a\">Чван</span></small></li></ul><p>В отряде: <span data-items=\"ogre8a\">Чван</span> (Логово Урага, m536)</p>"
+     "html": "<ul class=\"plain-list\"><li>Логово Чвана</li><li>m536</li><li><small>в одной группе с: <span data-items=\"ogre8a\">Чван</span></small></li></ul><p>В отряде: <span data-items=\"ogre8a\">Чван</span> (Логово Чвана, m536)</p>"
     }
    ],
    "backrefs": []
@@ -6839,7 +6839,7 @@
    "blocks": [
     {
      "title": "Локация",
-     "html": "<ul class=\"plain-list\"><li><span data-maps=\"m120\">Вымершее поселение</span></li></ul><p>В отряде: <span data-items=\"bear1a\">Медведь</span> (<span data-maps=\"m59\">Берлога</span>, <span data-maps=\"m58\">Волчья пещера</span>)</p>"
+     "html": "<ul class=\"plain-list\"></ul><p>В отряде: <span data-items=\"bear1a\">Медведь</span> (<span data-maps=\"m59\">Берлога</span>, <span data-maps=\"m58\">Волчья пещера</span>)</p>"
     },
     {
      "title": "Дроп",
@@ -8176,7 +8176,7 @@
     ],
     [
      "Аспект",
-     "Hegun"
+     "Farao"
     ],
     [
      "Здоровье",
@@ -22600,7 +22600,7 @@
    "blocks": [
     {
      "title": "Локация",
-     "html": "<ul class=\"plain-list\"><li>Логово Урага</li><li>m536</li></ul>"
+     "html": "<ul class=\"plain-list\"><li>Логово Чвана</li><li>m536</li></ul>"
     },
     {
      "title": "Команда",

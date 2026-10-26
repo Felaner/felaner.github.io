@@ -1,0 +1,210 @@
+[
+ {
+  "effect": "FAST_RESTING",
+  "id": 1,
+  "powerFactor": 0.0,
+  "shortName": "N'xen",
+  "startBonus": 0.1,
+  "type": "UNIVERSAL"
+ },
+ {
+  "effect": "SLOWER_GEAR_DISCHARGING",
+  "id": 2,
+  "powerFactor": 0.0,
+  "shortName": "M'ren",
+  "startBonus": 0.1,
+  "type": "UNIVERSAL"
+ },
+ {
+  "effect": "BONUS_EXP",
+  "id": 3,
+  "powerFactor": 0.0,
+  "shortName": "R'xen",
+  "startBonus": 0.05,
+  "type": "UNIVERSAL"
+ },
+ {
+  "effect": "BONUS_GOLD",
+  "id": 4,
+  "powerFactor": 0.0,
+  "shortName": "V'lan",
+  "startBonus": 0.05,
+  "type": "UNIVERSAL"
+ },
+ {
+  "effect": "BONUS_PSYCHOEXP",
+  "id": 5,
+  "powerFactor": 0.0,
+  "shortName": "P'ren",
+  "startBonus": 0.05,
+  "type": "UNIVERSAL"
+ },
+ {
+  "effect": "BACKPACK_CAPACITY",
+  "id": 6,
+  "powerFactor": 0.0,
+  "shortName": "S'len",
+  "startBonus": 50.0,
+  "type": "UNIVERSAL"
+ },
+ {
+  "effect": "CHANCE_TO_DODGE",
+  "id": 7,
+  "powerFactor": 8.0,
+  "shortName": "Re'ed",
+  "startBonus": 0.1,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "REDUCE_MELEE_DAMAGE",
+  "id": 8,
+  "powerFactor": 16.0,
+  "shortName": "Ba'ed",
+  "startBonus": 0.03,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "REDUCE_RANGED_DAMAGE",
+  "id": 9,
+  "powerFactor": 16.0,
+  "shortName": "De'ed",
+  "startBonus": 0.03,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "REDUCE_MENTAL_DAMAGE",
+  "id": 10,
+  "powerFactor": 16.0,
+  "shortName": "Ge'ed",
+  "startBonus": 0.03,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "REDUCE_AOE_DAMAGE",
+  "id": 11,
+  "powerFactor": 4.0,
+  "shortName": "Mi'ed",
+  "startBonus": 0.03,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "REDUCE_NORMAL_MOBS_DAMAGE",
+  "id": 12,
+  "powerFactor": 4.0,
+  "shortName": "Vo'ed",
+  "startBonus": 0.03,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "REDUCE_CHAMPION_DAMAGE",
+  "id": 13,
+  "powerFactor": 4.0,
+  "shortName": "Lu'ed",
+  "startBonus": 0.03,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "REDUCE_BOSS_DAMAGE",
+  "id": 14,
+  "powerFactor": 16.0,
+  "shortName": "Ze'ed",
+  "startBonus": 0.03,
+  "type": "DEFENSIVE"
+ },
+ {
+  "effect": "CHANCE_DRAIN_HP",
+  "id": 15,
+  "powerFactor": 8.0,
+  "shortName": "Fu'at",
+  "startBonus": 0.1,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "CHANCE_DRAIN_MANA",
+  "id": 16,
+  "powerFactor": 4.0,
+  "shortName": "Po'at",
+  "startBonus": 0.1,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "CHANCE_DRAIN_STAMINA",
+  "id": 17,
+  "powerFactor": 4.0,
+  "shortName": "Se'at",
+  "startBonus": 0.1,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "DAMAGE_WHEN_CRITICAL_INJURED",
+  "id": 18,
+  "powerFactor": 4.0,
+  "shortName": "Ha'at",
+  "startBonus": 0.1,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "CHANCE_PENETRATE_FARID_AND_HOLM",
+  "id": 20,
+  "powerFactor": 4.0,
+  "shortName": "Te'at",
+  "startBonus": 0.1,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "DAMAGE_VS_NORMAL_MOBS",
+  "id": 21,
+  "powerFactor": 16.0,
+  "shortName": "Ka'at",
+  "startBonus": 0.05,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "DAMAGE_VS_CHAMPIONS",
+  "id": 22,
+  "powerFactor": 8.0,
+  "shortName": "Pa'at",
+  "startBonus": 0.05,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "DAMAGE_VS_BOSSES",
+  "id": 23,
+  "powerFactor": 8.0,
+  "shortName": "Ti'at",
+  "startBonus": 0.05,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "INCREASE_HIT_CHANCE_ON_MISSING",
+  "id": 24,
+  "powerFactor": 8.0,
+  "shortName": "Cu'at",
+  "startBonus": 0.03,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "MORE_POWERFUL_CRIT_CHANCE",
+  "id": 25,
+  "powerFactor": 16.0,
+  "shortName": "Li'at",
+  "startBonus": 0.05,
+  "type": "OFFENSIVE"
+ },
+ {
+  "effect": "BONUS_DAIMONIT",
+  "id": 26,
+  "powerFactor": 0.0,
+  "shortName": "Q'zen",
+  "startBonus": 0.05,
+  "type": "UNIVERSAL"
+ },
+ {
+  "effect": "INCREASE_DEFENCE_CHANCE_ON_HIT",
+  "id": 27,
+  "powerFactor": 8.0,
+  "shortName": "Na'ed",
+  "startBonus": 0.05,
+  "type": "DEFENSIVE"
+ }
+]

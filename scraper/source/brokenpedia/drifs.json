@@ -1,0 +1,322 @@
+[
+ {
+  "id": 1,
+  "shortName": "alorn",
+  "startPower": 4.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "REDUCTION",
+  "psychoMod": "DAMAGE_REDUCTION",
+  "forRemoval": false,
+  "powerFactor": 32.0
+ },
+ {
+  "id": 2,
+  "shortName": "band",
+  "startPower": 4.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "DAMAGE",
+  "psychoMod": "CRIT_CHANCE",
+  "forRemoval": false,
+  "powerFactor": 32.0
+ },
+ {
+  "id": 3,
+  "shortName": "teld",
+  "startPower": 4.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "DAMAGE",
+  "psychoMod": "DOUBLE_HIT_CHANCE",
+  "forRemoval": false,
+  "powerFactor": 32.0
+ },
+ {
+  "id": 4,
+  "shortName": "farid",
+  "startPower": 4.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "REDUCTION",
+  "psychoMod": "FARID",
+  "forRemoval": false,
+  "powerFactor": 32.0
+ },
+ {
+  "id": 5,
+  "shortName": "unn",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 0.35,
+  "category": "DAMAGE",
+  "psychoMod": "EXTRA_FIRE_DAMAGE",
+  "forRemoval": false,
+  "powerFactor": 16.0
+ },
+ {
+  "id": 6,
+  "shortName": "kalh",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 0.35,
+  "category": "DAMAGE",
+  "psychoMod": "EXTRA_COLD_DAMAGE",
+  "forRemoval": false,
+  "powerFactor": 16.0
+ },
+ {
+  "id": 7,
+  "shortName": "val",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 0.35,
+  "category": "DAMAGE",
+  "psychoMod": "EXTRA_ENERGY_DAMAGE",
+  "forRemoval": false,
+  "powerFactor": 16.0
+ },
+ {
+  "id": 8,
+  "shortName": "astah",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "DAMAGE",
+  "psychoMod": "PHYSICAL_DAMAGE_INCREASE",
+  "forRemoval": false,
+  "powerFactor": 16.0
+ },
+ {
+  "id": 9,
+  "shortName": "abaf",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "DAMAGE",
+  "psychoMod": "MAGICAL_DAMAGE_INCREASE",
+  "forRemoval": false,
+  "powerFactor": 16.0
+ },
+ {
+  "id": 10,
+  "shortName": "holm",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "REDUCTION",
+  "psychoMod": "HOLM",
+  "forRemoval": false,
+  "powerFactor": 16.0
+ },
+ {
+  "id": 11,
+  "shortName": "verd",
+  "startPower": 2.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "SPECIAL",
+  "psychoMod": "CHANCE_OF_DISENCHANTMENT",
+  "forRemoval": false,
+  "powerFactor": 8.0
+ },
+ {
+  "id": 12,
+  "shortName": "oda",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "ACCURACY",
+  "psychoMod": "MAGICAL_HIT_MODIFIER",
+  "forRemoval": false,
+  "powerFactor": 8.0
+ },
+ {
+  "id": 13,
+  "shortName": "ling",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "ACCURACY",
+  "psychoMod": "RANGE_HIT_MODIFIER",
+  "forRemoval": false,
+  "powerFactor": 8.0
+ },
+ {
+  "id": 14,
+  "shortName": "ulk",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "ACCURACY",
+  "psychoMod": "PHYSICAL_HIT_MODIFIER",
+  "forRemoval": false,
+  "powerFactor": 8.0
+ },
+ {
+  "id": 15,
+  "shortName": "iori",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "REDUCTION",
+  "psychoMod": "PASSIVE_DAMAGE_REDUCTION",
+  "forRemoval": false,
+  "powerFactor": 8.0
+ },
+ {
+  "id": 16,
+  "shortName": "faln",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "REDUCTION",
+  "psychoMod": "CRIT_DAMAGE_REDUCTION",
+  "forRemoval": false,
+  "powerFactor": 2.0
+ },
+ {
+  "id": 17,
+  "shortName": "von",
+  "startPower": 2.0,
+  "psychoGrowByLevel": -1.0,
+  "category": "SPECIAL",
+  "psychoMod": "MANA_USAGE",
+  "forRemoval": false,
+  "powerFactor": 4.0
+ },
+ {
+  "id": 18,
+  "shortName": "amad",
+  "startPower": 2.0,
+  "psychoGrowByLevel": -1.0,
+  "category": "SPECIAL",
+  "psychoMod": "STAMINA_USAGE",
+  "forRemoval": false,
+  "powerFactor": 4.0
+ },
+ {
+  "id": 19,
+  "shortName": "ann",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 0.15,
+  "category": "SPECIAL",
+  "psychoMod": "MANA_REGENERATION",
+  "forRemoval": false,
+  "powerFactor": 2.0
+ },
+ {
+  "id": 20,
+  "shortName": "eras",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 0.15,
+  "category": "SPECIAL",
+  "psychoMod": "STAMINA_REGENERATION",
+  "forRemoval": false,
+  "powerFactor": 2.0
+ },
+ {
+  "id": 21,
+  "shortName": "dur",
+  "startPower": 2.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "ACCURACY",
+  "psychoMod": "DOUBLE_ATTACK_ROLL_CHANCE",
+  "forRemoval": false,
+  "powerFactor": 8.0
+ },
+ {
+  "id": 22,
+  "shortName": "lorb",
+  "startPower": 2.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "ACCURACY",
+  "psychoMod": "MENTAL_ATTACKS_PENETRATION",
+  "forRemoval": false,
+  "powerFactor": 4.0
+ },
+ {
+  "id": 23,
+  "shortName": "elen",
+  "startPower": 2.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "DEFENCE",
+  "psychoMod": "DOUBLE_DEFENCE_ROLL_CHANCE",
+  "forRemoval": false,
+  "powerFactor": 4.0
+ },
+ {
+  "id": 24,
+  "shortName": "grod",
+  "startPower": 2.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "DEFENCE",
+  "psychoMod": "CRIT_RESISTANCE",
+  "forRemoval": false,
+  "powerFactor": 8.0
+ },
+ {
+  "id": 25,
+  "shortName": "grud",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 1.5,
+  "category": "DEFENCE",
+  "psychoMod": "MAGICAL_DEFENCE_MODIFIER",
+  "forRemoval": false,
+  "powerFactor": 2.0
+ },
+ {
+  "id": 26,
+  "shortName": "tovi",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 1.5,
+  "category": "DEFENCE",
+  "psychoMod": "RANGE_DEFENCE_MODIFIER",
+  "forRemoval": false,
+  "powerFactor": 2.0
+ },
+ {
+  "id": 27,
+  "shortName": "tall",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 1.5,
+  "category": "DEFENCE",
+  "psychoMod": "PHYSICAL_DEFENCE_MODIFIER",
+  "forRemoval": false,
+  "powerFactor": 2.0
+ },
+ {
+  "id": 28,
+  "shortName": "err",
+  "startPower": 3.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "SPECIAL",
+  "psychoMod": "MANA_DRAIN",
+  "forRemoval": false,
+  "powerFactor": 16.0
+ },
+ {
+  "id": 29,
+  "shortName": "heb",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "SPECIAL",
+  "psychoMod": "RESISTANCE_TO_ROOT",
+  "forRemoval": true,
+  "powerFactor": 4.0
+ },
+ {
+  "id": 30,
+  "shortName": "adrim",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "SPECIAL",
+  "psychoMod": "RESISTANCE_TO_FREEZING",
+  "forRemoval": true,
+  "powerFactor": 4.0
+ },
+ {
+  "id": 31,
+  "shortName": "lun",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 0.5,
+  "category": "SPECIAL",
+  "psychoMod": "STUN_AND_INSTA_KILL_RESISTANCE",
+  "forRemoval": false,
+  "powerFactor": 4.0
+ },
+ {
+  "id": 32,
+  "shortName": "jorn",
+  "startPower": 1.0,
+  "psychoGrowByLevel": 1.0,
+  "category": "REDUCTION",
+  "psychoMod": "PERCENTAGE_DAMAGE_REDUCTION",
+  "forRemoval": false,
+  "powerFactor": 2.0
+ }
+]
