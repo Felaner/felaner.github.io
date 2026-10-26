@@ -830,3 +830,6 @@ body.static { background: var(--bg); }
 .disputes ul { margin: 0; padding-left: 18px; }
 .disputes li { margin: 3px 0; }
 .disputes p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+
+.block-html ol.steps { margin: 0; padding-left: 22px; }
+.block-html ol.steps li { margin: 4px 0; }

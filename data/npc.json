@@ -627,7 +627,9 @@
      "title": "Упоминается в",
      "ids": [
       "item755",
-      "item786"
+      "item786",
+      "quest_quest4",
+      "quest_quest6"
      ]
     }
    ]
@@ -776,7 +778,8 @@
     {
      "title": "Упоминается в",
      "ids": [
-      "item1300"
+      "item1300",
+      "quest_quest1"
      ]
     }
    ]
@@ -2029,7 +2032,8 @@
     {
      "title": "Упоминается в",
      "ids": [
-      "item865"
+      "item865",
+      "quest_quest5"
      ]
     }
    ]
@@ -3184,6 +3188,14 @@
     {
      "title": "Где найти",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m287\"><b>Пещера великанов</b></span> <small>— путь: <span data-maps=\"m267\">Беирн</span> → <span data-maps=\"m279\">Склон</span> → <span data-maps=\"m287\"><b>Пещера великанов</b></span></small></li></ul>"
+    }
+   ],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest6"
+     ]
     }
    ]
   },

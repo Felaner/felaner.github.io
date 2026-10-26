@@ -10613,7 +10613,15 @@
      "25 000"
     ]
    ],
-   "blocks": []
+   "blocks": [],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest6"
+     ]
+    }
+   ]
   },
   {
    "attacks": {
@@ -11785,7 +11793,15 @@
      "25 000"
     ]
    ],
-   "blocks": []
+   "blocks": [],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest6"
+     ]
+    }
+   ]
   },
   {
    "attacks": {
@@ -15186,7 +15202,15 @@
      "2000"
     ]
    ],
-   "blocks": []
+   "blocks": [],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest5"
+     ]
+    }
+   ]
   },
   {
    "attacks": {
@@ -21817,7 +21841,15 @@
      "15 000"
     ]
    ],
-   "blocks": []
+   "blocks": [],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest6"
+     ]
+    }
+   ]
   },
   {
    "attacks": {
@@ -22579,7 +22611,14 @@
      "html": "<img data-items=\"item764\" src=\"data/raresImg/items/764.items.png\"/> <img data-items=\"item822\" src=\"data/raresImg/items/822.items.png\"/> <img data-items=\"item765\" src=\"data/raresImg/items/765.items.png\"/> <img data-items=\"item754\" src=\"data/raresImg/items/754.items.png\"/>"
     }
    ],
-   "backrefs": []
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest4"
+     ]
+    }
+   ]
   },
   {
    "attacks": {
@@ -22747,6 +22786,7 @@
     {
      "title": "Упоминается в",
      "ids": [
+      "quest_quest5",
       "wb_bossy",
       "wb_nasycenie",
       "wb_respawn",

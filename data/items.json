@@ -7899,6 +7899,7 @@
      "title": "Упоминается в",
      "ids": [
       "item865",
+      "quest_quest5",
       "wb_surowce_i_skladniki"
      ]
     }
@@ -8806,6 +8807,7 @@
       "item523",
       "item986",
       "mlynarzmlynarza",
+      "quest_quest1",
       "wb_awans_epika",
       "wb_czastka_czasu",
       "wb_elity",
@@ -8891,7 +8893,8 @@
       "scoundrelArcher1a",
       "mlynarzmlynarza",
       "facesHerewalda",
-      "przewoznika"
+      "przewoznika",
+      "quest_quest5"
      ]
     },
     {
@@ -10590,6 +10593,7 @@
     {
      "title": "Упоминается в",
      "ids": [
+      "quest_quest5",
       "wb_eliksiry",
       "wb_nagrody_dq_alchemia_zlota",
       "wb_plany_wrogiej_frakcji",
@@ -15124,7 +15128,14 @@
      "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Получаем за выполнение <span data-items=\"wb_zadania_codzienne\">Ежедневное задание</span> <i>Общий язык</i> у Стаськи в Беирне.</li></ul> </td></tr></table></div></div>"
     }
    ],
-   "backrefs": []
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest6"
+     ]
+    }
+   ]
   },
   {
    "id": "item605",
@@ -15474,6 +15485,14 @@
      "title": "Где найти",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m3\"><b>Замок Гастельхоф</b></span> <small>— путь: <span data-maps=\"m133\">Посад</span> → <span data-maps=\"m3\"><b>Замок Гастельхоф</b></span></small></li></ul>"
     }
+   ],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest5"
+     ]
+    }
    ]
   },
   {
@@ -15500,6 +15519,14 @@
      "title": "Где найти",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m298\"><b>Библиотека Клавдия</b></span></li></ul>"
     }
+   ],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest5"
+     ]
+    }
    ]
   },
   {
@@ -15525,6 +15552,14 @@
     {
      "title": "Где найти",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m298\"><b>Библиотека Клавдия</b></span></li></ul>"
+    }
+   ],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest5"
+     ]
     }
    ]
   },
@@ -17201,6 +17236,14 @@
     {
      "title": "Где найти",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m424\"><b>Пустошь Хвара</b></span></li></ul>"
+    }
+   ],
+   "backrefs": [
+    {
+     "title": "Упоминается в",
+     "ids": [
+      "quest_quest1"
+     ]
     }
    ]
   },

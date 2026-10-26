@@ -15,7 +15,7 @@ SITE_URL = "https://felaner.github.io/"
 SITE_NAME = "Broken Ranks Fandom Wiki"
 
 SEC_TITLES = {"equipment": "Экипировка", "pets": "Питомцы", "mobs": "Противники", "items": "Предметы",
-              "npc": "НПС", "skills": "Навыки", "guides": "Статьи"}
+              "npc": "НПС", "skills": "Навыки", "guild": "Гильдия", "quests": "Задания", "guides": "Статьи"}
 SEC_ORDER = list(SEC_TITLES)
 DIFF = (("e", "лёгк."), ("n", "норм."), ("h", "тяжел."))
 ATK = (("b", "Ближние"), ("d", "Дальние"), ("m", "Ментальные"))

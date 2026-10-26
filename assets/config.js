@@ -38,6 +38,16 @@ window.BR_CONFIG = {
       categories: []
     },
     {
+      id: "guild",
+      title: "Гильдия",
+      categories: []
+    },
+    {
+      id: "quests",
+      title: "Задания",
+      categories: []
+    },
+    {
       id: "guides",
       title: "Статьи",
       categories: []

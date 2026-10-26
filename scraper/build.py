@@ -1624,6 +1624,68 @@ def apply_patch_overrides(maps):
     print(f"Правки по патчам: {n}")
 
 
+# ---------- гильдия и задания ----------
+
+GUILD_RES = [("gold", "Золото"), ("wood", "Дерево"), ("stone", "Камень"), ("iron", "Железо"), ("crystal", "Кристаллы"),
+             ("tower", "Башни"), ("prestige", "Престиж"), ("time", "Время, ч")]
+GUILD_BONUS = {"maxmember": "Членов гильдии", "areas": "Доступно локаций", "svitki": "Свитков телепортации",
+               "buffs": "Благословений", "zaryads": "Зарядов", "cage1": "Клеток I", "cage2": "Клеток II", "cage3": "Клеток III",
+               "korm": "Корма", "crystal": "Кристаллов", "wood": "Дерева", "iron": "Железа", "stone": "Камня"}
+
+
+def level_table(levels, columns):
+    """{'lvl1': {...}, ...} -> таблица «Уровень × колонки»; уровни и колонки, где всё по нулям, пропускаются."""
+    rows = [(k[3:], v) for k, v in sorted(levels.items(), key=lambda x: int(re.sub(r"\D", "", x[0]) or 0))
+            if any(v.get(c) for c, _ in columns)]
+    cols = [(c, n) for c, n in columns if any(v.get(c) for _, v in rows)]
+    if not rows or not cols:
+        return ""
+    head = "".join(f"<th>{n}</th>" for _, n in cols)
+    body = "".join(f"<tr><td>{lv}</td>" + "".join(f"<td>{fmt(v.get(c, 0)) if v.get(c) else '—'}</td>" for c, _ in cols)
+                   + "</tr>" for lv, v in rows)
+    return f'<div class="tscroll"><table class="art"><tr><th>Уровень</th>{head}</tr>{body}</table></div>'
+
+
+def guild():
+    entries = []
+    for o in DB.get("guildMain", {}).values():
+        blocks = []
+        descr = (o.get("descrGuild") or {}).get("ru")
+        if descr:
+            blocks.append({"title": "Описание", "html": H.escape(descr)})
+        bonus = o.get("bonusesGuild") or {}
+        keys = sorted({k for v in bonus.values() for k in v})
+        if keys:
+            blocks.append({"title": "Бонусы по уровням", "html": level_table(bonus, [(k, GUILD_BONUS.get(k, k)) for k in keys])})
+        if o.get("resourcesGuild"):
+            blocks.append({"title": "Постройка и улучшение", "html": level_table(o["resourcesGuild"], GUILD_RES)})
+        if o.get("rechargeGuild"):
+            blocks.append({"title": "Подзарядка", "html": level_table(o["rechargeGuild"], GUILD_RES)})
+        levels = len([v for v in (o.get("resourcesGuild") or {}).values() if any(v.values())])
+        entries.append({"id": f"guild_{o['id']}", "category": "buildings", "name": o["title"], "namePL": o.get("titlePL", ""),
+                        "nameEN": o.get("titleEN", ""), "icon": icon_of(o),
+                        "fields": [["Уровней", str(levels)]] if levels else [], "blocks": [b for b in blocks if b["html"]]})
+    return [{"id": "buildings", "name": "Постройки"}], entries
+
+
+def quests():
+    entries = []
+    for o in DB.get("questsMain", {}).values():
+        for q in o.get("forQf") or []:
+            def step(s):
+                reward = f" <small>— награда: {clean_html(s['reward'])}</small>" if s.get("reward") else ""
+                return f"<li>{clean_html(s.get('desc'))}{reward}</li>"
+            steps = "".join(step(s) for s in q.get("steps", []))
+            blocks = [{"title": "Ход задания", "html": f'<ol class="steps">{steps}</ol>'}]
+            final = clean_html(q.get("finalReward") or q.get("finalItem") or "")
+            if final:
+                blocks.append({"title": "Награда", "html": final})
+            entries.append({"id": f"quest_{o['id']}", "category": "daily" if "Ежеднев" in q.get("type", "") else "other",
+                            "name": q.get("title") or o["title"], "icon": icon_of(o), "level": int(q["lvl"]) if str(q.get("lvl", "")).isdigit() else None,
+                            "fields": [["Тип", q.get("type", "")], ["Уровень", str(q.get("lvl", ""))]], "blocks": blocks})
+    return [{"id": "daily", "name": "Ежедневные"}, {"id": "other", "name": "Прочие"}], entries
+
+
 def write(sid, cats, entries):
     SECTIONS_OUT[sid] = (cats, entries)
 
@@ -1679,6 +1741,8 @@ def main():
     write("items", *items())
     write("npc", [], [build_entry(o, "npc", "_") for o in DB["npcMain"].values()])
     write("skills", [], [build_entry(o, "skills", "_") for o in DB["skillsMain"].values()])
+    write("guild", *guild())
+    write("quests", *quests())
     add_wikibr()
     dedupe_second_source()
     apply_brokenpedia()
