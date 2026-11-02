@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "categories": [
   {
    "id": "normal",
@@ -23145,10 +23145,6 @@
     {
      "title": "Как добраться",
      "html": "<ul class=\"plain-list\"><li><span data-maps=\"m29\"><b>Тоннель Крестовика</b></span> <small>— путь: <span data-maps=\"m128\">Болота</span> → <span data-maps=\"m2\">Паучьи тоннели</span> → <span data-maps=\"m29\"><b>Тоннель Крестовика</b></span></small></li></ul>"
-    },
-    {
-     "title": "Описание",
-     "html": "<div class=\"src2\"><div class=\"kv\"><div><img src=\"data/wiki/images/f/f3/Krzy%C5%BCak.png\" title=\"Крестовик\"/>Крестовик </div></div><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"3\">Уровень: <b>25</b> <br/> <img src=\"data/wiki/images/3/35/Power_icon.png\" title=\"Сила (PvE)\"/> <b>427</b> </td><td colspan=\"3\">Уровень: <b>30</b> <br/> <img src=\"data/wiki/images/3/35/Power_icon.png\" title=\"Сила (PvE)\"/> <b>588</b> </td></tr><tr><td colspan=\"3\"><div>Здоровье<b>: 1 000</b></div><div>Мана<b>: 1 850</b></div><div>Выносливость<b>: 1 000</b></div> </td><td colspan=\"3\"><div>Здоровье<b>: 1 600</b></div><div>Мана<b>: 1 850</b></div><div>Выносливость<b>: 1 000</b></div> </td></tr></table></div></div>"
     },
     {
      "title": "Умения",

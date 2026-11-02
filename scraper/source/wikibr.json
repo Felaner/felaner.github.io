@@ -9490,8 +9490,8 @@
    ],
    "blocks": [
     {
-     "title": "Описание",
-     "html": "<table class=\"wb\"><tr><td colspan=\"6\"><span><img data-wikibr-img=\"/images/f/f3/Krzy%C5%BCak.png\" title=\"Krzyżak\"/></span>Krzyżak </td></tr><tr><td colspan=\"3\">Poziom: <b>25</b> <br/> <span><span><img data-wikibr-img=\"/images/3/35/Power_icon.png\" title=\"Power\"/></span></span> <b>427</b> </td><td colspan=\"3\">Poziom: <b>30</b> <br/> <span><span><img data-wikibr-img=\"/images/3/35/Power_icon.png\" title=\"Power\"/></span></span> <b>588</b> </td></tr><tr><td colspan=\"3\"><center><div><b> <span></span></b>Punkty życia<b>: 1 000</b></div><div><b> <span></span></b>Mana<b>: 1 850</b></div><div><b> <span></span></b>Kondycja<b>: 1 000</b></div></center> </td><td colspan=\"3\"><center><div><b> <span></span></b>Punkty życia<b>: 1 600</b></div><div><b> <span></span></b>Mana<b>: 1 850</b></div><div><b> <span></span></b>Kondycja<b>: 1 000</b></div></center> </td></tr></table>"
+     "title": "Статистика",
+     "html": "<table class=\"wb\"><tr><td colspan=\"3\"><span><span><img data-wikibr-img=\"/images/7/7a/Easy.png\" title=\"Ścieżka poznania\"/></span></span> </td><td colspan=\"3\"><span><span><img data-wikibr-img=\"/images/f/fb/Normal.png\" title=\"Ścieżka przygody\"/></span></span> </td></tr><tr><td colspan=\"3\">Poziom: <b>25</b> <br/> <span><span><img data-wikibr-img=\"/images/3/35/Power_icon.png\" title=\"Power\"/></span></span> <b>427</b> </td><td colspan=\"3\">Poziom: <b>30</b> <br/> <span><span><img data-wikibr-img=\"/images/3/35/Power_icon.png\" title=\"Power\"/></span></span> <b>588</b> </td></tr><tr><td colspan=\"3\"><center><div><b> <span></span></b>Punkty życia<b>: 1 000</b></div><div><b> <span></span></b>Mana<b>: 1 850</b></div><div><b> <span></span></b>Kondycja<b>: 1 000</b></div></center> </td><td colspan=\"3\"><center><div><b> <span></span></b>Punkty życia<b>: 1 600</b></div><div><b> <span></span></b>Mana<b>: 1 850</b></div><div><b> <span></span></b>Kondycja<b>: 1 000</b></div></center> </td></tr></table>"
     },
     {
      "title": "Зоны атаки",
@@ -23007,7 +23007,7 @@
     },
     {
      "title": "Sposoby pozyskiwania",
-     "html": "<table class=\"wb\"><tr><td colspan=\"2\"> <ul><li>Zakup: <ul><li>Sklep premium: 40 x Zwój teleportacji za 1 platyny.</li> <li>Wieże teleportacji: 50 x Zwój teleportacji za 1 platyny lub 100 000 złota.</li></ul></li></ul> </td></tr></table>"
+     "html": "<table class=\"wb\"><tr><td colspan=\"2\"> <ul><li>Zakup: <ul><li>Sklep premium: 40 x Zwój teleportacji za 1 platyny.</li> <li>Wieża teleportacji: 50 x Zwój teleportacji za 1 platyny lub 100 000 złota.</li></ul></li></ul> </td></tr></table>"
     }
    ],
    "links": []

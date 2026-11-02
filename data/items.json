@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "categories": [
   {
    "id": "isyrie",
@@ -10162,7 +10162,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Покупка: <ul><li>Премиум-магазин: 40 × Свиток телепортации за 1 платину.</li> <li>Башни телепортации: 50 × Свиток телепортации за 1 платину или 100 000 золота.</li></ul></li></ul> </td></tr></table></div></div>"
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Покупка: <ul><li>Премиум-магазин: 40 × Свиток телепортации за 1 платину.</li> <li>Wieża teleportacji: 50 x Zwój teleportacji za 1 platyny lub 100 000 złota.</li></ul></li></ul> </td></tr></table></div></div>"
     }
    ],
    "backrefs": [
