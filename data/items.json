@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "categories": [
   {
    "id": "isyrie",
@@ -884,7 +884,7 @@
     },
     {
      "title": "Применение",
-     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Один из ингредиентов <span data-items=\"item1355\">Свитка кровавого прозрения</span>.</li></ul> </td></tr></table></div></div>"
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Один из ингредиентов <span data-items=\"item1355\">Свитка кровавого прозрения</span>,</li> <li>Do awansowania Bonusów na <span data-items=\"wb_rary\">рарах</span> zdobywanych na instancji <i>Монастырь Вольхарда</i>.</li></ul> </td></tr></table></div></div>"
     },
     {
      "title": "Способы получения",
@@ -916,12 +916,24 @@
     [
      "Вес",
      "1"
+    ],
+    [
+     "Цена",
+     "1 000 000"
     ]
    ],
    "blocks": [
     {
      "title": "Описание",
-     "html": "Необходим для усиления эффекта вампирского снаряжения"
+     "html": "Необходим для усиления эффекта вампирского снаряжения<hr><div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Нужен для усиления вампирского эффекта снаряжения. </td></tr></table></div></div>"
+    },
+    {
+     "title": "Применение",
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Do awansowania Bonusów na <span data-items=\"wb_rary\">рарах</span> zdobywanych na instancji <i>Монастырь Вольхарда</i>.</li></ul> </td></tr></table></div></div>"
+    },
+    {
+     "title": "Способы получения",
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Получаем за победу над противниками в инстансе <i>Монастырь Вольхарда</i>.</li></ul> </td></tr></table></div></div>"
     }
    ],
    "backrefs": [
@@ -946,12 +958,24 @@
     [
      "Вес",
      "1"
+    ],
+    [
+     "Цена",
+     "1 500 000"
     ]
    ],
    "blocks": [
     {
      "title": "Описание",
-     "html": "Необходим для усиления эффекта вампирского снаряжения"
+     "html": "Необходим для усиления эффекта вампирского снаряжения<hr><div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\">Нужен для усиления вампирского эффекта снаряжения. </td></tr></table></div></div>"
+    },
+    {
+     "title": "Применение",
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Do awansowania Bonusów na <span data-items=\"wb_rary\">рарах</span> zdobywanych na instancji <i>Монастырь Вольхарда</i>.</li></ul> </td></tr></table></div></div>"
+    },
+    {
+     "title": "Способы получения",
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Получаем за победу над противниками в инстансе <i>Монастырь Вольхарда</i>.</li></ul> </td></tr></table></div></div>"
     }
    ],
    "backrefs": [
@@ -1216,7 +1240,7 @@
     },
     {
      "title": "Примечания",
-     "html": "<div class=\"src2\"><p><b>Даймонит</b> — предмет, нужный для <span data-items=\"wb_modyfikacje_sprzetu\">повышения</span> <span data-items=\"wb_orby\">орбов</span> а также в процессе создания <span data-items=\"wb_legendy\"><span class=\"c-green\">Легенды</span></span>. С его помощью можно повышать их уровень. Даймонит можно получить в инстансах на пути испытания. Он гарантированно выпадает каждому члену отряда, присутствующему при смерти босса, а количество зависит от босса. Даймонитом нельзя торговать.</p></div>"
+     "html": "<div class=\"src2\"><p><b>Даймонит</b> — предмет, нужный для <span data-items=\"wb_modyfikacje_sprzetu\">повышения</span> <span data-items=\"wb_orby\">орбов</span>, awansowania Bonusów na <span data-items=\"wb_rary\">рарах</span> zdobywanych na instancji <i>Монастырь Вольхарда</i> а также в процессе создания <span data-items=\"wb_legendy\"><span class=\"c-green\">Легенды</span></span>. Daimonit otrzymać można na instancjach ze ścieżki wyzwania. Ich drop jest gwarantowany dla każdego członka drużyny, który będzie przy śmierci bossa, a ich ilość zależy od pokonanego bossa. Daimonitem nie można handlować.</p></div>"
     }
    ],
    "backrefs": [
