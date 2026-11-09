@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "categories": [
   {
    "id": "isyrie",
@@ -8804,7 +8804,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>В процессе <span data-items=\"wb_modyfikacje_sprzetu\">переплавки</span> раров, сетов и раров для питомцев,</li> <li>В процессе <span data-items=\"wb_modyfikacje_sprzetu\">переплавки</span> Дрифов,</li> <li>Добыча с противников.</li></ul> </td></tr></table></div></div>"
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>В процессе <span data-items=\"wb_modyfikacje_sprzetu\">переплавки</span> раров, сетов и раров для питомцев,</li> <li>В процессе <span data-items=\"wb_modyfikacje_sprzetu\">переплавки</span> Дрифов,</li> <li>Добыча с противников.</li> <li>Ukryte skarby.</li></ul> </td></tr></table></div></div>"
     }
    ],
    "backrefs": [
