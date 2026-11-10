@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "categories": [
   {
    "id": "normal",
@@ -34682,7 +34682,7 @@
     },
     {
      "title": "Команда",
-     "html": "2х <img data-items=\"skeleton4ac\" src=\"data/raresImg/mobs/skeleton4_a.moblogo.png\"/> <img data-items=\"ghost2a\" src=\"data/raresImg/mobs/ghost2_a.moblogo.png\"/><hr><div class=\"src2\"><div class=\"kv\"><div><img src=\"data/wiki/images/0/0a/Nieumar%C5%82y_Mag.png\"/><img src=\"data/wiki/images/0/0a/Nieumar%C5%82y_Mag.png\"/><img src=\"data/wiki/images/8/8b/Upi%C3%B3r.png\"/> </div></div></div>"
+     "html": "2х <img data-items=\"skeleton4ac\" src=\"data/raresImg/mobs/skeleton4_a.moblogo.png\"/> <img data-items=\"ghost2a\" src=\"data/raresImg/mobs/ghost2_a.moblogo.png\"/><hr><div class=\"src2\"><div class=\"kv\"><div><img src=\"data/wiki/images/0/0a/Nieumar%C5%82y_Mag.png\"/><img src=\"data/wiki/images/8/8b/Upi%C3%B3r.png\"/> </div></div></div>"
     },
     {
      "title": "Дроп",
