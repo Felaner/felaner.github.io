@@ -1,5 +1,5 @@
 {
-  "version": 13.18,
+  "version": 13.31,
   "data": {
     "pantsMain": {
       "pants11": {
@@ -52925,9 +52925,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n            ",
         "time": {
-          "ru": "60 минут - 70 минут",
-          "pl": "60 minut - 70 minut",
-          "en": "60 minutes - 70 minutes"
+          "ru": "10 минут - 20 минут",
+          "pl": "10 minut - 20 minut",
+          "en": "10 minutes - 20 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -52964,9 +52964,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(30-50)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "35 минут - 47 минут",
-          "pl": "35 minut - 47 minut",
-          "en": "35 minutes - 47 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53003,9 +53003,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"genocidList\" src=\"/raresImg/lists/genocid.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "35 минут - 55 минут",
-          "pl": "35 minut - 55 minut",
-          "en": "35 minutes - 55 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53080,9 +53080,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "45 минут - 65 минут",
-          "pl": "45 minut - 65 minut",
-          "en": "45 minutes - 65 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53132,8 +53132,8 @@
         "idCatalog": "champs",
         "img": "burkan2a.champslogo.png",
         "navigation": "+",
-        "titleChamps": "Бешенный Буркан",
-        "title": "Бешенный Буркан",
+        "titleChamps": "Бешеный Буркан",
+        "title": "Бешеный Буркан",
         "titlePL": "Wściekły Burkan",
         "titleEN": "Rabid Burkan",
         "lvl": 65,
@@ -53197,9 +53197,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-30)</span>\n                <img class=\"other-icon\" data-items=\"tellabagList\" src=\"/raresImg/lists/tellabag.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "30 минут - 45 минут",
-          "pl": "30 minut - 45 minut",
-          "en": "30 minutes - 45 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53275,9 +53275,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"item1248\" src=\"/raresImg/items/1248.items.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "35 минут - 47 минут",
-          "pl": "35 minut - 47 minut",
-          "en": "35 minutes - 47 minutes"
+          "ru": "30 минут - 40 минут",
+          "pl": "30 minut - 40 minut",
+          "en": "30 minutes - 40 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53313,9 +53313,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"tellabagList\" src=\"/raresImg/lists/tellabag.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "60 минут - 70 минут",
-          "pl": "60 minut - 70 minut",
-          "en": "60 minutes - 70 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53351,9 +53351,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"item147\" src=\"/raresImg/items/147.items.png\">\n                <img class=\"other-icon\" data-items=\"item1136\" src=\"/raresImg/items/1136.items.png\">\n                <img class=\"other-icon\" data-items=\"item1135\" src=\"/raresImg/items/1135.items.png\">\n                <img class=\"other-icon\" data-items=\"item1139\" src=\"/raresImg/items/1139.items.png\">\n                <img class=\"other-icon\" data-items=\"item1140\" src=\"/raresImg/items/1140.items.png\">\n            ",
         "time": {
-          "ru": "25 минут - 30 минут",
-          "pl": "25 minut - 30 minut",
-          "en": "25 minutes - 30 minutes"
+          "ru": "10 минут - 20 минут",
+          "pl": "10 minut - 20 minut",
+          "en": "10 minutes - 20 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53428,9 +53428,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(30-50)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "25 минут - 40 минут",
-          "pl": "25 minut - 40 minut",
-          "en": "25 minutes - 40 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53466,9 +53466,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(II)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"item147\" src=\"/raresImg/items/147.items.png\">\n                <img class=\"other-icon\" data-items=\"item1138\" src=\"/raresImg/items/1138.items.png\">\n                <img class=\"other-icon\" data-items=\"item1134\" src=\"/raresImg/items/1134.items.png\">\n                <img class=\"other-icon\" data-items=\"item1137\" src=\"/raresImg/items/1137.items.png\">\n                <img class=\"other-icon\" data-items=\"item1141\" src=\"/raresImg/items/1141.items.png\">\n            ",
         "time": {
-          "ru": "25 минут - 30 минут",
-          "pl": "25 minut - 30 minut",
-          "en": "25 minutes - 30 minutes"
+          "ru": "10 минут - 20 минут",
+          "pl": "10 minut - 20 minut",
+          "en": "10 minutes - 20 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53544,9 +53544,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-50)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "90 минут - 110 минут",
-          "pl": "90 minut - 110 minut",
-          "en": "90 minutes - 110 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53661,9 +53661,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"pinaryList\" src=\"/raresImg/lists/pinary.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "20 минут - 24 минут",
-          "pl": "20 minut - 24 minut",
-          "en": "20 minutes - 24 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53700,9 +53700,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"genocidList\" src=\"/raresImg/lists/genocid.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "25 минут - 33 минут",
-          "pl": "25 minut - 33 minut",
-          "en": "25 minutes - 33 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53778,9 +53778,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(30-50)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "60 минут - 70 минут",
-          "pl": "60 minut - 70 minut",
-          "en": "60 minutes - 70 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53817,9 +53817,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-30)</span>\n                <img class=\"other-icon\" data-items=\"tellabagList\" src=\"/raresImg/lists/tellabag.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "40 минут - 48 минут",
-          "pl": "40 minut - 48 minut",
-          "en": "40 minutes - 48 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53895,9 +53895,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"item175\" src=\"/raresImg/items/175.items.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "15 минут - 19 минут",
-          "pl": "15 minut - 19 minut",
-          "en": "15 minutes - 19 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -53934,9 +53934,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"genocidList\" src=\"/raresImg/lists/genocid.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "45 минут - 57 минут",
-          "pl": "45 minut - 57 minut",
-          "en": "45 minutes - 57 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54012,9 +54012,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"genocidList\" src=\"/raresImg/lists/genocid.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "90 минут - 100 минут",
-          "pl": "90 minut - 100 minut",
-          "en": "90 minutes - 100 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54090,9 +54090,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n            ",
         "time": {
-          "ru": "90 минут - 120 минут",
-          "pl": "90 minut - 120 minut",
-          "en": "90 minutes - 120 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54206,9 +54206,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(30-50)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "45 минут - 65 минут",
-          "pl": "45 minut - 65 minut",
-          "en": "45 minutes - 65 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54278,9 +54278,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "20 минут - 28 минут",
-          "pl": "20 minut - 28 minut",
-          "en": "20 minutes - 28 minutes"
+          "ru": "10 минут - 20 минут",
+          "pl": "10 minut - 20 minut",
+          "en": "10 minutes - 20 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54356,9 +54356,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "20 минут - 30 минут",
-          "pl": "20 minut - 30 minut",
-          "en": "20 minutes - 30 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54434,9 +54434,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "40 минут - 60 минут",
-          "pl": "40 minut - 60 minut",
-          "en": "40 minutes - 60 minutes"
+          "ru": "10 минут - 20 минут",
+          "pl": "10 minut - 20 minut",
+          "en": "10 minutes - 20 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54473,9 +54473,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "30 минут - 40 минут",
-          "pl": "30 minut - 40 minut",
-          "en": "30 minutes - 40 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54511,9 +54511,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"genocidList\" src=\"/raresImg/lists/genocid.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "50 минут - 65 минут",
-          "pl": "50 minut - 65 minut",
-          "en": "50 minutes - 65 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54588,9 +54588,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(30-50)</span>\n                <img class=\"other-icon\" data-items=\"epikyList\" src=\"/raresImg/lists/epiks.list.png\">\n                <img class=\"other-icon\" data-items=\"om50List\" src=\"/raresImg/lists/s50om.list.png\">\n                <img class=\"other-icon\" data-items=\"var50List\" src=\"/raresImg/lists/s50var.list.png\">\n                <img class=\"other-icon\" data-items=\"luk50List\" src=\"/raresImg/lists/s50luk.list.png\">\n                <img class=\"other-icon\" data-items=\"ryc50List\" src=\"/raresImg/lists/s50ryc.list.png\">\n                <img class=\"other-icon\" data-items=\"vd50List\" src=\"/raresImg/lists/s50vd.list.png\">\n                <img class=\"other-icon\" data-items=\"monk50List\" src=\"/raresImg/lists/s50monk.list.png\">\n                <img class=\"other-icon\" data-items=\"dru50List\" src=\"/raresImg/lists/s50dru.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "120 минут - 150 минут",
-          "pl": "120 minut - 150 minut",
-          "en": "120 minutes - 150 minutes"
+          "ru": "30 минут - 40 минут",
+          "pl": "30 minut - 40 minut",
+          "en": "30 minutes - 40 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54626,9 +54626,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"pinaryList\" src=\"/raresImg/lists/pinary.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "40 минут - 45 минут",
-          "pl": "40 minut - 45 minut",
-          "en": "40 minutes - 45 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54665,9 +54665,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-40)</span>\n                <img class=\"other-icon\" data-items=\"pinaryList\" src=\"/raresImg/lists/pinary.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n                <img class=\"other-icon\" data-items=\"biDrifs\" src=\"/raresImg/drif/medium_5.drif.png\">\n            ",
         "time": {
-          "ru": "60 минут - 66 минут",
-          "pl": "60 minut - 66 minut",
-          "en": "60 minutes - 66 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54743,9 +54743,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-30)</span>\n                <img class=\"other-icon\" data-items=\"tellabagList\" src=\"/raresImg/lists/tellabag.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "60 минут - 70 минут",
-          "pl": "60 minut - 70 minut",
-          "en": "60 minutes - 70 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54782,9 +54782,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "60 минут - 75 минут",
-          "pl": "60 minut - 75 minut",
-          "en": "60 minutes - 75 minutes"
+          "ru": "20 минут - 30 минут",
+          "pl": "20 minut - 30 minut",
+          "en": "20 minutes - 30 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54860,9 +54860,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "60 минут - 75 минут",
-          "pl": "60 minut - 75 minut",
-          "en": "60 minutes - 75 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54899,9 +54899,9 @@
         },
         "drop": "\n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20-30)</span>\n                <img class=\"other-icon\" data-items=\"tellabagList\" src=\"/raresImg/lists/tellabag.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "90 минут - 120 минут",
-          "pl": "90 minut - 120 minut",
-          "en": "90 minutes - 120 minutes"
+          "ru": "25 минут - 35 минут",
+          "pl": "25 minut - 35 minut",
+          "en": "25 minutes - 35 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -54938,9 +54938,9 @@
         },
         "drop": " \n                <img class=\"other-icon\" data-items=\"sinsSpis\" src=\"/raresImg/lists/synergetyki_zliczanie.png\"><span style=\"color:#FF1493;\">(20)</span>\n                <img class=\"other-icon\" data-items=\"okovyList\" src=\"/raresImg/lists/okovy.list.png\">\n                <img class=\"other-icon\" data-items=\"reffList\" src=\"/raresImg/lists/reff.list.png\">\n                <img class=\"other-icon\" data-items=\"subDrifs\" src=\"/raresImg/drif/small_5.drif.png\">\n            ",
         "time": {
-          "ru": "35 минут - 50 минут",
-          "pl": "35 minut - 50 minut",
-          "en": "35 minutes - 50 minutes"
+          "ru": "15 минут - 25 минут",
+          "pl": "15 minut - 25 minut",
+          "en": "15 minutes - 25 minutes"
         },
         "otstup": "<br><br><br>"
       },
@@ -91579,7 +91579,12 @@
         "idClass": "gbuildings",
         "idCatalog": "guild",
         "imgGuild": [
-          "1b1.png"
+          "1b1.png",
+          "1b2.png",
+          "1b3.png",
+          "1b4.png",
+          "1b5.png",
+          "1b6.png"
         ],
         "title": "Хранилище",
         "titlePL": "Depozyt",
@@ -92057,7 +92062,7 @@
           "6b5.png",
           "6b6.png"
         ],
-        "title": "Питомник",
+        "title": "Зверинец",
         "titlePL": "Menażeria",
         "titleEN": "Menagerie",
         "descrGuild": {

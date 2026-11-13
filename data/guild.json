@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "categories": [
   {
    "id": "buildings",
@@ -126,7 +126,7 @@
   {
    "id": "guild_pitomnik",
    "category": "buildings",
-   "name": "Питомник",
+   "name": "Зверинец",
    "namePL": "Menażeria",
    "nameEN": "Menagerie",
    "icon": "data/raresImg/guild/pitomnik.guild.png",
