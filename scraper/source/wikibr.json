@@ -6563,7 +6563,7 @@
     },
     {
      "title": "Sposoby pozyskiwania",
-     "html": "<table class=\"wb\"><tr><td colspan=\"2\"> <ul><li>Zakup u NPC: <ul><li>Urzędnik w Ratuszu w Trentis,</li> <li>Lesgar w Karczmie u Lesgara w Alarilu,</li> <li>Kudłaty w Siedzibie Pozostałych w Thalii,</li> <li>Herewald w Górach Koldów,</li> <li>Berer w Pokój Berera w Garnizonie Dmother,</li> <li>Ortred na Błoniach Klasztornych.</li></ul></li></ul> <ul><li>Koszt zakupu Imperiałów: <ul><li>25 x Imperiał za 125 000 złota,</li> <li>250 x Imperiał za 1 250 000 złota,</li> <li>1 000 x Imperiał za 5 000 000 złota,</li> <li>25 x Imperiał za 3 platyny,</li> <li>250 x Imperiał za 30 platyny,</li> <li>1 000 x Imperiał za 120 platyny.</li></ul></li></ul> <ul><li>Łup z przeciwników.</li></ul> </td></tr></table>"
+     "html": "<table class=\"wb\"><tr><td colspan=\"2\"> <ul><li>Zakup u NPC: <ul><li>Urzędnik w Ratuszu w Trentis,</li> <li>Lesgar w Karczmie u Lesgara w Alarilu,</li> <li>Kudłaty w Siedzibie Pozostałych w Thalii,</li> <li>Herewald w Górach Koldów,</li> <li>Berer w Pokój Berera w Garnizonie Dmother,</li> <li>Leber w Karczma pod Szczytem w Beirn,</li> <li>Ortred na Błoniach Klasztornych.</li></ul></li></ul> <ul><li>Koszt zakupu Imperiałów: <ul><li>25 x Imperiał za 125 000 złota,</li> <li>250 x Imperiał za 1 250 000 złota,</li> <li>1 000 x Imperiał za 5 000 000 złota,</li> <li>25 x Imperiał za 3 platyny,</li> <li>250 x Imperiał za 30 platyny,</li> <li>1 000 x Imperiał za 120 platyny.</li></ul></li></ul> <ul><li>Łup z przeciwników.</li></ul> </td></tr></table>"
     }
    ],
    "links": []
@@ -11044,7 +11044,7 @@
     },
     {
      "title": "Применение",
-     "html": "<table class=\"wb\"><tr><td colspan=\"2\"> <ul><li>100 x Nasionko aumazji możemy sprzedać za 17 000 złota u Jacka Cygana w Alarilu.</li></ul> </td></tr></table>"
+     "html": "<table class=\"wb\"><tr><td colspan=\"2\"> <ul><li>10 x Nasionko aumazji możemy sprzedać za 1 700 złota u Jacka Cygana w Alarilu,</li> <li>100 x Nasionko aumazji możemy sprzedać za 17 000 złota u Jacka Cygana w Alarilu.</li></ul> </td></tr></table>"
     },
     {
      "title": "Как добыть",
