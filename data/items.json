@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "categories": [
   {
    "id": "isyrie",
@@ -85,7 +85,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Элемент питания</i> у Труна в Поместье Ландау.</li></ul> </td></tr></table></div></div>"
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Элемент питания</i> od <b>Фрахлумп</b> w Norze Dveirów.</li></ul> </td></tr></table></div></div>"
     }
    ],
    "backrefs": [

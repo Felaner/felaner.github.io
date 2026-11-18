@@ -1,1 +1,1 @@
-window.BR_VERSION = "ed5b13bb";
+window.BR_VERSION = "246eadba";
