@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "categories": [
   {
    "id": "isyrie",
@@ -5655,7 +5655,7 @@
     },
     {
      "title": "Способы получения",
-     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Глубина Дыхания</i> у Зохара в Деревне друидов,</li> <li>Покупка за 3 500 золота у Зохара в Деревне друидов.</li></ul> </td></tr></table></div></div>"
+     "html": "<div class=\"src2\"><div class=\"tscroll\"><table class=\"wb art\"><tr><td colspan=\"2\"> <ul><li>Получаем за выполнение <span data-items=\"wb_zlecenia\">поручения</span> <i>Глубина Дыхания</i> od Zohara w Wiosce Druidów,</li> <li>Zakup za 3 500 złota u Zohara w Wiosce Druidów.</li></ul> </td></tr></table></div></div>"
     }
    ],
    "backrefs": [
