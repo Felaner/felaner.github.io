@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "categories": [
   {
    "id": "normal",
@@ -33876,7 +33876,7 @@
     },
     {
      "title": "Команда",
-     "html": "4x <img data-items=\"rat2ac\" src=\"data/raresImg/mobs/brat.moblogo.png\"/><hr><div class=\"src2\"><div class=\"kv\"><div><img src=\"data/wiki/images/b/bf/Mysza.png\"/><img src=\"data/wiki/images/b/bf/Mysza.png\"/><img src=\"data/wiki/images/b/bf/Mysza.png\"/><img src=\"data/wiki/images/b/bf/Mysza.png\"/> </div></div></div>"
+     "html": "4x <img data-items=\"rat2ac\" src=\"data/raresImg/mobs/brat.moblogo.png\"/><hr><div class=\"src2\"><div class=\"kv\"><div><img src=\"data/wiki/images/b/bf/Mysza.png\"/><img src=\"data/wiki/images/b/bf/Mysza.png\"/> </div></div></div>"
     },
     {
      "title": "Дроп",
