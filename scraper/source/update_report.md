@@ -1,4 +1,4 @@
-# Обновление данных 25.11.2026
+# Обновление данных 26.11.2026
 
 - База anteiku: 13.32 → 13.32
 - Новых записей: 0, изменённых: 0, удалённых: 0
@@ -9,4 +9,4 @@
 
 Проверьте патчноуты: то, чего ещё нет в базах, — в `scraper/source/patch_overrides.json`.
 
-- [Joint Tests on the Broken Ranks PTR - Party Finder Stress Tests](https://brokenranks.com/en/news/joint-tests-on-the-broken-ranks-ptr---party-finder-stress-tests)
+- [Broken Ranks Black Friday 2026 - Discounts, Bonuses, and Deals](https://brokenranks.com/en/news/broken-ranks-black-friday-2026---discounts-bonuses-and-deals)
