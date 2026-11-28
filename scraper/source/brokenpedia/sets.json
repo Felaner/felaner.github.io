@@ -213,14 +213,14 @@
        "value": 1.0
       },
       {
-       "effect": "HOLM",
-       "id": 27,
-       "itemSetId": 13,
-       "value": 9.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 26,
+       "itemSetId": 13,
+       "value": 15.0
+      },
+      {
+       "effect": "PHYSICAL_HIT_MODIFIER",
+       "id": 28,
        "itemSetId": 13,
        "value": 15.0
       },
@@ -231,10 +231,10 @@
        "value": 1.0
       },
       {
-       "effect": "PHYSICAL_HIT_MODIFIER",
-       "id": 28,
+       "effect": "HOLM",
+       "id": 27,
        "itemSetId": 13,
-       "value": 15.0
+       "value": 9.0
       }
      ],
      "customEffects": [
@@ -292,14 +292,14 @@
        "value": 1.0
       },
       {
-       "effect": "HOLM",
-       "id": 27,
-       "itemSetId": 13,
-       "value": 9.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 26,
+       "itemSetId": 13,
+       "value": 15.0
+      },
+      {
+       "effect": "PHYSICAL_HIT_MODIFIER",
+       "id": 28,
        "itemSetId": 13,
        "value": 15.0
       },
@@ -310,10 +310,10 @@
        "value": 1.0
       },
       {
-       "effect": "PHYSICAL_HIT_MODIFIER",
-       "id": 28,
+       "effect": "HOLM",
+       "id": 27,
        "itemSetId": 13,
-       "value": 15.0
+       "value": 9.0
       }
      ],
      "customEffects": [
@@ -371,14 +371,14 @@
        "value": 1.0
       },
       {
-       "effect": "HOLM",
-       "id": 27,
-       "itemSetId": 13,
-       "value": 9.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 26,
+       "itemSetId": 13,
+       "value": 15.0
+      },
+      {
+       "effect": "PHYSICAL_HIT_MODIFIER",
+       "id": 28,
        "itemSetId": 13,
        "value": 15.0
       },
@@ -389,10 +389,10 @@
        "value": 1.0
       },
       {
-       "effect": "PHYSICAL_HIT_MODIFIER",
-       "id": 28,
+       "effect": "HOLM",
+       "id": 27,
        "itemSetId": 13,
-       "value": 15.0
+       "value": 9.0
       }
      ],
      "customEffects": [
@@ -450,14 +450,14 @@
        "value": 1.0
       },
       {
-       "effect": "HOLM",
-       "id": 27,
-       "itemSetId": 13,
-       "value": 9.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 26,
+       "itemSetId": 13,
+       "value": 15.0
+      },
+      {
+       "effect": "PHYSICAL_HIT_MODIFIER",
+       "id": 28,
        "itemSetId": 13,
        "value": 15.0
       },
@@ -468,10 +468,10 @@
        "value": 1.0
       },
       {
-       "effect": "PHYSICAL_HIT_MODIFIER",
-       "id": 28,
+       "effect": "HOLM",
+       "id": 27,
        "itemSetId": 13,
-       "value": 15.0
+       "value": 9.0
       }
      ],
      "customEffects": [
@@ -529,14 +529,14 @@
        "value": 1.0
       },
       {
-       "effect": "HOLM",
-       "id": 27,
-       "itemSetId": 13,
-       "value": 9.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 26,
+       "itemSetId": 13,
+       "value": 15.0
+      },
+      {
+       "effect": "PHYSICAL_HIT_MODIFIER",
+       "id": 28,
        "itemSetId": 13,
        "value": 15.0
       },
@@ -547,10 +547,10 @@
        "value": 1.0
       },
       {
-       "effect": "PHYSICAL_HIT_MODIFIER",
-       "id": 28,
+       "effect": "HOLM",
+       "id": 27,
        "itemSetId": 13,
-       "value": 15.0
+       "value": 9.0
       }
      ],
      "customEffects": [
@@ -598,14 +598,14 @@
     "value": 1.0
    },
    {
-    "effect": "HOLM",
-    "id": 27,
-    "itemSetId": 13,
-    "value": 9.0
-   },
-   {
     "effect": "PHYSICAL_DAMAGE_INCREASE",
     "id": 26,
+    "itemSetId": 13,
+    "value": 15.0
+   },
+   {
+    "effect": "PHYSICAL_HIT_MODIFIER",
+    "id": 28,
     "itemSetId": 13,
     "value": 15.0
    },
@@ -616,10 +616,10 @@
     "value": 1.0
    },
    {
-    "effect": "PHYSICAL_HIT_MODIFIER",
-    "id": 28,
+    "effect": "HOLM",
+    "id": 27,
     "itemSetId": 13,
-    "value": 15.0
+    "value": 9.0
    }
   ],
   "customEffects": [
@@ -863,14 +863,14 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "PHYSICAL_DAMAGE_INCREASE",
-       "id": 5,
+       "effect": "MAGICAL_DAMAGE_INCREASE",
+       "id": 4,
        "itemSetId": 3,
        "value": 10.0
       },
       {
-       "effect": "MAGICAL_DAMAGE_INCREASE",
-       "id": 4,
+       "effect": "PHYSICAL_DAMAGE_INCREASE",
+       "id": 5,
        "itemSetId": 3,
        "value": 10.0
       }
@@ -924,14 +924,14 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "PHYSICAL_DAMAGE_INCREASE",
-       "id": 5,
+       "effect": "MAGICAL_DAMAGE_INCREASE",
+       "id": 4,
        "itemSetId": 3,
        "value": 10.0
       },
       {
-       "effect": "MAGICAL_DAMAGE_INCREASE",
-       "id": 4,
+       "effect": "PHYSICAL_DAMAGE_INCREASE",
+       "id": 5,
        "itemSetId": 3,
        "value": 10.0
       }
@@ -985,14 +985,14 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "PHYSICAL_DAMAGE_INCREASE",
-       "id": 5,
+       "effect": "MAGICAL_DAMAGE_INCREASE",
+       "id": 4,
        "itemSetId": 3,
        "value": 10.0
       },
       {
-       "effect": "MAGICAL_DAMAGE_INCREASE",
-       "id": 4,
+       "effect": "PHYSICAL_DAMAGE_INCREASE",
+       "id": 5,
        "itemSetId": 3,
        "value": 10.0
       }
@@ -1036,14 +1036,14 @@
   ],
   "psychoEffects": [
    {
-    "effect": "PHYSICAL_DAMAGE_INCREASE",
-    "id": 5,
+    "effect": "MAGICAL_DAMAGE_INCREASE",
+    "id": 4,
     "itemSetId": 3,
     "value": 10.0
    },
    {
-    "effect": "MAGICAL_DAMAGE_INCREASE",
-    "id": 4,
+    "effect": "PHYSICAL_DAMAGE_INCREASE",
+    "id": 5,
     "itemSetId": 3,
     "value": 10.0
    }
@@ -1772,16 +1772,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "CRIT_CHANCE",
-       "id": 10,
-       "itemSetId": 6,
-       "value": 7.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 11,
        "itemSetId": 6,
        "value": 8.0
+      },
+      {
+       "effect": "CRIT_CHANCE",
+       "id": 10,
+       "itemSetId": 6,
+       "value": 7.0
       }
      ],
      "customEffects": [
@@ -1833,16 +1833,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "CRIT_CHANCE",
-       "id": 10,
-       "itemSetId": 6,
-       "value": 7.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 11,
        "itemSetId": 6,
        "value": 8.0
+      },
+      {
+       "effect": "CRIT_CHANCE",
+       "id": 10,
+       "itemSetId": 6,
+       "value": 7.0
       }
      ],
      "customEffects": [
@@ -1894,16 +1894,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "CRIT_CHANCE",
-       "id": 10,
-       "itemSetId": 6,
-       "value": 7.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 11,
        "itemSetId": 6,
        "value": 8.0
+      },
+      {
+       "effect": "CRIT_CHANCE",
+       "id": 10,
+       "itemSetId": 6,
+       "value": 7.0
       }
      ],
      "customEffects": [
@@ -1955,16 +1955,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "CRIT_CHANCE",
-       "id": 10,
-       "itemSetId": 6,
-       "value": 7.0
-      },
-      {
        "effect": "PHYSICAL_DAMAGE_INCREASE",
        "id": 11,
        "itemSetId": 6,
        "value": 8.0
+      },
+      {
+       "effect": "CRIT_CHANCE",
+       "id": 10,
+       "itemSetId": 6,
+       "value": 7.0
       }
      ],
      "customEffects": [
@@ -2006,16 +2006,16 @@
   ],
   "psychoEffects": [
    {
-    "effect": "CRIT_CHANCE",
-    "id": 10,
-    "itemSetId": 6,
-    "value": 7.0
-   },
-   {
     "effect": "PHYSICAL_DAMAGE_INCREASE",
     "id": 11,
     "itemSetId": 6,
     "value": 8.0
+   },
+   {
+    "effect": "CRIT_CHANCE",
+    "id": 10,
+    "itemSetId": 6,
+    "value": 7.0
    }
   ],
   "customEffects": [
@@ -2320,12 +2320,6 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_REGENERATION",
-       "id": 16,
-       "itemSetId": 8,
-       "value": 2.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 14,
        "itemSetId": 8,
@@ -2334,6 +2328,12 @@
       {
        "effect": "MANA_REGENERATION",
        "id": 15,
+       "itemSetId": 8,
+       "value": 2.0
+      },
+      {
+       "effect": "STAMINA_REGENERATION",
+       "id": 16,
        "itemSetId": 8,
        "value": 2.0
       }
@@ -2387,12 +2387,6 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_REGENERATION",
-       "id": 16,
-       "itemSetId": 8,
-       "value": 2.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 14,
        "itemSetId": 8,
@@ -2401,6 +2395,12 @@
       {
        "effect": "MANA_REGENERATION",
        "id": 15,
+       "itemSetId": 8,
+       "value": 2.0
+      },
+      {
+       "effect": "STAMINA_REGENERATION",
+       "id": 16,
        "itemSetId": 8,
        "value": 2.0
       }
@@ -2454,12 +2454,6 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_REGENERATION",
-       "id": 16,
-       "itemSetId": 8,
-       "value": 2.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 14,
        "itemSetId": 8,
@@ -2468,6 +2462,12 @@
       {
        "effect": "MANA_REGENERATION",
        "id": 15,
+       "itemSetId": 8,
+       "value": 2.0
+      },
+      {
+       "effect": "STAMINA_REGENERATION",
+       "id": 16,
        "itemSetId": 8,
        "value": 2.0
       }
@@ -2521,12 +2521,6 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_REGENERATION",
-       "id": 16,
-       "itemSetId": 8,
-       "value": 2.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 14,
        "itemSetId": 8,
@@ -2535,6 +2529,12 @@
       {
        "effect": "MANA_REGENERATION",
        "id": 15,
+       "itemSetId": 8,
+       "value": 2.0
+      },
+      {
+       "effect": "STAMINA_REGENERATION",
+       "id": 16,
        "itemSetId": 8,
        "value": 2.0
       }
@@ -2578,12 +2578,6 @@
   ],
   "psychoEffects": [
    {
-    "effect": "STAMINA_REGENERATION",
-    "id": 16,
-    "itemSetId": 8,
-    "value": 2.0
-   },
-   {
     "effect": "CRIT_CHANCE",
     "id": 14,
     "itemSetId": 8,
@@ -2592,6 +2586,12 @@
    {
     "effect": "MANA_REGENERATION",
     "id": 15,
+    "itemSetId": 8,
+    "value": 2.0
+   },
+   {
+    "effect": "STAMINA_REGENERATION",
+    "id": 16,
     "itemSetId": 8,
     "value": 2.0
    }
@@ -2898,16 +2898,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_USAGE",
-       "id": 20,
-       "itemSetId": 10,
-       "value": -8.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 19,
        "itemSetId": 10,
        "value": 10.0
+      },
+      {
+       "effect": "STAMINA_USAGE",
+       "id": 20,
+       "itemSetId": 10,
+       "value": -8.0
       }
      ],
      "customEffects": [
@@ -2959,16 +2959,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_USAGE",
-       "id": 20,
-       "itemSetId": 10,
-       "value": -8.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 19,
        "itemSetId": 10,
        "value": 10.0
+      },
+      {
+       "effect": "STAMINA_USAGE",
+       "id": 20,
+       "itemSetId": 10,
+       "value": -8.0
       }
      ],
      "customEffects": [
@@ -3020,16 +3020,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_USAGE",
-       "id": 20,
-       "itemSetId": 10,
-       "value": -8.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 19,
        "itemSetId": 10,
        "value": 10.0
+      },
+      {
+       "effect": "STAMINA_USAGE",
+       "id": 20,
+       "itemSetId": 10,
+       "value": -8.0
       }
      ],
      "customEffects": [
@@ -3081,16 +3081,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "STAMINA_USAGE",
-       "id": 20,
-       "itemSetId": 10,
-       "value": -8.0
-      },
-      {
        "effect": "CRIT_CHANCE",
        "id": 19,
        "itemSetId": 10,
        "value": 10.0
+      },
+      {
+       "effect": "STAMINA_USAGE",
+       "id": 20,
+       "itemSetId": 10,
+       "value": -8.0
       }
      ],
      "customEffects": [
@@ -3132,16 +3132,16 @@
   ],
   "psychoEffects": [
    {
-    "effect": "STAMINA_USAGE",
-    "id": 20,
-    "itemSetId": 10,
-    "value": -8.0
-   },
-   {
     "effect": "CRIT_CHANCE",
     "id": 19,
     "itemSetId": 10,
     "value": 10.0
+   },
+   {
+    "effect": "STAMINA_USAGE",
+    "id": 20,
+    "itemSetId": 10,
+    "value": -8.0
    }
   ],
   "customEffects": [
@@ -3750,6 +3750,12 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "FARID",
+       "id": 32,
+       "itemSetId": 14,
+       "value": 7.0
+      },
+      {
        "effect": "MANA_REGENERATION",
        "id": 33,
        "itemSetId": 14,
@@ -3772,12 +3778,6 @@
        "id": 35,
        "itemSetId": 14,
        "value": 1.0
-      },
-      {
-       "effect": "FARID",
-       "id": 32,
-       "itemSetId": 14,
-       "value": 7.0
       }
      ],
      "customEffects": [
@@ -3829,6 +3829,12 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "FARID",
+       "id": 32,
+       "itemSetId": 14,
+       "value": 7.0
+      },
+      {
        "effect": "MANA_REGENERATION",
        "id": 33,
        "itemSetId": 14,
@@ -3851,12 +3857,6 @@
        "id": 35,
        "itemSetId": 14,
        "value": 1.0
-      },
-      {
-       "effect": "FARID",
-       "id": 32,
-       "itemSetId": 14,
-       "value": 7.0
       }
      ],
      "customEffects": [
@@ -3908,6 +3908,12 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "FARID",
+       "id": 32,
+       "itemSetId": 14,
+       "value": 7.0
+      },
+      {
        "effect": "MANA_REGENERATION",
        "id": 33,
        "itemSetId": 14,
@@ -3930,12 +3936,6 @@
        "id": 35,
        "itemSetId": 14,
        "value": 1.0
-      },
-      {
-       "effect": "FARID",
-       "id": 32,
-       "itemSetId": 14,
-       "value": 7.0
       }
      ],
      "customEffects": [
@@ -3987,6 +3987,12 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "FARID",
+       "id": 32,
+       "itemSetId": 14,
+       "value": 7.0
+      },
+      {
        "effect": "MANA_REGENERATION",
        "id": 33,
        "itemSetId": 14,
@@ -4009,12 +4015,6 @@
        "id": 35,
        "itemSetId": 14,
        "value": 1.0
-      },
-      {
-       "effect": "FARID",
-       "id": 32,
-       "itemSetId": 14,
-       "value": 7.0
       }
      ],
      "customEffects": [
@@ -4066,6 +4066,12 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "FARID",
+       "id": 32,
+       "itemSetId": 14,
+       "value": 7.0
+      },
+      {
        "effect": "MANA_REGENERATION",
        "id": 33,
        "itemSetId": 14,
@@ -4088,12 +4094,6 @@
        "id": 35,
        "itemSetId": 14,
        "value": 1.0
-      },
-      {
-       "effect": "FARID",
-       "id": 32,
-       "itemSetId": 14,
-       "value": 7.0
       }
      ],
      "customEffects": [
@@ -4135,6 +4135,12 @@
   ],
   "psychoEffects": [
    {
+    "effect": "FARID",
+    "id": 32,
+    "itemSetId": 14,
+    "value": 7.0
+   },
+   {
     "effect": "MANA_REGENERATION",
     "id": 33,
     "itemSetId": 14,
@@ -4157,12 +4163,6 @@
     "id": 35,
     "itemSetId": 14,
     "value": 1.0
-   },
-   {
-    "effect": "FARID",
-    "id": 32,
-    "itemSetId": 14,
-    "value": 7.0
    }
   ],
   "customEffects": [
@@ -4199,12 +4199,6 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 39,
-       "itemSetId": 15,
-       "value": 1.0
-      },
-      {
        "effect": "DOUBLE_HIT_CHANCE",
        "id": 38,
        "itemSetId": 15,
@@ -4219,6 +4213,12 @@
       {
        "effect": "CHEAT_DESTINY",
        "id": 40,
+       "itemSetId": 15,
+       "value": 1.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 39,
        "itemSetId": 15,
        "value": 1.0
       }
@@ -4278,12 +4278,6 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 39,
-       "itemSetId": 15,
-       "value": 1.0
-      },
-      {
        "effect": "DOUBLE_HIT_CHANCE",
        "id": 38,
        "itemSetId": 15,
@@ -4298,6 +4292,12 @@
       {
        "effect": "CHEAT_DESTINY",
        "id": 40,
+       "itemSetId": 15,
+       "value": 1.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 39,
        "itemSetId": 15,
        "value": 1.0
       }
@@ -4357,12 +4357,6 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 39,
-       "itemSetId": 15,
-       "value": 1.0
-      },
-      {
        "effect": "DOUBLE_HIT_CHANCE",
        "id": 38,
        "itemSetId": 15,
@@ -4377,6 +4371,12 @@
       {
        "effect": "CHEAT_DESTINY",
        "id": 40,
+       "itemSetId": 15,
+       "value": 1.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 39,
        "itemSetId": 15,
        "value": 1.0
       }
@@ -4436,12 +4436,6 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 39,
-       "itemSetId": 15,
-       "value": 1.0
-      },
-      {
        "effect": "DOUBLE_HIT_CHANCE",
        "id": 38,
        "itemSetId": 15,
@@ -4456,6 +4450,12 @@
       {
        "effect": "CHEAT_DESTINY",
        "id": 40,
+       "itemSetId": 15,
+       "value": 1.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 39,
        "itemSetId": 15,
        "value": 1.0
       }
@@ -4515,12 +4515,6 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 39,
-       "itemSetId": 15,
-       "value": 1.0
-      },
-      {
        "effect": "DOUBLE_HIT_CHANCE",
        "id": 38,
        "itemSetId": 15,
@@ -4535,6 +4529,12 @@
       {
        "effect": "CHEAT_DESTINY",
        "id": 40,
+       "itemSetId": 15,
+       "value": 1.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 39,
        "itemSetId": 15,
        "value": 1.0
       }
@@ -4584,12 +4584,6 @@
     "value": 15.0
    },
    {
-    "effect": "EXTRA_AP",
-    "id": 39,
-    "itemSetId": 15,
-    "value": 1.0
-   },
-   {
     "effect": "DOUBLE_HIT_CHANCE",
     "id": 38,
     "itemSetId": 15,
@@ -4604,6 +4598,12 @@
    {
     "effect": "CHEAT_DESTINY",
     "id": 40,
+    "itemSetId": 15,
+    "value": 1.0
+   },
+   {
+    "effect": "EXTRA_AP",
+    "id": 39,
     "itemSetId": 15,
     "value": 1.0
    }
@@ -4636,10 +4636,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "RANGE_HIT_MODIFIER",
-       "id": 42,
+       "effect": "EXTRA_AP",
+       "id": 44,
        "itemSetId": 16,
-       "value": 15.0
+       "value": 1.0
       },
       {
        "effect": "FARID",
@@ -4648,16 +4648,16 @@
        "value": 7.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 44,
-       "itemSetId": 16,
-       "value": 1.0
-      },
-      {
        "effect": "MAGICAL_DAMAGE_INCREASE",
        "id": 41,
        "itemSetId": 16,
        "value": 10.0
+      },
+      {
+       "effect": "RANGE_HIT_MODIFIER",
+       "id": 42,
+       "itemSetId": 16,
+       "value": 15.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -4715,10 +4715,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "RANGE_HIT_MODIFIER",
-       "id": 42,
+       "effect": "EXTRA_AP",
+       "id": 44,
        "itemSetId": 16,
-       "value": 15.0
+       "value": 1.0
       },
       {
        "effect": "FARID",
@@ -4727,16 +4727,16 @@
        "value": 7.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 44,
-       "itemSetId": 16,
-       "value": 1.0
-      },
-      {
        "effect": "MAGICAL_DAMAGE_INCREASE",
        "id": 41,
        "itemSetId": 16,
        "value": 10.0
+      },
+      {
+       "effect": "RANGE_HIT_MODIFIER",
+       "id": 42,
+       "itemSetId": 16,
+       "value": 15.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -4794,10 +4794,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "RANGE_HIT_MODIFIER",
-       "id": 42,
+       "effect": "EXTRA_AP",
+       "id": 44,
        "itemSetId": 16,
-       "value": 15.0
+       "value": 1.0
       },
       {
        "effect": "FARID",
@@ -4806,16 +4806,16 @@
        "value": 7.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 44,
-       "itemSetId": 16,
-       "value": 1.0
-      },
-      {
        "effect": "MAGICAL_DAMAGE_INCREASE",
        "id": 41,
        "itemSetId": 16,
        "value": 10.0
+      },
+      {
+       "effect": "RANGE_HIT_MODIFIER",
+       "id": 42,
+       "itemSetId": 16,
+       "value": 15.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -4873,10 +4873,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "RANGE_HIT_MODIFIER",
-       "id": 42,
+       "effect": "EXTRA_AP",
+       "id": 44,
        "itemSetId": 16,
-       "value": 15.0
+       "value": 1.0
       },
       {
        "effect": "FARID",
@@ -4885,16 +4885,16 @@
        "value": 7.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 44,
-       "itemSetId": 16,
-       "value": 1.0
-      },
-      {
        "effect": "MAGICAL_DAMAGE_INCREASE",
        "id": 41,
        "itemSetId": 16,
        "value": 10.0
+      },
+      {
+       "effect": "RANGE_HIT_MODIFIER",
+       "id": 42,
+       "itemSetId": 16,
+       "value": 15.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -4952,10 +4952,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "RANGE_HIT_MODIFIER",
-       "id": 42,
+       "effect": "EXTRA_AP",
+       "id": 44,
        "itemSetId": 16,
-       "value": 15.0
+       "value": 1.0
       },
       {
        "effect": "FARID",
@@ -4964,16 +4964,16 @@
        "value": 7.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 44,
-       "itemSetId": 16,
-       "value": 1.0
-      },
-      {
        "effect": "MAGICAL_DAMAGE_INCREASE",
        "id": 41,
        "itemSetId": 16,
        "value": 10.0
+      },
+      {
+       "effect": "RANGE_HIT_MODIFIER",
+       "id": 42,
+       "itemSetId": 16,
+       "value": 15.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -5021,10 +5021,10 @@
   ],
   "psychoEffects": [
    {
-    "effect": "RANGE_HIT_MODIFIER",
-    "id": 42,
+    "effect": "EXTRA_AP",
+    "id": 44,
     "itemSetId": 16,
-    "value": 15.0
+    "value": 1.0
    },
    {
     "effect": "FARID",
@@ -5033,16 +5033,16 @@
     "value": 7.0
    },
    {
-    "effect": "EXTRA_AP",
-    "id": 44,
-    "itemSetId": 16,
-    "value": 1.0
-   },
-   {
     "effect": "MAGICAL_DAMAGE_INCREASE",
     "id": 41,
     "itemSetId": 16,
     "value": 10.0
+   },
+   {
+    "effect": "RANGE_HIT_MODIFIER",
+    "id": 42,
+    "itemSetId": 16,
+    "value": 15.0
    },
    {
     "effect": "CHEAT_DESTINY",
@@ -5079,16 +5079,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "PASSIVE_DAMAGE_REDUCTION",
+       "id": 48,
+       "itemSetId": 17,
+       "value": 15.0
+      },
+      {
        "effect": "DAMAGE_REDUCTION",
        "id": 46,
        "itemSetId": 17,
        "value": 7.0
-      },
-      {
-       "effect": "HOLM",
-       "id": 47,
-       "itemSetId": 17,
-       "value": 10.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -5097,10 +5097,10 @@
        "value": 1.0
       },
       {
-       "effect": "PASSIVE_DAMAGE_REDUCTION",
-       "id": 48,
+       "effect": "HOLM",
+       "id": 47,
        "itemSetId": 17,
-       "value": 15.0
+       "value": 10.0
       },
       {
        "effect": "EXTRA_AP",
@@ -5158,16 +5158,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "PASSIVE_DAMAGE_REDUCTION",
+       "id": 48,
+       "itemSetId": 17,
+       "value": 15.0
+      },
+      {
        "effect": "DAMAGE_REDUCTION",
        "id": 46,
        "itemSetId": 17,
        "value": 7.0
-      },
-      {
-       "effect": "HOLM",
-       "id": 47,
-       "itemSetId": 17,
-       "value": 10.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -5176,10 +5176,10 @@
        "value": 1.0
       },
       {
-       "effect": "PASSIVE_DAMAGE_REDUCTION",
-       "id": 48,
+       "effect": "HOLM",
+       "id": 47,
        "itemSetId": 17,
-       "value": 15.0
+       "value": 10.0
       },
       {
        "effect": "EXTRA_AP",
@@ -5237,16 +5237,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "PASSIVE_DAMAGE_REDUCTION",
+       "id": 48,
+       "itemSetId": 17,
+       "value": 15.0
+      },
+      {
        "effect": "DAMAGE_REDUCTION",
        "id": 46,
        "itemSetId": 17,
        "value": 7.0
-      },
-      {
-       "effect": "HOLM",
-       "id": 47,
-       "itemSetId": 17,
-       "value": 10.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -5255,10 +5255,10 @@
        "value": 1.0
       },
       {
-       "effect": "PASSIVE_DAMAGE_REDUCTION",
-       "id": 48,
+       "effect": "HOLM",
+       "id": 47,
        "itemSetId": 17,
-       "value": 15.0
+       "value": 10.0
       },
       {
        "effect": "EXTRA_AP",
@@ -5316,16 +5316,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "PASSIVE_DAMAGE_REDUCTION",
+       "id": 48,
+       "itemSetId": 17,
+       "value": 15.0
+      },
+      {
        "effect": "DAMAGE_REDUCTION",
        "id": 46,
        "itemSetId": 17,
        "value": 7.0
-      },
-      {
-       "effect": "HOLM",
-       "id": 47,
-       "itemSetId": 17,
-       "value": 10.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -5334,10 +5334,10 @@
        "value": 1.0
       },
       {
-       "effect": "PASSIVE_DAMAGE_REDUCTION",
-       "id": 48,
+       "effect": "HOLM",
+       "id": 47,
        "itemSetId": 17,
-       "value": 15.0
+       "value": 10.0
       },
       {
        "effect": "EXTRA_AP",
@@ -5395,16 +5395,16 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
+       "effect": "PASSIVE_DAMAGE_REDUCTION",
+       "id": 48,
+       "itemSetId": 17,
+       "value": 15.0
+      },
+      {
        "effect": "DAMAGE_REDUCTION",
        "id": 46,
        "itemSetId": 17,
        "value": 7.0
-      },
-      {
-       "effect": "HOLM",
-       "id": 47,
-       "itemSetId": 17,
-       "value": 10.0
       },
       {
        "effect": "CHEAT_DESTINY",
@@ -5413,10 +5413,10 @@
        "value": 1.0
       },
       {
-       "effect": "PASSIVE_DAMAGE_REDUCTION",
-       "id": 48,
+       "effect": "HOLM",
+       "id": 47,
        "itemSetId": 17,
-       "value": 15.0
+       "value": 10.0
       },
       {
        "effect": "EXTRA_AP",
@@ -5464,16 +5464,16 @@
   ],
   "psychoEffects": [
    {
+    "effect": "PASSIVE_DAMAGE_REDUCTION",
+    "id": 48,
+    "itemSetId": 17,
+    "value": 15.0
+   },
+   {
     "effect": "DAMAGE_REDUCTION",
     "id": 46,
     "itemSetId": 17,
     "value": 7.0
-   },
-   {
-    "effect": "HOLM",
-    "id": 47,
-    "itemSetId": 17,
-    "value": 10.0
    },
    {
     "effect": "CHEAT_DESTINY",
@@ -5482,10 +5482,10 @@
     "value": 1.0
    },
    {
-    "effect": "PASSIVE_DAMAGE_REDUCTION",
-    "id": 48,
+    "effect": "HOLM",
+    "id": 47,
     "itemSetId": 17,
-    "value": 15.0
+    "value": 10.0
    },
    {
     "effect": "EXTRA_AP",
@@ -5528,8 +5528,14 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 54,
+       "effect": "HOLM",
+       "id": 53,
+       "itemSetId": 18,
+       "value": 9.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 55,
        "itemSetId": 18,
        "value": 1.0
       },
@@ -5540,14 +5546,8 @@
        "value": 5.0
       },
       {
-       "effect": "HOLM",
-       "id": 53,
-       "itemSetId": 18,
-       "value": 9.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 55,
+       "effect": "EXTRA_AP",
+       "id": 54,
        "itemSetId": 18,
        "value": 1.0
       }
@@ -5607,8 +5607,14 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 54,
+       "effect": "HOLM",
+       "id": 53,
+       "itemSetId": 18,
+       "value": 9.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 55,
        "itemSetId": 18,
        "value": 1.0
       },
@@ -5619,14 +5625,8 @@
        "value": 5.0
       },
       {
-       "effect": "HOLM",
-       "id": 53,
-       "itemSetId": 18,
-       "value": 9.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 55,
+       "effect": "EXTRA_AP",
+       "id": 54,
        "itemSetId": 18,
        "value": 1.0
       }
@@ -5686,8 +5686,14 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 54,
+       "effect": "HOLM",
+       "id": 53,
+       "itemSetId": 18,
+       "value": 9.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 55,
        "itemSetId": 18,
        "value": 1.0
       },
@@ -5698,14 +5704,8 @@
        "value": 5.0
       },
       {
-       "effect": "HOLM",
-       "id": 53,
-       "itemSetId": 18,
-       "value": 9.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 55,
+       "effect": "EXTRA_AP",
+       "id": 54,
        "itemSetId": 18,
        "value": 1.0
       }
@@ -5765,8 +5765,14 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 54,
+       "effect": "HOLM",
+       "id": 53,
+       "itemSetId": 18,
+       "value": 9.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 55,
        "itemSetId": 18,
        "value": 1.0
       },
@@ -5777,14 +5783,8 @@
        "value": 5.0
       },
       {
-       "effect": "HOLM",
-       "id": 53,
-       "itemSetId": 18,
-       "value": 9.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 55,
+       "effect": "EXTRA_AP",
+       "id": 54,
        "itemSetId": 18,
        "value": 1.0
       }
@@ -5844,8 +5844,14 @@
        "value": 15.0
       },
       {
-       "effect": "EXTRA_AP",
-       "id": 54,
+       "effect": "HOLM",
+       "id": 53,
+       "itemSetId": 18,
+       "value": 9.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 55,
        "itemSetId": 18,
        "value": 1.0
       },
@@ -5856,14 +5862,8 @@
        "value": 5.0
       },
       {
-       "effect": "HOLM",
-       "id": 53,
-       "itemSetId": 18,
-       "value": 9.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 55,
+       "effect": "EXTRA_AP",
+       "id": 54,
        "itemSetId": 18,
        "value": 1.0
       }
@@ -5913,8 +5913,14 @@
     "value": 15.0
    },
    {
-    "effect": "EXTRA_AP",
-    "id": 54,
+    "effect": "HOLM",
+    "id": 53,
+    "itemSetId": 18,
+    "value": 9.0
+   },
+   {
+    "effect": "CHEAT_DESTINY",
+    "id": 55,
     "itemSetId": 18,
     "value": 1.0
    },
@@ -5925,14 +5931,8 @@
     "value": 5.0
    },
    {
-    "effect": "HOLM",
-    "id": 53,
-    "itemSetId": 18,
-    "value": 9.0
-   },
-   {
-    "effect": "CHEAT_DESTINY",
-    "id": 55,
+    "effect": "EXTRA_AP",
+    "id": 54,
     "itemSetId": 18,
     "value": 1.0
    }
@@ -5965,22 +5965,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "MAGICAL_HIT_MODIFIER",
-       "id": 57,
+       "effect": "DOUBLE_HIT_CHANCE",
+       "id": 56,
        "itemSetId": 19,
-       "value": 15.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 60,
-       "itemSetId": 19,
-       "value": 1.0
-      },
-      {
-       "effect": "EXTRA_AP",
-       "id": 59,
-       "itemSetId": 19,
-       "value": 1.0
+       "value": 5.0
       },
       {
        "effect": "FARID",
@@ -5989,10 +5977,22 @@
        "value": 7.0
       },
       {
-       "effect": "DOUBLE_HIT_CHANCE",
-       "id": 56,
+       "effect": "MAGICAL_HIT_MODIFIER",
+       "id": 57,
        "itemSetId": 19,
-       "value": 5.0
+       "value": 15.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 59,
+       "itemSetId": 19,
+       "value": 1.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 60,
+       "itemSetId": 19,
+       "value": 1.0
       }
      ],
      "customEffects": [
@@ -6044,22 +6044,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "MAGICAL_HIT_MODIFIER",
-       "id": 57,
+       "effect": "DOUBLE_HIT_CHANCE",
+       "id": 56,
        "itemSetId": 19,
-       "value": 15.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 60,
-       "itemSetId": 19,
-       "value": 1.0
-      },
-      {
-       "effect": "EXTRA_AP",
-       "id": 59,
-       "itemSetId": 19,
-       "value": 1.0
+       "value": 5.0
       },
       {
        "effect": "FARID",
@@ -6068,10 +6056,22 @@
        "value": 7.0
       },
       {
-       "effect": "DOUBLE_HIT_CHANCE",
-       "id": 56,
+       "effect": "MAGICAL_HIT_MODIFIER",
+       "id": 57,
        "itemSetId": 19,
-       "value": 5.0
+       "value": 15.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 59,
+       "itemSetId": 19,
+       "value": 1.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 60,
+       "itemSetId": 19,
+       "value": 1.0
       }
      ],
      "customEffects": [
@@ -6123,22 +6123,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "MAGICAL_HIT_MODIFIER",
-       "id": 57,
+       "effect": "DOUBLE_HIT_CHANCE",
+       "id": 56,
        "itemSetId": 19,
-       "value": 15.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 60,
-       "itemSetId": 19,
-       "value": 1.0
-      },
-      {
-       "effect": "EXTRA_AP",
-       "id": 59,
-       "itemSetId": 19,
-       "value": 1.0
+       "value": 5.0
       },
       {
        "effect": "FARID",
@@ -6147,10 +6135,22 @@
        "value": 7.0
       },
       {
-       "effect": "DOUBLE_HIT_CHANCE",
-       "id": 56,
+       "effect": "MAGICAL_HIT_MODIFIER",
+       "id": 57,
        "itemSetId": 19,
-       "value": 5.0
+       "value": 15.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 59,
+       "itemSetId": 19,
+       "value": 1.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 60,
+       "itemSetId": 19,
+       "value": 1.0
       }
      ],
      "customEffects": [
@@ -6202,22 +6202,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "MAGICAL_HIT_MODIFIER",
-       "id": 57,
+       "effect": "DOUBLE_HIT_CHANCE",
+       "id": 56,
        "itemSetId": 19,
-       "value": 15.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 60,
-       "itemSetId": 19,
-       "value": 1.0
-      },
-      {
-       "effect": "EXTRA_AP",
-       "id": 59,
-       "itemSetId": 19,
-       "value": 1.0
+       "value": 5.0
       },
       {
        "effect": "FARID",
@@ -6226,10 +6214,22 @@
        "value": 7.0
       },
       {
-       "effect": "DOUBLE_HIT_CHANCE",
-       "id": 56,
+       "effect": "MAGICAL_HIT_MODIFIER",
+       "id": 57,
        "itemSetId": 19,
-       "value": 5.0
+       "value": 15.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 59,
+       "itemSetId": 19,
+       "value": 1.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 60,
+       "itemSetId": 19,
+       "value": 1.0
       }
      ],
      "customEffects": [
@@ -6281,22 +6281,10 @@
      "setLegendaryItems": null,
      "psychoEffects": [
       {
-       "effect": "MAGICAL_HIT_MODIFIER",
-       "id": 57,
+       "effect": "DOUBLE_HIT_CHANCE",
+       "id": 56,
        "itemSetId": 19,
-       "value": 15.0
-      },
-      {
-       "effect": "CHEAT_DESTINY",
-       "id": 60,
-       "itemSetId": 19,
-       "value": 1.0
-      },
-      {
-       "effect": "EXTRA_AP",
-       "id": 59,
-       "itemSetId": 19,
-       "value": 1.0
+       "value": 5.0
       },
       {
        "effect": "FARID",
@@ -6305,10 +6293,22 @@
        "value": 7.0
       },
       {
-       "effect": "DOUBLE_HIT_CHANCE",
-       "id": 56,
+       "effect": "MAGICAL_HIT_MODIFIER",
+       "id": 57,
        "itemSetId": 19,
-       "value": 5.0
+       "value": 15.0
+      },
+      {
+       "effect": "EXTRA_AP",
+       "id": 59,
+       "itemSetId": 19,
+       "value": 1.0
+      },
+      {
+       "effect": "CHEAT_DESTINY",
+       "id": 60,
+       "itemSetId": 19,
+       "value": 1.0
       }
      ],
      "customEffects": [
@@ -6350,22 +6350,10 @@
   ],
   "psychoEffects": [
    {
-    "effect": "MAGICAL_HIT_MODIFIER",
-    "id": 57,
+    "effect": "DOUBLE_HIT_CHANCE",
+    "id": 56,
     "itemSetId": 19,
-    "value": 15.0
-   },
-   {
-    "effect": "CHEAT_DESTINY",
-    "id": 60,
-    "itemSetId": 19,
-    "value": 1.0
-   },
-   {
-    "effect": "EXTRA_AP",
-    "id": 59,
-    "itemSetId": 19,
-    "value": 1.0
+    "value": 5.0
    },
    {
     "effect": "FARID",
@@ -6374,10 +6362,22 @@
     "value": 7.0
    },
    {
-    "effect": "DOUBLE_HIT_CHANCE",
-    "id": 56,
+    "effect": "MAGICAL_HIT_MODIFIER",
+    "id": 57,
     "itemSetId": 19,
-    "value": 5.0
+    "value": 15.0
+   },
+   {
+    "effect": "EXTRA_AP",
+    "id": 59,
+    "itemSetId": 19,
+    "value": 1.0
+   },
+   {
+    "effect": "CHEAT_DESTINY",
+    "id": 60,
+    "itemSetId": 19,
+    "value": 1.0
    }
   ],
   "customEffects": [
